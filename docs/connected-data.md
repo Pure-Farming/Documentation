@@ -115,6 +115,9 @@ The Data API is based on the REST standard, where URLs represent collections of 
         </div>
     </div>
 </div>
+
+---
+
 ## Endpoints / Environments
 The Pure Farming API is provided as a SaaS offering and the endpoints that you will be interested in are: 
 
