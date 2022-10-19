@@ -79,4 +79,4 @@ A call to the Livestock Animal Birth Registration endpoint returns the following
 |**Location**|An identifier for the location of the Animal Birth Registration. |Identifier|
 |**Remark**|A comment or remark field for additional user-specified information about the event.|String |
 |**Animal**|Unique animal scheme and identifier combination.|Identifier|
-|**Animal Detail**|Core schema for representing animal. [See the Animal definition](/animal). |AnimalDetail|
+|**Animal Detail**|Core schema for representing animal. [See the Animal definition](./index.md). |AnimalDetail|
