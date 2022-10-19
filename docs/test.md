@@ -1,3 +1,17 @@
+---
+
+title: Connected Data
+menu_order: 1
+post_status: publish
+post_excerpt: Connected Data
+taxonomy:
+    category:
+        - root
+    post_tag:
+        - root
+
+---
+
 [Home](https://developer.purefarming.com) 
 **/**
 Test
