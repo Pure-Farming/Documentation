@@ -1,25 +1,5 @@
-<div class="wpb_wrapper">
-  <div class="fbc fbc-page">
-    <div class="fbc-wrap">
-      <ol class="fbc-items" itemscope="" itemtype="https://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-          <span itemprop="name">
-            <a itemprop="item" href="https://developer.purefarming.com/home/">
-              <i class="fa fa-home" aria-hidden="true"></i>Home                    </a>
-          </span>
-          <meta itemprop="position" content="1">
-          </li>
-          <li>
-          <span class="fbc-separator">/</span></li>
-        <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-        <span itemprop="name">Connected Data</span>
-          <meta itemprop="position" content="2">
-        </li>
-      </ol>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</div>
+[Home](https://developer.purefarming.com) **/**
+Connected Data
 
 ---
 - [Introduction](#introduction)
@@ -44,77 +24,7 @@ A load receival records the details of the material, transport, source, and dest
 The Data API is based on the REST standard, where URLs represent collections of data, and actions on the data are performed using HTTP verbs (Such as GET for retrieving data and POST for creating data). Any programming language capable of performing HTTPs requests can be used. Data returned from API uses the JSON standard.  
 
 ## Resource Types
-<div class="vc_row wpb_row vc_inner vc_row-fluid">
-    <div class="wpb_column vc_column_container vc_col-sm-6">
-        <div class="vc_column-inner">
-            <div class="wpb_wrapper">
-                <div class="minti_boxedholder manualBox  clearfix" style="padding: 40px 40px 20px 40px; margin: 0px 0px 0px 0px; background-color: #ffffff; border-radius: 2px; border-width: 1px; border-color: #e1e1e1; ">
-                    <h4 class="headline font-inherit fontsize-inherit fontweight-inherit lh-inherit align-left transform-inherit " style="margin: 0 0 0 0; color: #18303d;">Common Objects</h4>
-                    <div class="spacer" style="height: 10px;"></div>
-	                <div class="wpb_text_column wpb_content_element  sevenText">
-                        <div class="wpb_wrapper">
-                            <p>Items which are common across all Resource Types, such as Metadata, Links etc.</p>
-                        </div>
-                    </div>
-                    <a href="https://developer.purefarming.com/docs/resource-types/common-objects" target="_self" class="button button-appear color-3 medium " style="border-radius: 2px;">
-                        <span>Go to Common Objects<i class="fa fa-chevron-right"></i></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wpb_column vc_column_container vc_col-sm-6">
-        <div class="vc_column-inner">
-            <div class="wpb_wrapper">
-                <div class="minti_boxedholder manualBox  clearfix" style="padding: 40px 40px 20px 40px; margin: 0px 0px 0px 0px; background-color: #ffffff; border-radius: 2px; border-width: 1px; border-color: #e1e1e1; ">
-                    <h4 class="headline font-inherit fontsize-inherit fontweight-inherit lh-inherit align-left transform-inherit " style="margin: 0 0 0 0; color: #18303d;">Crops – Sample Plan</h4>
-                    <div class="spacer" style="height: 10px;"></div>
-                    <div class="wpb_text_column wpb_content_element  sevenText">
-                        <div class="wpb_wrapper">
-                            <p><span data-contrast="auto">Sample Plans provides information about a planned sampling activity for a crop&nbsp; at a geospatial feature (paddock, field, or block) level.</span></p>
-                        </div>
-                    </div>
-                    <a href="https://developer.purefarming.com/connected-data/sample-plan" target="_self" class="button button-appear color-3 medium " style="border-radius: 2px;"><span>Go to Sample Plan<i class="fa fa-chevron-right"></i></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="spacer" style="height: 50px;"></div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid">
-    <div class="wpb_column vc_column_container vc_col-sm-6">
-        <div class="vc_column-inner">
-            <div class="wpb_wrapper">
-                <div class="minti_boxedholder manualBox  clearfix" style="padding: 40px 40px 20px 40px; margin: 0px 0px 0px 0px; background-color: #ffffff; border-radius: 2px; border-width: 1px; border-color: #e1e1e1; ">
-                    <h4 class="headline font-inherit fontsize-inherit fontweight-inherit lh-inherit align-left transform-inherit " style="margin: 0 0 0 0; color: #18303d;">Crops – Sample Analysis</h4>
-                    <div class="spacer" style="height: 10px;"></div>
-                    <div class="wpb_text_column wpb_content_element  sevenText">
-                        <div class="wpb_wrapper">
-                            <p><span data-contrast="auto">Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples.&nbsp;</span></p>
-                        </div>
-                    </div>
-                    <a href="https://developer.purefarming.com/connected-data/sample-analysis" target="_self" class="button button-appear color-3 medium " style="border-radius: 2px;"><span>Go to Sample Analysis<i class="fa fa-chevron-right"></i></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wpb_column vc_column_container vc_col-sm-6">
-        <div class="vc_column-inner">
-            <div class="wpb_wrapper">
-                <div class="minti_boxedholder manualBox  clearfix" style="padding: 40px 40px 20px 40px; margin: 0px 0px 0px 0px; background-color: #ffffff; border-radius: 2px; border-width: 1px; border-color: #e1e1e1; ">
-                    <h4 class="headline font-inherit fontsize-inherit fontweight-inherit lh-inherit align-left transform-inherit " style="margin: 0 0 0 0; color: #18303d;">Crops – Load Receival</h4>
-                    <div class="spacer" style="height: 10px;"></div>
-                    <div class="wpb_text_column wpb_content_element  sevenText">
-                        <div class="wpb_wrapper">
-                            <p><span data-contrast="auto">Load Receivals provide information about the arrival of harvested crop loads to a location.&nbsp;</span></p>
-                        </div>
-                    </div>
-                    <a href="https://developer.purefarming.com/connected-data/load-receival" target="_self" class="button button-appear color-3 medium " style="border-radius: 2px;"><span>Go to Load Receival<i class="fa fa-chevron-right"></i></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+- [Common Objects](./resource-types/common.md)
 
 ---
 
