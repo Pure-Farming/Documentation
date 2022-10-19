@@ -12,9 +12,7 @@ taxonomy:
 
 ---
 
-[Home](https://developer.purefarming.com) 
-**/**
-Test
+[Home](https://developer.purefarming.com) **/** Test
 
 ---
 - [Introduction](#introduction)
