@@ -1,8 +1,17 @@
-[Home](https://developer.purefarming.com)
-**/**
-[Connected Data](../test.md)
-**/**
-Common Objects
+---
+
+title: Common Objects
+menu_order: 1
+post_status: publish
+post_excerpt: Common Data Objects
+taxonomy:
+    category:
+        - api
+        - data
+    post_tag:
+        - api
+
+---
 
 # Common Objects
 
@@ -14,6 +23,7 @@ Common Objects
 ---
 
 ## Metadata
+
 This provides metadata about a given object, including information about the creator, provenance and timestamps relating to its creation and modification.
 
 ```json
@@ -39,6 +49,7 @@ This provides metadata about a given object, including information about the cre
 ---
 
 ## Feature
+
 Provides information about a Feature, which can may be another entity in *Pure Farming* such as a Holding, Enterprise etc.
 
 ```json
@@ -63,6 +74,7 @@ Provides information about a Feature, which can may be another entity in *Pure F
 ---
 
 ## Identifier
+
 Represents an identifier, which is a combination of a scheme and an ID value.
 
 ```json
@@ -80,6 +92,7 @@ Represents an identifier, which is a combination of a scheme and an ID value.
 ---
 
 ## Link
+
 Represents an individual Link for an object.
 
 ```json
