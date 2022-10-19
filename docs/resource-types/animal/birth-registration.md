@@ -1,4 +1,19 @@
-﻿# Resource Type: Livestock - Movement - Animal Birth Registration 
+﻿---
+
+title: Birth Registration
+menu_order: 1
+post_status: publish
+post_excerpt: Animal - Birth Registration
+taxonomy:
+    category:
+        - api
+        - data
+    post_tag:
+        - api
+
+---
+
+# Resource Type: Livestock - Movement - Animal Birth Registration 
 
  - [URLs](#URLs)
  - [Response Structure](#response-structure)
@@ -8,19 +23,25 @@
 
 Get all animal birth registrations that you have access to.
 
-    Get /data/livestock/movement/animal-birth-registrations
+```
+GET /data/livestock/movement/animal-birth-registrations
+```
     
 Get an individual animal birth registration for a given **AnimalBirthRegId**, the Id of the animal birth registration is required.
-
-    Get /data/livestock/movement/animal-birth-registrations/{AnimalBirthRegId}
+```
+GET /data/livestock/movement/animal-birth-registrations/{AnimalBirthRegId}
+```
 
 Get all animal birth registrations for a given holding, the **HoldingId** is required.
 
-    Get /data/holdings/{HoldingId}/livestock/movement/animal-birth-registrations
+```
+GET /data/holdings/{HoldingId}/livestock/movement/animal-birth-registrations
+```
 
 Get an individual animal birth registration with a given **HoldingId** and **AnimalBirthRegId**, both Ids are required.
-
-    Get /data/holdings/{HoldingId}/livestock/movement/animal-birth-registrations/{AnimalBirthRegId}
+```
+GET /data/holdings/{HoldingId}/livestock/movement/animal-birth-registrations/{AnimalBirthRegId}
+```
 
 ## Response Structure
 
