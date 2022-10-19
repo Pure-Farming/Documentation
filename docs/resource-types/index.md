@@ -12,9 +12,6 @@ taxonomy:
 
 ---
 
-[Home](https://developer.purefarming.com) **/** Connected Data
-
----
 - [Introduction](#introduction)
 - [Resource Types](#resource-types)
 - [Endpoints/Environments](#endpoints-environments)

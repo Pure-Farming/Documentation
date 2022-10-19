@@ -13,8 +13,6 @@ taxonomy:
 
 ---
 
-[Home](https://developer.purefarming.com) **/** [Connected Data](../connected-data.md) **/** Common Objects
-
 # Common Objects
 
 - [Metadata](#metadata)
