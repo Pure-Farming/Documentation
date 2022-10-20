@@ -21,3 +21,4 @@ Below are the currently provided resource types for Crops.
 - [Sample Analysis](./sample-analysis.md)
 - [Sample Plans](./sample-plan.md)
 - [Load Receivals](./load-receival.md)
+- [Work Records](./work-record.md)
