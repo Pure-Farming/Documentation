@@ -18,7 +18,8 @@ taxonomy:
 
 Below are the currently provided resource types for Crops.
 
-- [Sample Analysis](./sample-analysis.md)
-- [Sample Plans](./sample-plan.md)
-- [Load Receivals](./load-receival.md)
-- [Work Records](./work-record.md)
+- [Sample Analysis](/resource-types/crops/sample-analysis.md)
+- [Sample Plans](/resource-types/crops/sample-plan.md)
+- [Load Receivals](/resource-types/crops/load-receival.md)
+- [Work Records](/resource-types/crops/work-record.md)
+
