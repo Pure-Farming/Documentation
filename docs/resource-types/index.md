@@ -34,7 +34,14 @@ A load receival records the details of the material, transport, source, and dest
 The Data API is based on the REST standard, where URLs represent collections of data, and actions on the data are performed using HTTP verbs (Such as GET for retrieving data and POST for creating data). Any programming language capable of performing HTTPs requests can be used. Data returned from API uses the JSON standard.  
 
 ## Resource Types
-- [Common Objects](./resource-types/common.md)
+- [Common Objects](./common.md)  
+  Items which are common across all Resource Types.
+- [Crops - Sample Plans](./crops/sample-plan.md)  
+  Sample Plans provides information about a planned sampling activity for a crop  at a geospatial feature (paddock, field, or block) level.
+- [Crops - Sample Analysis](./crops/sample-analysis.md)  
+  Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
+- [Crops - Load Receivals](./crops/load-receival.md)  
+  Load Receivals provide information about the arrival of harvested crop loads to a location. 
 
 ---
 
