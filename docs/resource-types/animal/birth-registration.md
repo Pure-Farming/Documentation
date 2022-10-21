@@ -48,9 +48,9 @@ GET /data/holdings/{HoldingId}/livestock/movement/animal-birth-registrations/{An
 A call to the Livestock Animal Birth Registration endpoint returns the following fields:
 ```json
 {
-	"self": "string",
-	"id": "string",
-	"meta": { ... },
+    "self": "string",
+    "id": "string",
+    "meta": { ... },
     "resourceType": "/livestock/movement/animal-birth-registration",
     "eventDateTime": "string",
     "traitLabel": { ... },
