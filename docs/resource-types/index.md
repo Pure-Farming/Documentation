@@ -42,7 +42,7 @@ The Data API is based on the REST standard, where URLs represent collections of 
   Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
 - [Crops - Load Receivals](/resource-types/crops/load-receival.md)  
   Load Receivals provide information about the arrival of harvested crop loads to a location. 
-- [Animal](/resource-types/animal/index.md). 
+- [Animals](/resource-types/animal/index.md)  
   Animal provides information about individual animals.
 
 ---
