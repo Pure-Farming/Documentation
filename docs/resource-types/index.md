@@ -36,14 +36,18 @@ The Data API is based on the REST standard, where URLs represent collections of 
 ## Resource Types
 - [Common Objects](/resource-types/common.md)  
   Items which are common across all Resource Types.
-- [Crops - Sample Plans](/resource-types/crops/sample-plan.md)  
-  Sample Plans provides information about a planned sampling activity for a crop  at a geospatial feature (paddock, field, or block) level.
-- [Crops - Sample Analysis](/resource-types/crops/sample-analysis.md)  
-  Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
-- [Crops - Load Receivals](/resource-types/crops/load-receival.md)  
-  Load Receivals provide information about the arrival of harvested crop loads to a location. 
-- [Animals](/resource-types/animal/index.md)  
-  Animal provides information about individual animals.
+- [Crops](/resource-types/crops)  
+  Resource types available for Crops.
+  - [Crops - Sample Plans](/resource-types/crops/sample-plan.md)  
+    Sample Plans provides information about a planned sampling activity for a crop  at a geospatial feature (paddock, field, or block) level.
+  - [Crops - Sample Analysis](/resource-types/crops/sample-analysis.md)  
+    Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
+  - [Crops - Load Receivals](/resource-types/crops/load-receival.md)  
+    Load Receivals provide information about the arrival of harvested crop loads to a location.   
+- [Livestock](/resource-types/livestock)
+  Resource types available for Livestock.
+  - [Animals](/resource-types/livestock/animals.md)  
+    Animal provides information about individual animals.
 
 ---
 
