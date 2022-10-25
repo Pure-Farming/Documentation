@@ -13,7 +13,7 @@ taxonomy:
 
 ---
 
-# Resource Type: Livestock - Movement - Animal Birth Registration 
+# Resource Type: Livestock - Movements - Animal Birth Registration 
 
  - [URLs](#URLs)
  - [Response Structure](#response-structure)
