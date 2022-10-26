@@ -144,5 +144,5 @@ It is the total Length of all Boundaries.
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Measurement** | The total length of all boundaries, or polygons for a spatial feature. | Number |
+| **Measurement** | The total length of all line strings, or total perimeter of all polygons. | Number |
 | **Units** | The unit of measurement. | Enumeration |
