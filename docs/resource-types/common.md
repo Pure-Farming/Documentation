@@ -126,7 +126,7 @@ It is the total area of the geospatial object.
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Area** | The total area of the spatial feature. | Number |
+| **Measurement** | The total area of the spatial feature. | Number |
 | **Units** | The unit of measurement. | Enumeration |
 
 ---
