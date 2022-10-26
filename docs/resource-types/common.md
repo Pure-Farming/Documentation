@@ -120,7 +120,7 @@ It is the total area of the geospatial object.
 ```json
 {
     "area": 0,
-    "units": 0
+    "units": "MTK"
 }
 ```
 
