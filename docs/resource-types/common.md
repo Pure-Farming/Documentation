@@ -115,7 +115,7 @@ Represents an individual Link for an object.
 
 ## Total Area
 
-It is the total area of the Boundary. 
+It is the total area of the geospatial object. 
 
 ```json
 {
