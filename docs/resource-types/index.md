@@ -36,6 +36,13 @@ The Data API is based on the REST standard, where URLs represent collections of 
 ## Resource Types
 - [Common Objects](/resource-types/common.md)  
   Items which are common across all Resource Types.
+- [Core](/resource-types/core)
+  Core resource types, which are common across most data-requests.
+  - [Holdings](/resource-types/core/holdings.md)
+    A Holding is a representation of a working Farm, whether it be comprised of multiple areas of land (contiguous or non-contiguous) or not, it is represented as a Holding. An individual Holding may have spatial information, or may not, if present it may be a centroid (point), or spatial feature (feature) or both.
+  - [Plots](/resource-types/core/plots.md)
+    Plots are a field or a piece of land that is used for planting and reaping crops. 
+    Although it is smaller than the holdings but is a quite substantial piece of land. 
 - [Crops](/resource-types/crops)  
   Resource types available for Crops.
   - [Crops - Sample Plans](/resource-types/crops/sample-plan.md)  
