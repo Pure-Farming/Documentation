@@ -71,18 +71,18 @@ A call to the Arrivals endpoints returns the following fields.
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-|**Self** | A link to this specific Animal | URI
-|**Location** | An identifier for the location of the Animal | Identifier
+|**Self** | A link to this specific Arrival | URI
+|**Location** | An identifier for the location of the Arrival | Identifier
 |**Meta** | Meta data for the resource | Metadata
 |**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/arrival  | String
 |**Consignment** | The consignment for this movement event | Consignment
-|**Responsable** | The date of birth of this Animal | Date/Time
-|**ContemporaryGroup** | The breed fractions for this Animal | Breed Fractions
+|**Responsable** | The date of birth of this Animal | String
+|**ContemporaryGroup** | The breed fractions for this Animal | String
 |**Remark** | The color of this Animal’s coat | String
-|**Animal Id** | The color of this Animal’s coat using a national or breed-defined scheme and identifier | Identifier
-|**Animal Scheme** | The gender of this Animal. (Valid values: Female, FemaleNeuter, Male, MaleCryptorchid, MaleNeuter, Unknown) | Enumeration
-|**Arrival Reason** | The health status of this Animal. (Valid values: Healthy, Suspicious, Ill, InTreatment, ToBeCulled) | Enumeration
-|**Id** | The Pure Farming Id of this Animal | UUID |
+|**Animal Id** | The main identifier for the animal | String
+|**Animal Scheme** | The scheme for the main identifier | String
+|**Arrival Reason** | The Reason for the arrival (Valid values: Purchase, Internal Transfer, Imported, Stud Service, Stud Service Return, Slaughter, Agistment, Agistment Return, Show, Show Return, Sale, Sale Return, Other) | Enumeration
+|**Id** | The Pure Farming Id of this Arrival | UUID |
 
 ---
 
@@ -110,19 +110,19 @@ Consignment are …
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Id** |	The Id of this consignment | string |
-| **Scheme** |	The Scheme of this consignment | string |
+| **Id** |	The Id of this consignment | String |
+| **Scheme** |	The Scheme of this consignment | String |
 | **Origin** |	The Origin of this consignment | Location |
 | **Destination** | The Destination of this consignment | Location |
-| **Loading DateTime** | The time that the animals were loaded for this consignment | DateTime |
-| **Unloading DateTime** | The time that the animals were unloaded for this consignment | DateTime |
+| **Loading DateTime** | The time that the animals were loaded for this consignment | Date/Time |
+| **Unloading DateTime** | The time that the animals were unloaded for this consignment | Date/Time |
 | **Expected Duration** | The expected transport duration | Number |
-| **Transport Operator** | The operator doing this consignment | string |
-| **Vehicle** | The vehicle used for this consignment | string |
-| **Transport Reference** | The Reference for this consignment | string |
-| **Isolation Facility Used** | If an Isolation Facility was used as part of this consignment | boolean |
-| **Farm Assurance Reference Id** | | string |
-| **Farm Assurance Reference Scheme** | | string |
+| **Transport Operator** | The operator doing this consignment | String |
+| **Vehicle** | The vehicle used for this consignment | String |
+| **Transport Reference** | The Reference for this consignment | String |
+| **Isolation Facility Used** | If an Isolation Facility was used as part of this consignment | Boolean |
+| **Farm Assurance Reference Id** | | String |
+| **Farm Assurance Reference Scheme** | | String |
 
 ---
 
@@ -140,7 +140,7 @@ A Location is an Origin or Destination for a consignment
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Id** | The Id of the location | string |
+| **Id** | The Id of the location | String |
 | **Scheme** | The Scheme of the location | Number |
 | **Address** | The postal address of this location | Address |
 
@@ -164,10 +164,10 @@ A address for a location
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Country** | The gender of this Animal. (Valid values: Female, FemaleNeuter, Male, MaleCryptorchid, MaleNeuter, Unknown) | Enumeration |
-| **Locality** | The identifier of this Animal | Identifier |
-| **Region** | Official herd-book name for this Animal | String |
-| **Post Office Box** | The identifier for the child of the Animal | Identifier |
-| **Post Code** | Identifies the type of parent. (Valid values: Genetic, Recipient, Adoptive) | Enumeration |
-| **Street Address** | | string |
-| **Address String** | | string |
+| **Country** | The country part of the sdress | String |
+| **Locality** | The locality part of the address | String |
+| **Region** | The region for the address | String |
+| **Post Office Box** | The post office box | String |
+| **Post Code** | The post code | String |
+| **Street Address** | The street address | String |
+| **Address String** | The complete address | String |
