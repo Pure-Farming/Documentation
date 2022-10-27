@@ -3,14 +3,13 @@
 title: Core
 menu_order: 1
 post_status: publish
-post_excerpt: Connected Data - Core
+post_excerpt: Core
 taxonomy:
     category:
-        - root
+        - api
         - core
     post_tag:
-        - root
-        -core
+        - api
 
 ---
 
