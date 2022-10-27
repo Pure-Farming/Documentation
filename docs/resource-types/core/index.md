@@ -18,5 +18,5 @@ taxonomy:
 
 Below are the currently provided core resource types.
 
-- [Holdings](/resource-types/crops/sample-analysis.md)
-- [Plots](/resource-types/crops/sample-plan.md)
+- [Holdings](/resource-types/core/holdings.md)
+- [Plots](/resource-types/core/plots.md)
