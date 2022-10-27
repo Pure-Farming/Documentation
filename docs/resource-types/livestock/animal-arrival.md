@@ -22,28 +22,28 @@ taxonomy:
 
 ## URLs
 
-Get all Animals that you have access to
+Get all Arrivals that you have access to
 
 ```
-GET /data/livestock/animals
+GET /data/livestock/movement/animal-arrivals
 ```
 
-Get the Animal for the specified id
+Get the Arrival for the specified id
 
 ```
-GET /data/livestock/animals/{id}
+GET /data/livestock/movement/arrivals/{id}
 ```
 
-Get all Animals that are linked to the provided holding id
+Get all Arrivals that are linked to the provided animal id
 
 ```
-GET /data/holdings/{holdingId}/livestock/animals
+GET /data/livestock/animals/{animalId}/arrivals
 ```
 
-Get the Animal for the specified id that is linked to the provided holding id
+Get the Arrival for the specified id that is linked to the provided animal id
 
 ```
-GET /data/holdings/{holdingId}/livestock/animals/{id}
+GET /data/livestock/animals/{animalId}/arrivals/{arrivalId}
 ```
 
 ---
@@ -57,7 +57,7 @@ A call to the Animals endpoints returns the following fields.
   "self": "string",
   "location": {...},
   "meta": {...},
-  "resourceType": "/livestock/animal",
+  "resourceType": "/livestock/movement/arrival",
   "alternativeIdentifiers": [{...}],
   "birthDate": "string",
   "breedFractions": {...},
@@ -85,7 +85,7 @@ A call to the Animals endpoints returns the following fields.
 |**Self** | A link to this specific Animal | URI
 |**Location** | An identifier for the location of the Animal | Identifier
 |**Meta** | Meta data for the resource | Metadata
-|**Resource Type** | The fixed discriminator for the animal resource type.<br/>Value: /livestock/animal  | String
+|**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/arrival  | String
 |**Alternative Identifiers** | Any identifier of this Animal | Array of Identifiers
 |**Birth Date** | The date of birth of this Animal | Date/Time
 |**Breed Fractions** | The breed fractions for this Animal | Breed Fractions
