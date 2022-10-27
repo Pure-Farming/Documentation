@@ -114,21 +114,43 @@ Consignment are …
 
 ```json
 {
-  "denominator": 0,
-  "fractions": [{...}]
+  "id": "string",
+  "scheme": "string",
+  "origin": {...},
+  "destination": {...},
+  "loadingDateTime": "DateTime",
+  "unloadingDateTime": "DateTime",
+  "expectedDuration": "double",
+  "transportOperator": "string",
+  "vehicle": "string",
+  "transportReference": "string",
+  "isolationFacilityUsed": "boolean",
+  "farmAssuranceReferenceId": "string",
+  "farmAssuranceReferenceScheme": "string"
 }
 ```
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Denominator** |	The denominator of breed fractions for this Animal. This specifies the number of fractions there are. | Number |
-| **Fractions** | The several fractions’ details of the breed for this Animal | Fraction |
+| **Id** |	The Id of this consignment | string |
+| **Scheme** |	The Scheme of this consignment | string |
+| **Origin** |	The Origin of this consignment | Location |
+| **Destination** | The Destination of this consignment | Location |
+| **Loading DateTime** | The time that the animals were loaded for this consignment | DateTime |
+| **Unloading DateTime** | The time that the animals were unloaded for this consignment | DateTime |
+| **Expected Duration** | The expected transport duration | Number |
+| **Transport Operator** | The operator doing this consignment | string |
+| **Vehicle** | The vehicle used for this consignment | string |
+| **Transport Reference** | The Reference for this consignment | string |
+| **Isolation Facility Used** | If an Isolation Facility was used as part of this consignment | boolean |
+| **Farm Assurance Reference Id** | | string |
+| **Farm Assurance Reference Scheme** | | string |
 
 ---
 
 ### Location
 
-A Fraction is …
+A Location is …
 
 ```json
 {
@@ -144,9 +166,9 @@ A Fraction is …
 
 ---
 
-### Parentage
+### Postal Address
 
-A description of the parents of this Animal
+A address for a location
 
 ```json
 {
