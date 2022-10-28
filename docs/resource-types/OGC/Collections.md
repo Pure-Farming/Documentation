@@ -21,7 +21,7 @@ taxonomy:
 ---
 
 ## URLs
-Get all the links to collections of data which includes location information that you have access to. 
+Get all the collections of data which includes location information that you have access to. 
 
 ```
 GET /ogc/collections
