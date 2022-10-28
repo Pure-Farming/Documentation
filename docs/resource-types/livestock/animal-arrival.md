@@ -76,9 +76,9 @@ A call to the Arrivals endpoints returns the following fields.
 |**Meta** | Meta data for the resource | Metadata
 |**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/arrival  | String
 |**Consignment** | The consignment for this movement event | Consignment
-|**Responsable** | The date of birth of this Animal | String
-|**ContemporaryGroup** | The breed fractions for this Animal | String
-|**Remark** | The color of this Animal’s coat | String
+|**Responsable** | Whos responsable for this arrival | String
+|**ContemporaryGroup** | The Contemporary Group for this arrival | String
+|**Remark** | A Remark for this arrival | String
 |**Animal Id** | The main identifier for the animal | String
 |**Animal Scheme** | The scheme for the main identifier | String
 |**Arrival Reason** | The Reason for the arrival (Valid values: Purchase, Internal Transfer, Imported, Stud Service, Stud Service Return, Slaughter, Agistment, Agistment Return, Show, Show Return, Sale, Sale Return, Other) | Enumeration
