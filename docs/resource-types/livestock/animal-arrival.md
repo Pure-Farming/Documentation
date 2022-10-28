@@ -121,8 +121,8 @@ Consignment are …
 | **Vehicle** | The vehicle used for this consignment | String |
 | **Transport Reference** | The Reference for this consignment | String |
 | **Isolation Facility Used** | If an Isolation Facility was used as part of this consignment | Boolean |
-| **Farm Assurance Reference Id** | | String |
-| **Farm Assurance Reference Scheme** | | String |
+| **Farm Assurance Reference Id** | The Farm Assurance Reference Id | String |
+| **Farm Assurance Reference Scheme** | The Farm Assurance Reference Scheme | String |
 
 ---
 
