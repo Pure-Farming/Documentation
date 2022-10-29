@@ -107,4 +107,4 @@ Represents an individual Link for an object.
 | ------------- | ----------- | --------- |
 | **Content Type** | The content type of the link | String |
 | **Related** | The actual URI of this Link | String |
-| **Relationship** | The relationship of this link to its parent | String |
+| **Relationship** | The relationship of this link to its parent | String 
