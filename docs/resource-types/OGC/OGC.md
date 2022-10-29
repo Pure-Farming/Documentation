@@ -89,10 +89,20 @@ It provides all the links that show the capabilities of the different APIs.
 | Href | This is the link to the OGC API landing page | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data, like English | String
 | Title | It is the code of the data. | String
 | Href | This is the link to the OGC API definition | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, vnd.oai.openapi+json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data like English | String
+| Title | It is the code of the data. | String
+| Href | This is the link to the ogc - conformance endpoint | URL
+| Rel | 
+| Type | It is the type of the format used for storing data. For example, json | String
+| Hreflang | It is the language used in the data like English | String
+| Title | It is the code of the data. | String
+| Href | This is the link to the collections endpoint | URL
+| Rel | 
+| Type | It is the type of the format used for storing data. For example, vnd.oai.openapi+json | String
+| Hreflang | It is the language used in the data like English | String
 | Title | It is the code of the data. | String

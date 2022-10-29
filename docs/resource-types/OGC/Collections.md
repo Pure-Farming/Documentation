@@ -44,7 +44,7 @@ A call to the collection endpoint returns the following fields:
 
 ## Links
 
-It provides all the links for the collections of the data that shows geographical specifications of locations like holdings, land-covers and plots
+It provides all the links for the collections of the data that show geographical specifications of locations like holdings, land-covers, and plots
 
 ```json
 {
@@ -61,10 +61,10 @@ It provides all the links for the collections of the data that shows geographica
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| Href | It shows URL to the links of collections of data of different locations | URL
+| Href | It shows URL to the links of collections of data of different geographical locations. The locations can be holdings, land-covers, or plots | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data, like English | String
 
 ## Collections
 
@@ -146,29 +146,29 @@ It provides the links to collections of metadata and items of holdings, land-cov
 | Href | It shows URL to the links of collection of items of holdings | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, geo+json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data like English | String
 | Title | It is the code of the items. For example, holdings | String
 | ID | It shows the type of geographical area. For example, land-covers | String
 | Links | This shows the links to a specific collection of data related to land-covers | An array of links
 | Href | It shows URL to the links of collection of metadata of land-covers | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data like English | String
 | Title | It is the code of the metadata. For example, land-covers | String
-| Href | It shows URL to the links of collection of items of land-covers | URL
+| Href | It shows the URL to the links of collection of items of land-covers | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, geo+json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data like English | String
 | Title | It is the code of the items. For example, holdings | String
 | ID | It shows the type of geographical area. For example, plots | String
 | Links | This shows the links to a specific collection of data related to plots | An array of links
 | Href | It shows URL to the links of collection of metadata of plots | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data like English | String
 | Title | It is the code of the metadata. For example, plots | String
-| Href | It shows URL to the links of collection of items of plots | URL
+| Href | It shows URL to the links to the collection of items of plots | URL
 | Rel | 
 | Type | It is the type of the format used for storing data. For example, geo+json | String
-| Hreflang | It is the language used in the response like English | String
+| Hreflang | It is the language used in the data like English | String
 | Title | It is the code of the items. For example, plots | String
