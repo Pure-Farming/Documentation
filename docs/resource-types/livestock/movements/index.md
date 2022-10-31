@@ -1,6 +1,6 @@
 ---
 
-title: Livestock
+title: Livestock Movements
 menu_order: 1
 post_status: publish
 post_excerpt: Connected Data - Livestock
@@ -14,9 +14,9 @@ taxonomy:
 
 ---
 
-# Resource Types: Livestock
+# Resource Types: Livestock Movements
 
 Below are the currently provided resource types for Livestock.
 
-- [Animals](/resource-types/livestock/animals.md)
 - [Movements](/resource-types/livestock/movements)
+  - [Birth Registration](/resource-types/livestock/movements/birth-registrations.md)
