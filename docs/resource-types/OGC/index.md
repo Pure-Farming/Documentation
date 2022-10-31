@@ -36,7 +36,7 @@ To learn more about the OGC API - Features standard, see the OGC API - Features 
 ## Errors
 The pure farming OGC API uses HTTP response status codes that indicate whether the API requests have been successful or failed.
 
-There are five classes or groups in which all HTTP response status codes are separated. These five classes are given as follows:
+There are five classes or groups in which all HTTP response status codes are separated. 
 
 1. 1xx informational response – This range of codes indicates that the request was successfully received and the process is in progress.
 2. 2xx successful – This range of codes indicates that the request was successful. 
@@ -48,8 +48,8 @@ There are five classes or groups in which all HTTP response status codes are sep
 
 | Code | Description |
 | ---- | ----------- |
-200 - Ok | It indicates the success of the API request.
-400 - Bad Request | It indicates that the request made was not accepted due to some client error. 
-404 - Not Found | The requested resource cannot be found.
-429 - Quota Exceeded | The user has exceeded the limit of requests.
-500 - Internal Server Error | Something went wrong on Pure Farming’s server.
+| 200 - Ok | It indicates the success of the API request. |
+| 400 - Bad Request | It indicates that the request made was not accepted due to some client error. |
+| 404 - Not Found | The resource that the user requested cannot be found. |
+| 429 - Quota Exceeded | The user has exceeded the limit of requests. |
+| 500 - Internal Server Error | Something went wrong on Pure Farming’s server. |
