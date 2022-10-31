@@ -63,6 +63,7 @@ A call to the Deaths endpoints returns the following fields.
   "contemporaryGroup": "string",
   "remark" : "string",
   "responsible" : "string",
+  "traitLabel" : {...},
   "animalId": "string",
   "animalScheme": "string",
   "deathDate" : "DateTime",
@@ -82,12 +83,20 @@ A call to the Deaths endpoints returns the following fields.
 |**Location** | An identifier for the location of the Death | Identifier
 |**Meta** | Meta data for the resource | Metadata
 |**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/death  | String
+|**Consignment** | The consignment for this movement event | Consignment
+|**Remark** | Something | String
+|**Responsable** | Whos responsable for this arrival | String
+|**Trait Label** | Something Trait Something | Identifier
+|**ContemporaryGroup** | The Contemporary Group for this arrival | String
 |**Animal Id** | The main identifier for the animal | String
 |**Animal Scheme** | The scheme for the main identifier | String
 |**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
 Nutrition, Fertility) | Enumeration
 |**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration
 |**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration
+|**Disposal Operator** | Who disposed of the animal | String
+|**Disposal Reference** | Reference for the disposal | String
+|**Explanation** | Explanation | String
 |**Id** | The Pure Farming Id of this Death | UUID |
 
 ---
