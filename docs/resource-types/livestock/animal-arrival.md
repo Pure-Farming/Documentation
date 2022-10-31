@@ -88,7 +88,7 @@ A call to the Arrivals endpoints returns the following fields.
 
 ### Consignment
 
-Consignment are …
+Consignment are information about the transport of the animal in this event
 
 ```json
 {

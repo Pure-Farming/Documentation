@@ -50,45 +50,51 @@ GET /data/livestock/animals/{animalId}/deaths/{arrivalId}
 
 ## Response Structure
 
-A call to the Arrivals endpoints returns the following fields.
+A call to the Deaths endpoints returns the following fields.
 
 ```json
 {
   "self": "string",
   "location": {...},
   "meta": {...},
-  "resourceType": "/livestock/movement/arrival",
+  "resourceType": "/livestock/movement/death",
   "consignment": {...},
   "responsable": "string",
   "contemporaryGroup": "string",
-  "remark": "string",
+  "remark" : "string",
+  "responsible" : "string",
   "animalId": "string",
   "animalScheme": "string",
-  "arrivalReason": "string",
+  "deathDate" : "DateTime",
+  "deathReason" : "string",
+  "deathMethod" : "string",
+  "disposalMethod" : "string",
+  "disposalOperator" : "string",
+  "disposalReference" : "string",
+  "explanation" : "string",
   "id": "string"
 }
 ```
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-|**Self** | A link to this specific Arrival | URI
-|**Location** | An identifier for the location of the Arrival | Identifier
+|**Self** | A link to this specific Death | URI
+|**Location** | An identifier for the location of the Death | Identifier
 |**Meta** | Meta data for the resource | Metadata
-|**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/arrival  | String
-|**Consignment** | The consignment for this movement event | Consignment
-|**Responsable** | Whos responsable for this arrival | String
-|**ContemporaryGroup** | The Contemporary Group for this arrival | String
-|**Remark** | A Remark for this arrival | String
+|**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/death  | String
 |**Animal Id** | The main identifier for the animal | String
 |**Animal Scheme** | The scheme for the main identifier | String
-|**Arrival Reason** | The Reason for the arrival (Valid values: Purchase, Internal Transfer, Imported, Stud Service, Stud Service Return, Slaughter, Agistment, Agistment Return, Show, Show Return, Sale, Sale Return, Other) | Enumeration
-|**Id** | The Pure Farming Id of this Arrival | UUID |
+|**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
+Nutrition, Fertility) | Enumeration
+|**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration
+|**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration
+|**Id** | The Pure Farming Id of this Death | UUID |
 
 ---
 
 ### Consignment
 
-Consignment are …
+Consignment are information about the transport of the animal in this event
 
 ```json
 {
