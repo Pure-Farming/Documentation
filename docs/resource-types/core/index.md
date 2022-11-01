@@ -3,14 +3,13 @@
 title: Core
 menu_order: 1
 post_status: publish
-post_excerpt: Connected Data - Core
+post_excerpt: Core
 taxonomy:
     category:
-        - root
+        - api
         - core
     post_tag:
-        - root
-        -core
+        - api
 
 ---
 
@@ -18,5 +17,5 @@ taxonomy:
 
 Below are the currently provided core resource types.
 
-- [Holdings](/resource-types/crops/sample-analysis.md)
-- [Plots](/resource-types/crops/sample-plan.md)
+- [Holdings](/resource-types/core/holdings.md)
+- [Plots](/resource-types/core/plots.md)
