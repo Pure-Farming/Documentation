@@ -22,7 +22,7 @@ taxonomy:
 
 ## URLs
 
-Get all the links that show the capabilities of different APIs that you have access to. 
+Get all the links to the API definition, the conformance resource type, and to the collections of data describing geographical specifications for holdings, plots, and land-covers. 
 
 ```
 GET /ogc
@@ -41,9 +41,9 @@ A call to the OGC endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| Title | This shows the OGC API landing page | String
-| Description | It provides the description of the OGC API landing page | String
-| Links | This provides the links that show the capabilities of different APIs | An array of links
+| Title | This shows the OGC API landing page | String |
+| Description | It provides the description of the OGC API landing page | String |
+| Links | This provides the links that show the capabilities of different APIs that you may have access to | An array of links |
 
 ## links
 
@@ -86,23 +86,23 @@ It provides all the links that show the capabilities of the different APIs.
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| Href | This is the link to the OGC API landing page | URL
+| Href | This is the link to the OGC API landing page | URL |
 | Rel | 
-| Type | It is the type of the format used for storing data. For example, json | String
-| Hreflang | It is the language used in the data, like English | String
-| Title | It is the code of the data. | String
-| Href | This is the link to the OGC API definition | URL
+| Type | It is the type of the format used for storing data. For example, json | String |
+| Hreflang | It is the language used in the data, like English | String |
+| Title | It is the code of the data. | String |
+| Href | This is the link to the OGC API definition | URL |
 | Rel | 
-| Type | It is the type of the format used for storing data. For example, vnd.oai.openapi+json | String
-| Hreflang | It is the language used in the data like English | String
-| Title | It is the code of the data. | String
-| Href | This is the link to the ogc - conformance endpoint | URL
+| Type | It is the type of the format used for storing data. For example, vnd.oai.openapi+json | String |
+| Hreflang | It is the language used in the data like English | String |
+| Title | It is the code of the data. | String |
+| Href | This is the link to the ogc - conformance endpoint | URL |
 | Rel | 
-| Type | It is the type of the format used for storing data. For example, json | String
-| Hreflang | It is the language used in the data like English | String
-| Title | It is the code of the data. | String
-| Href | This is the link to the collections endpoint | URL
+| Type | It is the type of the format used for storing data. For example, json | String |
+| Hreflang | It is the language used in the data like English | String |
+| Title | It is the code of the data. | String |
+| Href | This is the link to the collections endpoint | URL |
 | Rel | 
-| Type | It is the type of the format used for storing data. For example, vnd.oai.openapi+json | String
-| Hreflang | It is the language used in the data like English | String
-| Title | It is the code of the data. | String
+| Type | It is the type of the format used for storing data. For example, vnd.oai.openapi+json | String |
+| Hreflang | It is the language used in the data like English | String |
+| Title | It is the code of the data. | String |
