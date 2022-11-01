@@ -34,13 +34,13 @@ Get the Arrival for the specified id
 GET /data/livestock/movement/animal-arrivals/{ArrivalId}
 ```
 
-Get all Arrivals that are linked to the provided animal id
+Get all Arrivals that are linked to the provided holding id
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/arrivals
 ```
 
-Get the Arrival for the specified id that is linked to the provided animal id
+Get the Arrival for the specified id that is linked to the provided holding id
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/arrivals/{ArrivalId}
