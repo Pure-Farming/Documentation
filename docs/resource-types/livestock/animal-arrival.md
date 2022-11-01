@@ -31,19 +31,19 @@ GET /data/livestock/movement/animal-arrivals
 Get the Arrival for the specified id
 
 ```
-GET /data/livestock/movement/arrivals/{id}
+GET /data/livestock/movement/animal-arrivals/{ArrivalId}
 ```
 
 Get all Arrivals that are linked to the provided animal id
 
 ```
-GET /data/livestock/animals/{animalId}/arrivals
+GET /data/holdings/{HoldingId}/livestock/movement/arrivals
 ```
 
 Get the Arrival for the specified id that is linked to the provided animal id
 
 ```
-GET /data/livestock/animals/{animalId}/arrivals/{arrivalId}
+GET /data/holdings/{HoldingId}/livestock/movement/arrivals/{ArrivalId}
 ```
 
 ---
