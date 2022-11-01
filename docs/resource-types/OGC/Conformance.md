@@ -1,0 +1,47 @@
+---
+
+title: Conformance
+menu_order: 1
+post_status: publish
+post_excerpt: OGC - Conformance
+taxonomy:
+    category:
+        - api
+        - data
+    post_tag:
+        - api
+
+---
+
+# Resource Type: OGC – Conformance
+
+- [URLs](#urls)
+- [Response Structure](#response-structure)
+
+---
+
+## URLs
+Get all the links to the standards that OGC API conforms to.
+
+```
+GET /ogc/conformance
+```
+
+## Conformance
+A call to the conformance endpoint returns the following fields:
+
+```json
+{
+  "conformsTo": [
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0"
+  ]
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| ConformsTo | This shows what standards OGC APIs Conforms to. This includes ogcapi - features related to core, oas30, html, geojson, and gmlsf0 | An array of conformsTo |
