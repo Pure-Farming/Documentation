@@ -55,6 +55,10 @@ The Data API is based on the REST standard, where URLs represent collections of 
   Resource types available for Livestock.
   - [Animals](/resource-types/livestock/animals.md)  
     Animal provides information about individual animals.
+  - [Movements](/resource-types/livestock/movements)
+    Provides information about Movements that can be recorded against animals.
+    - [Birth Registrations](/resource-types/livestock/movements/birth-registrations.md)
+      Provides information about Birth Registrations for individual Animals.
 
 ---
 
