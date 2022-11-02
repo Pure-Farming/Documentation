@@ -19,6 +19,8 @@ taxonomy:
 - [Feature](#feature)
 - [Identifier](#identifier)
 - [Link](#link)
+- [Total Area](#total-area)
+- [Total Length](#total-length)
 
 ---
 
@@ -107,4 +109,40 @@ Represents an individual Link for an object.
 | ------------- | ----------- | --------- |
 | **Content Type** | The content type of the link | String |
 | **Related** | The actual URI of this Link | String |
-| **Relationship** | The relationship of this link to its parent | String 
+| **Relationship** | The relationship of this link to its parent | String |
+
+---
+
+## Total Area
+
+It is the total area of the geospatial object. 
+
+```json
+{
+    "measurement": 0,
+    "units": "MTK"
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| **Measurement** | The total area of the spatial feature. | Number |
+| **Units** | The unit of measurement. | Enumeration |
+
+---
+
+## Total Length
+
+It is the total Length of all Boundaries.
+
+```json
+{
+    "measurement": 0,
+    "units": "FT"
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| **Measurement** | The total length of all line strings, or total perimeter of all polygons. | Number |
+| **Units** | The unit of measurement. | Enumeration |
