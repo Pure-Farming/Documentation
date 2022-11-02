@@ -57,7 +57,7 @@ A call to the Deaths endpoints returns the following fields.
   "self": "string",
   "location": {...},
   "meta": {...},
-  "resourceType": "/livestock/movement/death",
+  "resourceType": "/livestock/movement/animal-deaths",
   "contemporaryGroup": "string",
   "eventDateTime": "DateTimeOffset",
   "id": "string",
@@ -85,10 +85,10 @@ A call to the Deaths endpoints returns the following fields.
 |**Event Date Time**| The Time that this event occured | DateTimeOffset
 |**Id** | The Pure Farming Id of this death event | UUID 
 |**Remark** | Something | String
-|**Responsable** | Whos responsable for this arrival | String
+|**Responsable** | Whos responsable for this death | String
 |**Trait Label** | Something Trait Something | Identifier
 |**Animal** | The Animal Identifier | Identifier
-|**Consignment** | The consignment for this movement event | Consignment
+|**Consignment** | The consignment for this event | Consignment
 |**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration
 |**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
 Nutrition, Fertility) | Enumeration

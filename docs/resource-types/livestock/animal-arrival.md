@@ -57,7 +57,7 @@ A call to the Arrivals endpoints returns the following fields.
   "self": "string",
   "location": {...},
   "meta": {...},
-  "resourceType": "/livestock/movement/arrival",
+  "resourceType": "/livestock/movement/animal-arrivals",
   "consignment": {...},
   "responsable": "string",
   "contemporaryGroup": "string",
