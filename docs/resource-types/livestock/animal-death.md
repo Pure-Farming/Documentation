@@ -31,19 +31,19 @@ GET /data/livestock/movement/animal-deaths
 Get the death for the specified id
 
 ```
-GET /data/livestock/movement/deaths/{DeathId}
+GET /data/livestock/movement/animal-deaths/{DeathId}
 ```
 
 Get all deaths that are linked to the provided holding id
 
 ```
-GET /data/holdings/{HoldingId}/livestock/movement/deaths
+GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths
 ```
 
 Get the death for the specified holding that is linked to the provided death id
 
 ```
-GET /data/holdings/{HoldingId}/livestock/movement/deaths/{DeathId}
+GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths/{DeathId}
 ```
 
 ---
