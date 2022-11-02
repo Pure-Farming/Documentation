@@ -68,10 +68,10 @@ Data that describes everything with a spatial extent, like size, shape, or posit
 
 There are 4 fundamental request patterns that are most applicable to all the endpoints in the APIs. These request patterns are based on the HTTP verbs. The 4 most commonly used HTTP verbs are:
 
-GET: This verb is used for retrieving information, and users are only allowed to read the information and cannot change it. 
-POST: This request pattern is used to create a new resource.
-PUT: This verb is used to update or replace the already existing data. 
-DELETE: Already clear from its name, this verb is used to delete the data or information present.
+1. GET: This verb is used for retrieving information, and users are only allowed to read the information and cannot change it. 
+2. POST: This request pattern is used to create a new resource.
+3. PUT: This verb is used to update or replace the already existing data. 
+4. DELETE: Already clear from its name, this verb is used to delete the data or information present.
 
 There are many other HTTP verbs also available, but they are used less frequently. 
 
