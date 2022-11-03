@@ -68,8 +68,8 @@ A call to the Sample Plan endpoint returns the following fields:
 | **Id** | The Id of the Sample Plan | UUID |
 | **Meta** | Metadata about the Sample Plan | Metadata |
 | **Observation Date** | The date of the Sample Plan | Date |
-| **Feature** | The feature that this Sample Plan is linked to | Feature |
-| **Holding** | The Holding that this Sample Plan is linked to | Feature |
+| **Feature** | The feature that this Sample Plan is linked to | [Feature](/resource-types/common.md/#feature)  |
+| **Holding** | The Holding that this Sample Plan is linked to | [Feature](/resource-types/common.md/#feature)  |
 | **Phenomenon Time** | The time that the Sample is due to be taken | Date/Time |
 | **Remark** | Any remarks recorded against this planned sample | String |
 | **Responsible** | The person responsible for this Sample Plan | String |

@@ -68,9 +68,9 @@ A call to the Load receivals endpoint returns the following fields:
 | **Loads** | This provides information about the load receival | Array of load receival data |
 | **Operation** | The operation of the load receivals | String |
 | **Status** | The status of the load receivals | Enumeration |
-| **Feature** | The feature that this load receival is linked to | Feature |
+| **Feature** | The feature that this load receival is linked to | [Feature](/resource-types/common.md/#feature)  |
 | **Feature Id** | The identifier for the Feature that this load receival is linked to | UUID |
-| **Holding** | The Holding that this load receival is linked to | Feature |
+| **Holding** | The Holding that this load receival is linked to | [Feature](/resource-types/common.md/#feature)  |
 | **Holding Id** | The Identifier for the Holding | UUID |
 | **Phenomenon Time** | The time when the load receival was received or recorded | Date/Time |
 | **Remark** | Any remarks recorded against this load receival | String |
@@ -145,7 +145,7 @@ This provides all the details about the destination of the load.
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Consignment date** | The date on which the crops arrived at a location | Date |
-| **Feature** | The feature that this load receival is linked to | Feature |
+| **Feature** | The feature that this load receival is linked to | [Feature](/resource-types/common.md/#feature)  |
 | **Organisation** | The organisation that this destination belongs to | Organisation |
 
 ---
@@ -192,5 +192,5 @@ This provides all the information about the place where the load came from.
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Consignment date** | The date on which the crops arrived at a location | Date |
-| **Feature** | The feature that this load receival is linked to | Feature |
+| **Feature** | The feature that this load receival is linked to | [Feature](/resource-types/common.md/#feature)  |
 | **Organisation** | The organisation that this source belongs to | Organisation |
