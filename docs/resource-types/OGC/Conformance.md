@@ -51,6 +51,7 @@ A call to the conformance endpoint returns the following fields:
 It provides links to the tests which verify the standards that OGC API conforms to.
 
 | Links | Standards that OGC API conforms to |
+| ----- | ---------------------------------- |
 | https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core | This page provides tests which verify that Pure Farming OGC API conforms to conformance class core | 
 | https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30 | This page provides tests which verify that Pure Farming OGC API conforms to conformance class oas30 |
 | https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html | This page provides tests which verify that Pure Farming OGC API conforms to conformance class HTML |
