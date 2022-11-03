@@ -37,13 +37,13 @@ GET /data/livestock/movement/animal-arrivals/{ArrivalId}
 Get all Arrivals that are linked to the provided holding id
 
 ```
-GET /data/holdings/{HoldingId}/livestock/movement/arrivals
+GET /data/holdings/{HoldingId}/livestock/movement/animal-arrivals
 ```
 
 Get the Arrival for the specified id that is linked to the provided holding id
 
 ```
-GET /data/holdings/{HoldingId}/livestock/movement/arrivals/{ArrivalId}
+GET /data/holdings/{HoldingId}/livestock/movement/animal-arrivals/{ArrivalId}
 ```
 
 ---
@@ -75,11 +75,11 @@ A call to the Arrivals endpoints returns the following fields.
 |**Self** | A link to this specific Arrival | URI
 |**Location** | An identifier for the location of the Arrival | Identifier
 |**Meta** | Meta data for the resource | Metadata
-|**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/arrival  | String
+|**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/animal-arrivals  | String
 |**Consignment** | The consignment for this movement event | Consignment
 |**Responsable** | Whos responsable for this arrival | String
 |**ContemporaryGroup** | The Contemporary Group for this arrival | String
-|**Remark** | A Remark for this arrival | String
+|**Remark** | The Remark for this event | String
 |**Animal Id** | The main identifier for the animal | String
 |**Animal Scheme** | The scheme for the main identifier | String
 |**Animal Detail** | The details of the animal | Animal Detail

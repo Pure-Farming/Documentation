@@ -1,9 +1,9 @@
 ---
 
-title: Animal Death
+title: Animal Departure
 menu_order: 1
 post_status: publish
-post_excerpt: Animal - Death
+post_excerpt: Animal - Departure
 taxonomy:
     category:
         - api
@@ -13,7 +13,7 @@ taxonomy:
 
 ---
 
-# Resource Type: Animal-Death
+# Resource Type: Animal-Departure
 
 - [URLs]()
 - [Response Structure]()
@@ -22,80 +22,71 @@ taxonomy:
 
 ## URLs
 
-Get all deaths that you have access to
+Get all Departures that you have access to
 
 ```
-GET /data/livestock/movement/animal-deaths
+GET /data/livestock/movement/animal-departures
 ```
 
-Get the death for the specified id
+Get the Departure for the specified id
 
 ```
-GET /data/livestock/movement/animal-deaths/{DeathId}
+GET /data/livestock/movement/animal-departures/{DepartureId}
 ```
 
-Get all deaths that are linked to the provided holding id
+Get all Departures that are linked to the provided holding id
 
 ```
-GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths
+GET /data/holdings/{HoldingId}/livestock/movement/animal-departures
 ```
 
-Get the death for the specified holding that is linked to the provided death id
+Get the Departure for the specified id that is linked to the provided holding id
 
 ```
-GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths/{DeathId}
+GET /data/holdings/{HoldingId}/livestock/movement/animal-departures/{DepartureId}
 ```
 
 ---
 
 ## Response Structure
 
-A call to the Deaths endpoints returns the following fields.
+A call to the Departures endpoints returns the following fields.
 
 ```json
 {
   "self": "string",
   "location": {...},
-  "meta": {...},
-  "resourceType": "/livestock/movement/animal-deaths",
+  "animalDetailMeta": {...},
+  "resourceType": "/livestock/movement/animal-departures",
+  "consignment": {...},
+  "responsable": "string",
   "contemporaryGroup": "string",
-  "eventDateTime": "DateTimeOffset",
-  "id": "string",
-  "remark" : "string",
-  "responsible" : "string",
+  "remark": "string",
   "traitLabel" : {...},
   "animal" : {...},
-  "consignment": {...},
-  "deathMethod" : "string",
-  "deathReason" : "string",
-  "disposalMethod" : "string",
-  "disposalOperator" : "string",
-  "disposalReference" : "string",
-  "explanation" : "string",
+  "departureKind" : "string",
+  "departureReason": "string",
+  "id": "string"
 }
 ```
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-|**Self** | A link to this specific Death | URI
-|**Location** | An identifier for the location of the Death | Identifier
-|**Meta** | Meta data for the resource | Metadata
-|**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/death  | String
+|**Self** | A link to this specific Departure | URI
+|**Location** | An identifier for the location of the Arrival | Identifier
+|**Animal Detail Meta** | Meta data for the resource | Metadata
+|**Resource Type** | The fixed discriminator for the animal departure resource type.<br/>Value: /livestock/movement/animal-departures  | String
+|**Consignment** | The consignment for this movement event | Consignment
+|**Responsable** | Whos responsable for this arrival | String
 |**ContemporaryGroup** | The Contemporary Group for this arrival | String
-|**Event Date Time**| The Time that this event occured | DateTimeOffset
-|**Id** | The Pure Farming Id of this death event | UUID 
-|**Remark** | Something | String
-|**Responsable** | Whos responsable for this death | String
+|**Remark** | The Remark for this event | String
 |**Trait Label** | Something Trait Something | Identifier
-|**Animal** | The Animal Identifier | Identifier
-|**Consignment** | The consignment for this event | Consignment
-|**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration
-|**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
-Nutrition, Fertility) | Enumeration
-|**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration
-|**Disposal Operator** | Who disposed of the animal | String
-|**Disposal Reference** | Reference for the disposal | String
-|**Explanation** | Explanation | String
+|**Animal** | The primary identifier for the animal | Identifier
+|**Departure Kind** | The kind of departure event (Valid values: Agistment, AgistmentReturn, Export, InternalTransfer, Newborn, Other, Sale, SaleReturn, Show, ShowReturn, Slaughter, StudService,
+StudServiceReturn) | Enumeration
+|**Departure Reason** | The Reason for the departure (Valid values: Age, BadType, Behaviour, Fertility, Health, LegOrClaw, Mastitis, MilkingAbility, Newborn, Nutrition, Other, Parturition,
+Production, Sale, Slaughter, Superfluous, Unknown) | Enumeration
+|**Id** | The Pure Farming Id of this Departure | UUID |
 
 ---
 
