@@ -74,16 +74,6 @@ There are 5 following components of HTTP requests:
 4. Request Header: The Request Header contains metadata for the HTTP request message. Metadata can be a client type, a client-supported format, a message body format, a cache setting, etc.
 5. Request Body: It demonstrates message content or resource representation.
 
-### How API is different from Web Services?
-
-| API | Web Services |
-| --- | ------------ |
-| A network may or may not be required in API operations. | A network is a must for the operations of Web Services. |
-| API can be communicated by any style of communication. | REST, SOAP, and XML-RPC can be the communication styles in Web Services. |
-| It supports HTTP/HTTPS protocol. | Web Service only supports HTTP protocol. |
-| All APIs are not Web Services. | All Web Services are the types of API. |
-| API supports XML, and JSON. | Web services only support XML. |
-
 ### What is Resource in REST?
 
 REST architecture considers each type of content as a resource i.e., text files, HTML pages, images, videos, and dynamic business information. REST server provides the ability to access the resources and modifies them. By using URIs or global IDs, users can identify each resource.
@@ -94,7 +84,9 @@ No, the users do not need to get authentication for all the API calls. They can 
 
 ### Is there a limit to API calls?
 
+### What are conformance classes? 
 
+Conformance gives a list that declares modules implemented by the API. These modules are named conformance classes. 
 
 ### I am having trouble accessing data. Whom shall I contact to?
 
@@ -102,4 +94,8 @@ If you are facing any trouble accessing data or making API calls, write to us at
 
 ### Where can I get more help?
 
-If you have any other questions, this API documentation doesn't answer, kindly reach out to us at info@mapof.ag.
+If you have any other questions, this API documentation doesn't answer, kindly reach out here - info@mapof.ag.
+
+### Is there a way to check the status of the API if there is an outage or downtime?
+
+Absolutely! You can check the status of the APIs here - https://purefarming.statuspage.io/
