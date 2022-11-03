@@ -88,7 +88,7 @@ A call to the Deaths endpoints returns the following fields.
 |**Responsable** | Use if an observation is manually recorded, or an event is carried out or authorised by a person. SHOULD be a person object. | String |
 |**Trait Label** | If the event represents a formal trait, this identifies the recording system and trait.| Identifier |
 |**Animal** | Unique animal scheme and identifier combination. | Identifier |
-|**Consignment** | The consignment for this event | Consignment |
+|**Consignment** | The consignment information for this event | Consignment |
 |**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration |
 |**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
 Nutrition, Fertility) | Enumeration |
