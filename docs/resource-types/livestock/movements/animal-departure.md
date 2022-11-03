@@ -66,26 +66,28 @@ A call to the Departures endpoints returns the following fields.
   "animal" : {...},
   "departureKind" : "string",
   "departureReason": "string",
+  "eventDateTime" : "DateTimeOffset",
   "id": "string"
 }
 ```
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-|**Self** | A link to this specific Departure | URI
-|**Location** | An identifier for the location of the Arrival | Identifier
-|**Animal Detail Meta** | Meta data for the resource | Metadata
-|**Resource Type** | The fixed discriminator for the animal departure resource type.<br/>Value: /livestock/movement/animal-departures  | String
-|**Consignment** | The consignment for this movement event | Consignment
-|**Responsable** | Whos responsable for this arrival | String
-|**ContemporaryGroup** | The Contemporary Group for this arrival | String
-|**Remark** | The Remark for this event | String
-|**Trait Label** | Something Trait Something | Identifier
-|**Animal** | The primary identifier for the animal | Identifier
+|**Self** | A link to this specific Departure | URI |
+|**Location** | An identifier for the location of the Arrival | Identifier |
+|**Animal Detail Meta** | Meta data for the resource | Metadata |
+|**Resource Type** | The fixed discriminator for the animal departure resource type.<br/>Value: /livestock/movement/animal-departures  | String |
+|**Consignment** | The consignment for this movement event | Consignment |
+|**Responsable** | Whos responsable for this arrival | String |
+|**ContemporaryGroup** | The Contemporary Group for this arrival | String |
+|**Remark** | The Remark for this event | String |
+|**Trait Label** | Something Trait Something | Identifier |
+|**Animal** | The primary identifier for the animal | Identifier |
 |**Departure Kind** | The kind of departure event (Valid values: Agistment, AgistmentReturn, Export, InternalTransfer, Newborn, Other, Sale, SaleReturn, Show, ShowReturn, Slaughter, StudService,
-StudServiceReturn) | Enumeration
+StudServiceReturn) | Enumeration |
 |**Departure Reason** | The Reason for the departure (Valid values: Age, BadType, Behaviour, Fertility, Health, LegOrClaw, Mastitis, MilkingAbility, Newborn, Nutrition, Other, Parturition,
-Production, Sale, Slaughter, Superfluous, Unknown) | Enumeration
+Production, Sale, Slaughter, Superfluous, Unknown) | Enumeration |
+|**Event Date Time** | The time and date the event occured | DateTimeOffset |
 |**Id** | The Pure Farming Id of this Departure | UUID |
 
 ---

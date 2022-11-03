@@ -77,25 +77,25 @@ A call to the Deaths endpoints returns the following fields.
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-|**Self** | A link to this specific Death | URI
-|**Location** | An identifier for the location of the Death | Identifier
-|**Meta** | Meta data for the resource | Metadata
-|**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/death  | String
-|**ContemporaryGroup** | The Contemporary Group for this arrival | String
-|**Event Date Time**| The Time that this event occured | DateTimeOffset
-|**Id** | The Pure Farming Id of this death event | UUID 
-|**Remark** | The Remark for this event | String
-|**Responsable** | Whos responsable for this death | String
-|**Trait Label** | Something Trait Something | Identifier
-|**Animal** | The Animal Identifier | Identifier
-|**Consignment** | The consignment for this event | Consignment
-|**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration
+|**Self** | A link to this specific Death | URI |
+|**Location** | An identifier for the location of the Death | Identifier |
+|**Meta** | Meta data for the resource | Metadata |
+|**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/death  | String |
+|**ContemporaryGroup** | The Contemporary Group for this arrival | String |
+|**Event Date Time**| The Time that this event occured | DateTimeOffset |
+|**Id** | The Pure Farming Id of this death event | UUID |
+|**Remark** | The Remark for this event | String |
+|**Responsable** | Whos responsable for this death | String |
+|**Trait Label** | Something Trait Something | Identifier |
+|**Animal** | The Animal Identifier | Identifier |
+|**Consignment** | The consignment for this event | Consignment |
+|**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration |
 |**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
-Nutrition, Fertility) | Enumeration
-|**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration
-|**Disposal Operator** | Who disposed of the animal | String
-|**Disposal Reference** | Reference for the disposal | String
-|**Explanation** | Explanation | String
+Nutrition, Fertility) | Enumeration |
+|**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration |
+|**Disposal Operator** | Who disposed of the animal | String |
+|**Disposal Reference** | Reference for the disposal | String |
+|**Explanation** | Explanation | String |
 
 ---
 
