@@ -44,4 +44,15 @@ A call to the conformance endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| ConformsTo | This shows what standards OGC APIs Conforms to. This includes ogcapi - features related to core, oas30, html, geojson, and gmlsf0 | An array of conformsTo |
+| ConformsTo | This shows what standards OGC APIs Conforms to. | An array of conformsTo |
+
+## ConformsTo
+
+It provides links to the tests which verify the standards that OGC API conforms to.
+
+| Links | Standards that OGC API conforms to |
+| https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core | This page provides tests which verify that Pure Farming OGC API conforms to conformance class core | 
+| https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30 | This page provides tests which verify that Pure Farming OGC API conforms to conformance class oas30 |
+| https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html | This page provides tests which verify that Pure Farming OGC API conforms to conformance class HTML |
+| https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson | This page provides tests which verify that Pure Farming OGC API conforms to conformance class GeoJSON |
+| https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0 | This page provides tests which verify that Pure Farming OGC API conforms to conformance class GML Simple Features Level 0 | 

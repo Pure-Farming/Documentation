@@ -64,20 +64,33 @@ Making an API call is easy. First, the users need to find their desired API endp
 
 Data that describes everything with a spatial extent, like size, shape, or position, is known as spatial data. This spatial data is also known as geospatial data when describing information about the things that are positioned relative to the earth. 
 
-### What are the HTTP verbs?
+### What are the components of HTTP requests?
 
-There are 4 fundamental request patterns that are most applicable to all the endpoints in the APIs. These request patterns are based on the HTTP verbs. The 4 most commonly used HTTP verbs are:
+There are 5 following components of HTTP requests:
 
-1. GET: This verb is used for retrieving information, and users are only allowed to read the information and cannot change it. 
-2. POST: This request pattern is used to create a new resource.
-3. PUT: This verb is used to update or replace the already existing data. 
-4. DELETE: Already clear from its name, this verb is used to delete the data or information present.
+1. Verbs showing HTTP methods like GET, PUT, POST, and DELETE for retrieving, creating, updating or replacing, and deleting the resources, respectively. 
+2. URI (Uniform Resource Identifier): URI is the identifier for the resource on the server.
+3. HTTP version: It demonstrates the version like - HTTP V1.1.
+4. Request Header: The Request Header contains metadata for the HTTP request message. Metadata can be a client type, a client-supported format, a message body format, a cache setting, etc.
+5. Request Body: It demonstrates message content or resource representation.
 
-There are many other HTTP verbs also available, but they are used less frequently. 
+### How API is different from Web Services?
 
-### Do I need authentication for all the calls that I want to make?
+| API | Web Services |
+| --- | ------------ |
+| A network may or may not be required in API operations. | A network is a must for the operations of Web Services. |
+| API can be communicated by any style of communication. | REST, SOAP, and XML-RPC can be the communication styles in Web Services. |
+| It supports HTTP/HTTPS protocol. | Web Service only supports HTTP protocol. |
+| All APIs are not Web Services. | All Web Services are the types of API. |
+| API supports XML, and JSON. | Web services only support XML. |
 
-No, the users do not need to get authentication for all the calls. They can easily make a call to get the collections of daṭa from the API, but they are required to get authentication if they want to get the items from the API.
+### What is Resource in REST?
+
+REST architecture considers each type of content as a resource i.e., text files, HTML pages, images, videos, and dynamic business information. REST server provides the ability to access the resources and modifies them. By using URIs or global IDs, users can identify each resource.
+
+### Do I need authentication for all the API calls that I want to make?
+
+No, the users do not need to get authentication for all the API calls. They can easily make an API call to get the collections of daṭa from the API, but they are required to get authentication if they want to get the items from the API.
 
 ### Is there a limit to API calls?
 
