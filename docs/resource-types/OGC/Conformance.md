@@ -32,13 +32,7 @@ A call to the conformance endpoint returns the following fields:
 
 ```json
 {
-  "conformsTo": [
-    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
-    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
-    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html",
-    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
-    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0"
-  ]
+  "conformsTo": [...]
 }
 ```
 
@@ -49,6 +43,18 @@ A call to the conformance endpoint returns the following fields:
 ## ConformsTo
 
 It provides links to the tests which verify the standards that OGC API conforms to.
+
+```json
+{
+  "conformsTo": [
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+    "https://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0"
+  ]
+}
+```
 
 | Links | Standards that OGC API conforms to |
 | ----- | ---------------------------------- |

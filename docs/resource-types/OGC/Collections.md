@@ -21,25 +21,25 @@ taxonomy:
 ---
 
 ## URLs
-Get a list of all collections of data on geographical specifications for holdings, plots, and land-covers or metadata describing data on geographical specifications for holdings, plots, and land-covers. 
+Get a list of all collections of data on geographical specifications of holdings, plots, and land-covers or metadata describing data on geographical specifications of holdings, plots, and land-covers. 
 
 ```
 GET /ogc/collections
 ```
 
-Get all the collections of data on geographical specifications for all the holdings.
+Get all the collections of data on geographical specifications of all the holdings.
 
 ```
 GET /ogc/collections/holdings
 ```
 
-Get a collection of data for a specific holding that you may have access to, the holdingID is required in this case.
+Get a collection of data of a specific holding that you may have access to, the holdingID is required in this case.
 
 ```
 GET /ogc/collections/holdings/{holdingId}/collections
 ```
 
-Get all the collections of data for all the plots.
+Get all the collections of data on geographical specifications of all the plots.
 
 ```
 GET /ogc/collections/plots
@@ -51,7 +51,7 @@ Get a collection of data of plots for a specific holding that you may have acces
 GET /ogc/collections/holdings/{holdingId}/collections/plots
 ```
 
-Get all the collections of data of all the land-covers.
+Get all the collections of data on geographical specifications of all the land-covers.
 
 ```
 GET /ogc/collections/land-covers
@@ -80,7 +80,7 @@ A call to the collection endpoint returns the following fields:
 
 ## Links
 
-It provides all the links for the collections of the data that show geographical specifications of locations like holdings, land-covers, and plots
+It provides all the links for the collections of the data that show geographical specifications of locations like holdings, land-covers, and plots.
 
 ```json
 {
@@ -98,8 +98,8 @@ It provides all the links for the collections of the data that show geographical
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | Href | It shows URL to the links of collections of data of different geographical locations. The locations can be holdings, land-covers, or plots | URL |
-| Rel | 
-| Type | It is the type of the format used for storing data. For example, json | String |
+| Rel | It shows the type of link. For instance this is the link to self. | String |
+| Type | It is the type of format used for storing data. For example, json | String |
 | Hreflang | It is the language used in the data, like English | String |
 
 ## Collections
@@ -107,7 +107,7 @@ It provides all the links for the collections of the data that show geographical
 It provides the links to collections of metadata and items of holdings, land-covers and plots
 
 ```json
-{
+ {
    "collections": [
     {
       "id": "holdings",
@@ -174,37 +174,37 @@ It provides the links to collections of metadata and items of holdings, land-cov
 | ------------- | ----------- | --------- |
 | ID | It shows the type of geographical location. For example, holding | String |
 | Links | This shows the links to a specific collection of data related to holdings | An array of links |
-| Href | It shows URL to the links of collection of metadata of holdings | URL |
-| Rel | 
-| Type | It is the type of the format used for storing data. For example, json | String |
+| Href | It shows the URL to the links of collection of metadata of holdings | URL |
+| Rel | This shows the type of link. For instance, this is the link to the collection. | String |
+| Type | It is the type of format used for storing data. For example, json | String |
 | Hreflang | It is the language used in the data like English | String |
 | Title | It is the code of the metadata. For example, holdings | String |
-| Href | It shows URL to the links of collection of items of holdings | URL |
-| Rel | 
-| Type | It is the type of the format used for storing data. For example, geo+json | String |
+| Href | It shows the URL to the links of collection of items of holdings | URL |
+| Rel | This shows the type of link. For example, this is the link to the items. | String | 
+| Type | It is the type of format used for storing data. For example, geo+json | String |
 | Hreflang | It is the language used in the data like English | String |
 | Title | It is the code of the items. For example, holdings | String |
 | ID | It shows the type of geographical area. For example, land-covers | String |
 | Links | This shows the links to a specific collection of data related to land-covers | An array of links |
-| Href | It shows URL to the links of collection of metadata of land-covers | URL |
-| Rel | 
-| Type | It is the type of the format used for storing data. For example, json | String |
+| Href | It shows the URL to the links of collection of metadata of land-covers | URL |
+| Rel | This shows the type of link. For example, this is the link to collection. | String |
+| Type | It is the type of format used for storing data. For example, json | String |
 | Hreflang | It is the language used in the data like English | String |
 | Title | It is the code of the metadata. For example, land-covers | String |
 | Href | It shows the URL to the links of collection of items of land-covers | URL |
-| Rel | 
-| Type | It is the type of the format used for storing data. For example, geo+json | String |
+| Rel | This shows the type of link. For example, this is the link to the items. | String |
+| Type | It is the type of format used for storing data. For example, geo+json | String |
 | Hreflang | It is the language used in the data like English | String |
 | Title | It is the code of the items. For example, holdings | String |
 | ID | It shows the type of geographical area. For example, plots | String |
 | Links | This shows the links to a specific collection of data related to plots | An array of links |
-| Href | It shows URL to the links of collection of metadata of plots | URL |
-| Rel | 
-| Type | It is the type of the format used for storing data. For example, json | String |
+| Href | It shows the URL to the links of collection of metadata of plots | URL |
+| Rel | This shows the type of link. For example, this is the link to collection. | String |
+| Type | It is the type of format used for storing data. For example, json | String |
 | Hreflang | It is the language used in the data like English | String |
 | Title | It is the code of the metadata. For example, plots | String |
-| Href | It shows URL to the links to the collection of items of plots | URL |
-| Rel | 
-| Type | It is the type of the format used for storing data. For example, geo+json | String |
+| Href | It shows the URL to the links to the collection of items of plots | URL |
+| Rel | This shows the type of link. For example, this is the link to the items. | String |
+| Type | It is the type of format used for storing data. For example, geo+json | String |
 | Hreflang | It is the language used in the data like English | String |
 | Title | It is the code of the items. For example, plots | String |
