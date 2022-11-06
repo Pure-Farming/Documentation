@@ -171,8 +171,8 @@ It provides information on the various activities performed on the plot. For ins
   "isPrimary": true,
   "name": "string",
   "productiveArea": {
-    "area": 0,
-    "units": "FT"
+    "measurement": 123,
+    "units": "MTK"
   }
 }
 ```
