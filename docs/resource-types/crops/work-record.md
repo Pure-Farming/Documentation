@@ -124,5 +124,41 @@ This represents an individual operation within the work record
 | **Remark** | Notes or remarks | String
 | **Summary Geometry** | The geojson feature (with its geometry) that summarises the operation activity.| GeoJSON Feature
 | **Logged Geometry** | The geojson feature (with its geometry) that covers the logged track or activity record in detail.| GeoJSON Feature
-| **Products** | | Array of Products
-| **Environment** | | Environment
+| **Products** |Products applied in the operation| Array of Products
+| **Environment** |Environmental data| Environment
+
+## Product
+A product applied in the operation
+
+```json
+{
+    "applicationRate": {
+        "measurement": 10,
+        "units": "KGM",
+        "resoultion": 0.1
+    },,
+    "spatialMetric":{
+        "measurement": 10,
+        "units": "MTK",
+        "resoultion": 1
+    },
+    "applicationTotal":{
+        "measurement": 100,
+        "units": "KGM",
+        "resoultion": 1
+    },
+    "components": [ … ],
+}
+```
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+|** Application Rate ** | The rate at which the product is applied | Object
+|** Spatial Metric ** | The spatial metric to which the application rate applies e.g., [per] linear metre (MTR) or square metre (MTK) | Object
+|** Application Total ** | The total amount of product applied | Object
+|** Components ** | The components in this product mix (can be one) | Array of Components
+
+
+## Environment
+
+
+## Components
