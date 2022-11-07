@@ -78,8 +78,8 @@ A call to the Work Record endpoints returns the following fields:
 |**Id** |The Pure Farming Id of this Work Record |UUID |
 | **Self** | A link to this specific work record | URI
 | **Operation** | Constant value in any concrete class for the operation type | String |
-| **Status** | Allowable statuses of a work item | Enumeration |
-| **Priority** | Allowable priorities of a work item | Enumeration |
+| **Status** | Allowable statuses of a work item (Valid values: Cancelled, Scheduled, InProgress, Complete, Paused, PartiallyCompleted) | Enumeration |
+| **Priority** | Allowable priorities of a work item (Valid values: Immediately, SoonAsPossible, High, Medium, Low, null) | Enumeration |
 | **Meta** |Meta data for the resource. | [Metadata](/resource-types/common.md#metadata) |
 | **Observation Date** |UTC Date (required) and time (optional) of the observation of the work record | Date/Time
 | **Phenomenon Start Time** | ISO UTC DateTime for when the work record started | Date/Time
@@ -213,13 +213,14 @@ Environmental data for the operation.
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-|**Wind Speed**|Wind speed (velocity) | Object
-|**Wind Direction (Compass)**|Wind direction in compass points at the time of activity.|Enumeration
+|**Wind Speed**| Wind speed (velocity) (Valid values for units: MTS, KNT, KMH, FR, HM, M19) | Object
+|**Wind Direction (Compass)**|Wind direction in compass points at the time of activity 
+(Valid values: N, NNE, NE, ENE, E, ESE, SE, SSE, S, SSW, SW, WSW, W, WNW, NW, NNW)| Enumeration
 |**Wind Direction (Degrees)**|Wind direction in decimal degrees at the time of activity. | Numeric
-|**Air Temperature**|Air temperature at the time of activity. | Object
-|**Humidity**|Humidity at the time of activity. | Object
-|**Soil Temperature**|Soil temperature at or near the time of activity. | Object
-|**Solar Radiation (24 hours)**|Cumulative solar radiation over 24 hour period | Object
+|**Air Temperature**|Air temperature at the time of activity (Valid values for units: KEL, CEL, FAH) | Object
+|**Humidity**|Humidity at the time of activity (Valid values for units: A93, P1, GK)| Object
+|**Soil Temperature**|Soil temperature at or near the time of activity (Valid values for units: KEL, CEL, FAH) | Object
+|**Solar Radiation (24 hours)**|Cumulative solar radiation over 24 hour period (Valid values for units: D54, B60 B13) | Object
 
 ---
 
