@@ -76,7 +76,7 @@ A call to the Arrivals endpoints returns the following fields.
 |**Location** | An identifier for the location of the Animal Arrival.| Identifier |
 |**Meta** | Meta data for the resource | Metadata |
 |**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/animal-arrivals  | String |
-|**Consignment** | Consignment information for a movement (arrival, departure). | Consignment |
+|**Consignment** | Consignment information for a movement (arrival, departure). [See the Consignment definition](/resource-types/livestock/movements/consignment.md) | Consignment |
 |**Responsable** | Use if an observation is manually recorded, or an event is carried out or authorised by a person. SHOULD be a person object. | String |
 |**ContemporaryGroup** | For manually recorded events, record any contemporary group code that would affect statistical analysis.| String |
 |**Remark** | A comment or remark field for additional user-specified information about the event. | String |
