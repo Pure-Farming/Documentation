@@ -66,7 +66,7 @@ A call to the Work Record endpoints returns the following fields:
     "workedArea": { … },
     "phenomenonStartTime": "2022-07-16T08:28:02:000Z",
     "phenomenonEndTime": "2022-07-16T10:18:02:000Z",
-    "remark": "spray prod and spreading fert on back field",
+    "remark": "string",
     "responsible": "string",
     "loggedOperations":[ … ]
 }
@@ -100,7 +100,7 @@ This represents an individual operation within the work record
     "id": "string",
     "identifiers": [ … ],
     "operation": "string",
-    "operationName":"",
+    "operationName":"string",
     "meta": { … }, 
     "links": [ … ],
     "observationDate": "2022-07-07T12:52:56.227Z", 
