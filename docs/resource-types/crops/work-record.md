@@ -26,6 +26,12 @@ Get all work records that you have access to.
 GET /data/crops/work-records
 ```
 
+Get an individual work record, regardless of its holding
+
+```
+GET /data/crops/work-records/{WorkRecordId}
+```
+
 Get all work records that you have access to for a given Holding, the HoldingId is required in this case. 
 
 ```
@@ -35,7 +41,7 @@ GET /data/holdings/{HoldingId}/crops/work-records
 Get an individual work record for a given holding, both the HoldingId and the Id of the work record are required. 
 
 ```
-GET /data/holdings/{HoldingId}/crops/work-records/{WorkRecordId} 
+GET /data/holdings/{HoldingId}/crops/work-records/{WorkRecordId}
 ```
 
 ---
