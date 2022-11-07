@@ -125,9 +125,9 @@ This represents an individual operation within the work record
 | **Summary Geometry** | The geojson feature (with its geometry) that summarises the operation activity.| GeoJSON Feature
 | **Logged Geometry** | The geojson feature (with its geometry) that covers the logged track or activity record in detail.| GeoJSON Feature
 | **Products** |Products applied in the operation| Array of Products
-| **Environment** |Environmental data| Environment
+| **Environment** |Environmental data| [Environment](#environment)
 
-## Product
+## Products
 A product applied in the operation
 
 ```json
@@ -152,13 +152,169 @@ A product applied in the operation
 ```
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-|** Application Rate ** | The rate at which the product is applied | Object
-|** Spatial Metric ** | The spatial metric to which the application rate applies e.g., [per] linear metre (MTR) or square metre (MTK) | Object
-|** Application Total ** | The total amount of product applied | Object
-|** Components ** | The components in this product mix (can be one) | Array of Components
+|**Application Rate** | The rate at which the product is applied | Object
+|**Spatial Metric** | The spatial metric to which the application rate applies e.g., per linear metre (MTR) or square metre (MTK) | Object
+|**Application Total** | The total amount of product applied | Object
+|**Components** | The components in this product mix (can be one) | Array of [Components](#components)
 
 
 ## Environment
+Environmental data for the operation.
+
+```json
+{
+    "windSpeed":{
+        "measurement":0,
+        "resolution":1,
+        "units":"MTS"
+    },
+    "windDirectionCompass":"E",
+    "windDirectionDegrees":90,
+    "airTemperature":{
+        "measurement":10,
+        "resolution":1,
+        "units":"CEL"
+    },
+    "humidity":{
+        "measurement":50,
+        "resolution":1,
+        "units":"P1"
+    },
+    "soilTemperature":{
+        "measurement":10,
+        "resolution":1,
+        "units":"CEL"
+    },
+    "solarRadiation24hr":{
+        "measurement":500,
+        "resolution":1,
+        "units":"D54"
+    },
+    "rainfall24hr":{
+        "measurement":2.3,
+        "resolution":0.1,
+        "units":"MMT"
+    }
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+|**Wind Speed**|Wind speed (velocity) | Object
+|**Wind Direction (Compass)**|Wind direction in compass points at the time of activity.|Enumeration
+|**Wind Direction (Degrees)**|Wind direction in decimal degrees at the time of activity. | Numeric
+|**Air Temperature**|Air temperature at the time of activity. | Object
+|**Humidity**|Humidity at the time of activity. | Object
+|**Soil Temperature**|Soil temperature at or near the time of activity. | Object
+|**Solar Radiation (24 hours)**|Cumulative solar radiation over 24 hour period | Object
 
 
 ## Components
+A component in the product mix.
+
+```json
+{
+    "mixSequence":1,
+    "percent":100,
+    "product": {
+        "type":"string",
+        "manufacturer":"string",
+        "brand":"string",
+        "form":"string",
+        "uri":"string",
+        "crop": {
+            "establishmentDate": "2022-09-13T10:51:55.898Z",
+            "harvestDate": "2022-09-13T10:51:55.898Z",
+            "identifiers": [ … ],
+            "maturityDate": "2022-09-13T10:51:55.898Z",
+            "name": "string",
+            "taxonomicName": "string",
+            "variety": "string"
+        },
+        "specificGravity":1,
+        "matterState":"Solid",
+        "analysis":[ … ],
+        "activeIngredients":[ … ],
+        "withdrawals":[ … ],
+        "claims":[ … ],
+        "registrations":[ … ]
+    }
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| **Mix Sequence** | The order of the product in the mix | Integer
+| **Percent** | The proportion that this product composes of the mix. Can be calculated from Wt/Vol or other measures. | Percentage
+| **Product Type** |Defines types of product that can be used in field activities. | Enumeration
+| **Product Manufacturer** |Manufacturer of the product| String
+| **Product Brand** |Brand of the product| String
+| **Product Form** | The physical form of the product | Enumeration
+| **Product Uri** |A link to the product. | URI
+| **Crop Establishment Date** | The date on which the Crop was planted | Date |
+| **Crop Harvest Date** | The date on which the Crop was harvested. | Date |
+| **Crop Identifiers** | Any identifiers for this Crop. | Array of [Identifiers](/resource-types/common.md#identifier) |
+| **Crop Maturity Date** | The date on which the Crop reached maturity | Date |
+| **Crop Name** | The name of the Crop if present. | String |
+| **Crop Taxonomic Name** | The scientific name for this Crop. | String |
+| **Crop Variety** | The variety of the Crop. | String |
+| **Specific Gravity** | Relative density. The ratio of the density (mass of a unit volume) of a substance to the density of a given reference material. For liquids this is typically water at 4 degrees celcius | Numeric
+| **Matter State** | Matter states | Enumeration
+| **Analysis** | Used to specify analysis of a product (for example, nutrient or energy). | Array of [Analysis](#product-analysis)
+| **Active Ingredients** | Array of active ingredients in the product| Array of [Active Ingredients](#active-ingredients)
+| **Withdrawals** |The withdrawal periods of the product| Array of [Withdrawals](#withdrawals)
+| **Claims** | Claims associated with the product | Array of [Identifiers](/resource-types/common.md#identifier) 
+| **Registrations** | Registrations associated with the product | Array of [Identifiers](/resource-types/common.md#identifier) 
+
+## Product Analysis
+
+```json
+{
+    "name":"Nitrogen",
+    "percent":40,
+    "id":{
+        "id":"string",
+        "scheme":"string"
+    }
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| **Name** | Name of the product analysis| String
+| **Percent** | Proportion of the product analysis | Number
+| **Id** | Identifier of this analysis | [Identifier](/resource-types/common.md#identifier) 
+
+## Active Ingredients
+An active ingredient of the product
+
+```json
+{
+    "name":"string",
+    "id":"string",
+    "scheme":"string"
+}
+```
+
+| Response Item | Description | Data Type |
+|---------------|-------------|-----------|
+| **Name** | Human readable name of the product | String
+| **Id** | Official Id of the active ingredient | String
+| **Scheme** |Scheme of the id of the active ingredient | String
+
+
+## Withdrawals
+
+The withdrawal period of the product
+
+```json
+{
+    "scheme":"string",
+    "hours":24
+}
+```
+
+| Response Type | Description | Data Type |
+|---------------|-------------|-----------|
+| **Scheme** |The scheme controlling the withdrawal period rules | String
+| **Hours** |Duration of the withdrawal period in hours | Number
