@@ -47,8 +47,8 @@ Consignment are information about the transport of the animal in this event
 | **Scheme** |	The Scheme of this consignment | String |
 | **Origin** |	The Origin of this consignment | Location |
 | **Destination** | The Destination of this consignment | Location |
-| **Loading DateTime** | A particular point in the progression of time. Shall be UTC format with Z, specified in RFC3339. | Date/Time |
-| **Unloading DateTime** | A particular point in the progression of time. Shall be UTC format with Z, specified in RFC3339. | Date/Time |
+| **Loading DateTime** | A particular point in the progression of time. Shall be UTC format with Z, specified in RFC3339. | DateTimeOffset  |
+| **Unloading DateTime** | A particular point in the progression of time. Shall be UTC format with Z, specified in RFC3339. | DateTimeOffset  |
 | **Expected Duration** | Expected duration of transportation in hours. | Number |
 | **Transport Operator** | Transport operator official name (should really be schema.org/organization).| String |
 | **Vehicle** | Identification of the vehicle (for example, licence plate). | String |
