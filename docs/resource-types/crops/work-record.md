@@ -38,6 +38,8 @@ Get an individual work record for a given holding, both the HoldingId and the Id
 GET /data/holdings/{HoldingId}/crops/work-records/{WorkRecordId} 
 ```
 
+---
+
 ## Response Structure
 
 A call to the Work Record endpoints returns the following fields:
@@ -79,6 +81,8 @@ A call to the Work Record endpoints returns the following fields:
 | **Remark** | Notes or remarks | String
 | **Responsible** | Identifier of the person responsible for the work record | String
 | **Logged Operations** | Array of the operations completed in this work record | Array of [Operations](/resource-types/crops/work-record.md#operations)
+
+---
 
 ## Operations
 
@@ -127,6 +131,8 @@ This represents an individual operation within the work record
 | **Products** |Products applied in the operation| Array of [Products](#products)
 | **Environment** |Environmental data| [Environment](#environment)
 
+---
+
 ## Products
 A product applied in the operation
 
@@ -157,6 +163,7 @@ A product applied in the operation
 |**Application Total** | The total amount of product applied | Object
 |**Components** | The components in this product mix (can be one) | Array of [Components](#components)
 
+---
 
 ## Environment
 Environmental data for the operation.
@@ -208,6 +215,7 @@ Environmental data for the operation.
 |**Soil Temperature**|Soil temperature at or near the time of activity. | Object
 |**Solar Radiation (24 hours)**|Cumulative solar radiation over 24 hour period | Object
 
+---
 
 ## Components
 A component in the product mix.
@@ -252,6 +260,8 @@ A component in the product mix.
 | **Claims** | Claims associated with the product | Array of [Identifiers](/resource-types/common.md#identifier) 
 | **Registrations** | Registrations associated with the product | Array of [Identifiers](/resource-types/common.md#identifier) 
 
+---
+
 ## Product Analysis
 
 ```json
@@ -271,6 +281,8 @@ A component in the product mix.
 | **Percent** | Proportion of the product analysis | Number
 | **Id** | Identifier of this analysis | [Identifier](/resource-types/common.md#identifier) 
 
+---
+
 ## Active Ingredients
 An active ingredient of the product
 
@@ -288,6 +300,7 @@ An active ingredient of the product
 | **Id** | Official Id of the active ingredient | String
 | **Scheme** |Scheme of the id of the active ingredient | String
 
+---
 
 ## Withdrawals
 
