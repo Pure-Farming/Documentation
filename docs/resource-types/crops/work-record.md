@@ -222,15 +222,7 @@ A component in the product mix.
         "brand":"string",
         "form":"string",
         "uri":"string",
-        "crop": {
-            "establishmentDate": "2022-09-13T10:51:55.898Z",
-            "harvestDate": "2022-09-13T10:51:55.898Z",
-            "identifiers": [ … ],
-            "maturityDate": "2022-09-13T10:51:55.898Z",
-            "name": "string",
-            "taxonomicName": "string",
-            "variety": "string"
-        },
+        "crop": { … },
         "specificGravity":1,
         "matterState":"Solid",
         "analysis":[ … ],
@@ -251,13 +243,7 @@ A component in the product mix.
 | **Product Brand** |Brand of the product| String
 | **Product Form** | The physical form of the product | Enumeration
 | **Product Uri** |A link to the product. | URI
-| **Crop Establishment Date** | The date on which the Crop was planted | Date |
-| **Crop Harvest Date** | The date on which the Crop was harvested. | Date |
-| **Crop Identifiers** | Any identifiers for this Crop. | Array of [Identifiers](/resource-types/common.md#identifier) |
-| **Crop Maturity Date** | The date on which the Crop reached maturity | Date |
-| **Crop Name** | The name of the Crop if present. | String |
-| **Crop Taxonomic Name** | The scientific name for this Crop. | String |
-| **Crop Variety** | The variety of the Crop. | String |
+| **Crop**  |Defines a managed crop, or a species in a mixed sward | [Crop](/resource-types/crops/index.md#crop)
 | **Specific Gravity** | Relative density. The ratio of the density (mass of a unit volume) of a substance to the density of a given reference material. For liquids this is typically water at 4 degrees celcius | Numeric
 | **Matter State** | Matter states | Enumeration
 | **Analysis** | Used to specify analysis of a product (for example, nutrient or energy). | Array of [Analysis](#product-analysis)

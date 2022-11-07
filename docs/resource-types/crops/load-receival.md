@@ -113,7 +113,7 @@ This represents an individual load that has been received.
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Analysis** | The details of the load receivals. | Array of Analysis |
-| **Crops** | The crop that is being received or being recorded that they have gone somewhere. | Array of Crop |
+| **Crops** | The crop that is being received or being recorded that they have gone somewhere. | Array of [Crops](/resource-types/crops/index.md#crop) |
 | **Destination** | This is the destination of the load | Destination |
 | **Logistic unit** | This shows the unit of the load receival. It can be Bale, Field, Module, Tank, Truck, Unknown | Enumeration |
 | **Quantity** | It is the standardised quantity of the load receival | Numeric |

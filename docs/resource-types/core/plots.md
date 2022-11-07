@@ -76,8 +76,8 @@ A call to the Plots endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Crops** | Provides information on the crops that are currently being grown on a specific plot | Array of [Crops](#crop) |
-| **Historic Crops** | Provides information on the crops that were historically grown on a specific plot | Array of [Historic Crops](#historic-crops) |
+| **Crops** | Provides information on the crops that are currently being grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
+| **Historic Crops** | Provides information on the crops that were historically grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
 | **Activities** | Provides information on the various activities performed on a specific plot.  | Array of [Activities](#activity) |
 | **Classifications** | Any classifications that an individual Plot may have | Array of [Classifications](#classification) |
 | **Centroid** | This is the central point of the plot | GeoJSON Point |
@@ -89,72 +89,6 @@ A call to the Plots endpoint returns the following fields:
 | **Identifiers** | Any identifiers for this Plot | Array of [Identifiers](/resource-types/common.md#identifier) |
 | **Links** | Any links relevant to this Plot | Array of [Links](/resource-types/common.md#link) |
 | **Name** | The name of the Plot, if present. | String |
-
----
-
-## Crop
-
-This provides information on the crops that are grown on a specific plot including their harvesting date, maturity date, name, etc.
-
-```json
-{
-  "establishmentDate": "2022-09-13T10:51:55.898Z",
-  "harvestDate": "2022-09-13T10:51:55.898Z",
-  "identifiers": [
-    {
-      "id": "string",
-      "scheme": "string"
-    }
-  ],
-  "maturityDate": "2022-09-13T10:51:55.898Z",
-  "name": "string",
-  "taxonomicName": "string",
-  "variety": "string"
-}
-```
-
-| Response Item | Description | Data Type |
-| ------------- | ----------- | --------- |
-| **Establishment Date** | The date on which the Crop was planted | Date |
-| **Harvest Date** | The date on which the Crop was harvested. | Date |
-| **Identifiers** | Any identifiers for this Crop. | Array of [Identifiers](/resource-types/common.md#identifier) |
-| **Maturity Date** | The date on which the Crop reached maturity | Date |
-| **Name** | The name of the Crop if present. | String |
-| **Taxonomic Name** | The scientific name for this Crop. | String |
-| **Variety** | The variety of the Crop. | String |
-
----
-
-## Historic Crops
-
-Historic Crops have the same structure as that of a Crop, but the only difference is that it is not counted as a Crop.
-
-```json
-{
-  "establishmentDate": "2022-09-13T10:51:55.898Z",
-  "harvestDate": "2022-09-13T10:51:55.898Z",
-  "identifiers": [
-    {
-      "id": "string",
-      "scheme": "string"
-    }
-  ],
-  "maturityDate": "2022-09-13T10:51:55.898Z",
-  "name": "string",
-  "taxonomicName": "string",
-  "variety": "string"
-}
-```
-
-| Response Item | Description | Data Type |
-| ------------- | ----------- | --------- |
-| **Establishment Date** | The date on which the Crop was planted | Date |
-| **Harvest Date** | The date on which the Crop was harvested. | Date |
-| **Identifiers** | Any identifiers for this Crop. | Array of [Identifiers](/resource-types/common.md#identifier) |
-| **Maturity Date** | The date on which the Crop reached maturity | Date |
-| **Name** | The name of the Crop if present. | String |
-| **Taxonomic Name** | The scientific name for this Crop. | String |
-| **Variety** | The variety of the Crop. | String |
 
 ---
 
