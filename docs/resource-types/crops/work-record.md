@@ -108,7 +108,7 @@ This represents an individual operation within the work record
     "holding": { … },
     "phenomenonStartTime": "2022-07-16T08:28:02:000Z",
     "phenomenonEndTime": "2022-07-16T10:18:02:000Z",
-    "remark": "spray prod and spreading fert on back field",
+    "remark": "string",
     "responsible": "string",
     "summaryGeometry": { … },
     "loggedGeometry": { … },
