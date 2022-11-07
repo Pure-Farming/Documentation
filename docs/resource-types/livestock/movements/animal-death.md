@@ -90,8 +90,7 @@ A call to the Deaths endpoints returns the following fields.
 |**Animal** | Unique animal scheme and identifier combination. | Identifier |
 |**Consignment** | Consignment information for a movement (arrival, departure). [See the Consignment definition](/resource-types/livestock/movements/consignment.md) | Consignment |
 |**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration |
-|**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
-Nutrition, Fertility) | Enumeration |
+|**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility, Nutrition, Fertility) | Enumeration |
 |**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration |
 |**Disposal Operator** | Disposal operator official name (should really be schema.org/organization). | String |
 |**Disposal Reference** | Reference (receipt, docket, or ID) for disposal. | String |

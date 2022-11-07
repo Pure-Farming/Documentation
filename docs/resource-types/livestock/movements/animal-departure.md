@@ -83,8 +83,7 @@ A call to the Departures endpoints returns the following fields.
 |**Remark** | A comment or remark field for additional user-specified information about the event. | String |
 |**Trait Label** | If the event represents a formal trait, this identifies the recording system and trait. | Identifier |
 |**Animal** | Unique animal scheme and identifier combination.| Identifier |
-|**Departure Kind** | The kind of departure event (Valid values: Agistment, AgistmentReturn, Export, InternalTransfer, Newborn, Other, Sale, SaleReturn, Show, ShowReturn, Slaughter, StudService,
-StudServiceReturn) | Enumeration |
+|**Departure Kind** | The kind of departure event (Valid values: Agistment, AgistmentReturn, Export, InternalTransfer, Newborn, Other, Sale, SaleReturn, Show, ShowReturn, Slaughter, StudService, StudServiceReturn) | Enumeration |
 |**Departure Reason** | The Reason for the departure (Valid values: Age, BadType, Behaviour, Fertility, Health, LegOrClaw, Mastitis, MilkingAbility, Newborn, Nutrition, Other, Parturition,
 Production, Sale, Slaughter, Superfluous, Unknown) | Enumeration |
 |**Event Date Time** | The Time that this event occured | DateTimeOffset |
