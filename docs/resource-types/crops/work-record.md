@@ -78,7 +78,7 @@ A call to the Work Record endpoints returns the following fields:
 | **Phenomenon End Time** | ISO UTC DateTime for when the work record ended | Date/Time
 | **Remark** | Notes or remarks | String
 | **Responsible** | Identifier of the person responsible for the work record | String
-| **Logged Operations** | Array of the operations completed in this work record | Array of [Operations](/resource-types/crops/work-record.md#operations)]
+| **Logged Operations** | Array of the operations completed in this work record | Array of [Operations](/resource-types/crops/work-record.md#operations)
 
 ## Operations
 
@@ -124,7 +124,7 @@ This represents an individual operation within the work record
 | **Remark** | Notes or remarks | String
 | **Summary Geometry** | The geojson feature (with its geometry) that summarises the operation activity.| GeoJSON Feature
 | **Logged Geometry** | The geojson feature (with its geometry) that covers the logged track or activity record in detail.| GeoJSON Feature
-| **Products** |Products applied in the operation| Array of Products
+| **Products** |Products applied in the operation| Array of [Products](#products)
 | **Environment** |Environmental data| [Environment](#environment)
 
 ## Products
