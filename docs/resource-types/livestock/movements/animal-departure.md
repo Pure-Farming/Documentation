@@ -87,7 +87,7 @@ A call to the Departures endpoints returns the following fields.
 StudServiceReturn) | Enumeration |
 |**Departure Reason** | The Reason for the departure (Valid values: Age, BadType, Behaviour, Fertility, Health, LegOrClaw, Mastitis, MilkingAbility, Newborn, Nutrition, Other, Parturition,
 Production, Sale, Slaughter, Superfluous, Unknown) | Enumeration |
-|**Event Date Time** | The time and date the event occured | DateTimeOffset |
+|**Event Date Time** | The Time that this event occured | DateTimeOffset |
 |**Id** | The Pure Farming Id of this Animal Departure | UUID |
 
 ---

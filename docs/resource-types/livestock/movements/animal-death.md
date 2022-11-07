@@ -95,7 +95,7 @@ Nutrition, Fertility) | Enumeration |
 |**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration |
 |**Disposal Operator** | Who disposed of the animal | String |
 |**Disposal Reference** | Reference for the disposal | String |
-|**Explanation** | Explanation | String |
+|**Explanation** | An additional explanation for what happened to the animal. | String |
 
 ---
 
