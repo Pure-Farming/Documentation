@@ -88,14 +88,14 @@ A call to the Deaths endpoints returns the following fields.
 |**Responsable** | Use if an observation is manually recorded, or an event is carried out or authorised by a person. SHOULD be a person object. | String |
 |**Trait Label** | If the event represents a formal trait, this identifies the recording system and trait.| Identifier |
 |**Animal** | Unique animal scheme and identifier combination. | Identifier |
-|**Consignment** | The consignment information for this event | Consignment |
+|**Consignment** | Consignment information for a movement (arrival, departure). | Consignment |
 |**Death Method** | How the animal was killed (Valid values: Accident, Culled, Lost, Other, Perished, Slaughter, Theft) | Enumeration |
 |**Death Reason** | The reason for the death (Valid values: Missing, Parturition, Disease, Accident, Consumption, Culled, Other, Unknown, Age, Mastitis, Production, LegOrClaw, MilkingAbility
 Nutrition, Fertility) | Enumeration |
 |**Disposal Method** | How the animal was disposed of (Valid values: ApprovedService, Consumption, OnPremise, Other) | Enumeration |
-|**Disposal Operator** | Who disposed of the animal | String |
-|**Disposal Reference** | Reference for the disposal | String |
-|**Explanation** | An additional explanation for what happened to the animal. | String |
+|**Disposal Operator** | Disposal operator official name (should really be schema.org/organization). | String |
+|**Disposal Reference** | Reference (receipt, docket, or ID) for disposal. | String |
+|**Explanation** | Free text explanation of the reason for death. | String |
 
 ---
 
@@ -127,15 +127,15 @@ Consignment are information about the transport of the animal in this event
 | **Scheme** |	The Scheme of this consignment | String |
 | **Origin** |	The Origin of this consignment | Location |
 | **Destination** | The Destination of this consignment | Location |
-| **Loading DateTime** | The time that the animals were loaded for this consignment | Date/Time |
-| **Unloading DateTime** | The time that the animals were unloaded for this consignment | Date/Time |
-| **Expected Duration** | The expected transport duration | Number |
-| **Transport Operator** | The operator doing this consignment | String |
-| **Vehicle** | The vehicle used for this consignment | String |
-| **Transport Reference** | The Reference for this consignment | String |
-| **Isolation Facility Used** | If an Isolation Facility was used as part of this consignment | Boolean |
-| **Farm Assurance Reference Id** | The Farm Assurance Reference Id | String |
-| **Farm Assurance Reference Scheme** | The Farm Assurance Reference Scheme | String |
+| **Loading DateTime** | A particular point in the progression of time. Shall be UTC format with Z, specified in RFC3339 (see https://ijmacd.github.io/rfc3339-iso8601/ for format guidance). | Date/Time |
+| **Unloading DateTime** | A particular point in the progression of time. Shall be UTC format with Z, specified in RFC3339 (see https://ijmacd.github.io/rfc3339-iso8601/ for format guidance). | Date/Time |
+| **Expected Duration** | Expected duration of transportation in hours. | Number |
+| **Transport Operator** | Transport operator official name (should really be schema.org/organization).| String |
+| **Vehicle** | Identification of the vehicle (for example, licence plate). | String |
+| **Transport Reference** | Shipping or transporter reference.| String |
+| **Isolation Facility Used** | True if an isolation facility was used for the movement. | Boolean |
+| **Farm Assurance Reference Id** | A unique identification for the resource issued under the auspices of the scheme. | String |
+| **Farm Assurance Reference Scheme** | The identifier (in reverse domain format) of an official scheme that manages unique identifiers. | String |
 
 ---
 
@@ -177,10 +177,10 @@ A address for a location
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Country** | The country part of the sdress | String |
-| **Locality** | The locality part of the address | String |
-| **Region** | The region for the address | String |
-| **Post Office Box** | The post office box | String |
-| **Post Code** | The post code | String |
-| **Street Address** | The street address | String |
+| **Country** | The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code. | String |
+| **Locality** | The locality in which the street address is, and which is in the region. For example, Mountain View. | String |
+| **Region** | The region in which the locality is, and which is in the country. For example, California or another appropriate first-level Administrative division | String |
+| **Post Office Box** | The post office box number for PO box addresses. | String |
+| **Post Code** | The postal code. For example, 94043. | String |
+| **Street Address** | The street address. For example, 1600 Amphitheatre Pkwy. | String |
 | **Address String** | The complete address | String |
