@@ -253,14 +253,14 @@ A component in the product mix.
 | ------------- | ----------- | --------- |
 | **Mix Sequence** | The order of the product in the mix | Integer
 | **Percent** | The proportion that this product composes of the mix. Can be calculated from Wt/Vol or other measures. | Percentage
-| **Product Type** |Defines types of product that can be used in field activities. | Enumeration
+| **Product Type** |Defines types of product that can be used in field activities (Valid values: Unknown, Irrigation, Seed, Plant, Bulb, Tuber, Fertiliser, Pesticide, Fungicide, Herbicide, Adjuvant, Effluent, Biocontrol, Organic, HarvestedProduct, Mix) | Enumeration
 | **Product Manufacturer** |Manufacturer of the product| String
 | **Product Brand** |Brand of the product| String
-| **Product Form** | The physical form of the product | Enumeration
+| **Product Form** | The physical form of the product (Valid values: Unknown, WettablePowder, WaterSolublePowder, WaterDispersableGranules, Granules, OrganicSolid, SuspensionConcentrate, SolubleConcentrate, EmulsifiableConcentrate, OrganicSuspension, Vapour, Gas)| Enumeration
 | **Product Uri** |A link to the product. | URI
 | **Crop**  |Defines a managed crop, or a species in a mixed sward | [Crop](/resource-types/crops/index.md#crop)
 | **Specific Gravity** | Relative density. The ratio of the density (mass of a unit volume) of a substance to the density of a given reference material. For liquids this is typically water at 4 degrees celcius | Numeric
-| **Matter State** | Matter states | Enumeration
+| **Matter State** | Matter states (Valid values: Unknown, Solid, Liquid, Gas)| Enumeration
 | **Analysis** | Used to specify analysis of a product (for example, nutrient or energy). | Array of [Analysis](#product-analysis)
 | **Active Ingredients** | Array of active ingredients in the product| Array of [Active Ingredients](#active-ingredients)
 | **Withdrawals** |The withdrawal periods of the product| Array of [Withdrawals](#withdrawals)
