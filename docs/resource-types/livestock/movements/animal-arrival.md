@@ -22,25 +22,25 @@ taxonomy:
 
 ## URLs
 
-Get all Arrivals that you have access to
+Get all animal arrival events that you have access to.
 
 ```
 GET /data/livestock/movement/animal-arrivals
 ```
 
-Get the Arrival for the specified id
+Get an individual animal arrival event for the specified id. 
 
 ```
 GET /data/livestock/movement/animal-arrivals/{ArrivalId}
 ```
 
-Get all Arrivals that are linked to the provided holding id
+Get all animal arrival events that are linked to the provided holding id.
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-arrivals
 ```
 
-Get the Arrival for the specified id that is linked to the provided holding id
+Get an individual animal arrival event for a given holding. 
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-arrivals/{ArrivalId}
@@ -50,14 +50,14 @@ GET /data/holdings/{HoldingId}/livestock/movement/animal-arrivals/{ArrivalId}
 
 ## Response Structure
 
-A call to the Arrivals endpoints returns the following fields.
+A call to the animal arrival endpoints returns the following fields.
 
 ```json
 {
   "self": "string",
   "location": {...},
   "meta": {...},
-  "resourceType": "/livestock/movement/animal-arrivals",
+  "resourceType": "/livestock/movement/animal-arrival",
   "consignment": {...},
   "responsable": "string",
   "contemporaryGroup": "string",
@@ -75,7 +75,7 @@ A call to the Arrivals endpoints returns the following fields.
 |**Self** | A link to this specific Animal Arrival | URI |
 |**Location** | An identifier for the location of the Animal Arrival.| Identifier |
 |**Meta** | Meta data for the resource | Metadata |
-|**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/animal-arrivals  | String |
+|**Resource Type** | The fixed discriminator for the animal arrival resource type.<br/>Value: /livestock/movement/animal-arrival  | String |
 |**Consignment** | Consignment information for a movement (arrival, departure). [See the Consignment definition](/resource-types/livestock/movements/consignment.md) | Consignment |
 |**Responsable** | Use if an observation is manually recorded, or an event is carried out or authorised by a person. SHOULD be a person object. | String |
 |**ContemporaryGroup** | For manually recorded events, record any contemporary group code that would affect statistical analysis.| String |

@@ -22,25 +22,25 @@ taxonomy:
 
 ## URLs
 
-Get all Departures that you have access to
+Get all animal departure events that you have access to.
 
 ```
 GET /data/livestock/movement/animal-departures
 ```
 
-Get the Departure for the specified id
+Get an individual animal departure event for the specified id. 
 
 ```
 GET /data/livestock/movement/animal-departures/{DepartureId}
 ```
 
-Get all Departures that are linked to the provided holding id
+Get all animal departure events that are linked to the provided holding id.
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-departures
 ```
 
-Get the Departure for the specified id that is linked to the provided holding id
+Get an individual animal departure event for a given holding. 
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-departures/{DepartureId}
@@ -50,14 +50,14 @@ GET /data/holdings/{HoldingId}/livestock/movement/animal-departures/{DepartureId
 
 ## Response Structure
 
-A call to the Departures endpoints returns the following fields.
+A call to the animal departure endpoints returns the following fields.
 
 ```json
 {
   "self": "string",
   "location": {...},
   "animalDetailMeta": {...},
-  "resourceType": "/livestock/movement/animal-departures",
+  "resourceType": "/livestock/movement/animal-departure",
   "consignment": {...},
   "responsable": "string",
   "contemporaryGroup": "string",
@@ -76,7 +76,7 @@ A call to the Departures endpoints returns the following fields.
 |**Self** | A link to this specific Animal Departure | URI |
 |**Location** | An identifier for the location of the Animal Departure | Identifier |
 |**Animal Detail Meta** | Meta data for the resource | Metadata |
-|**Resource Type** | The fixed discriminator for the animal departure resource type.<br/>Value: /livestock/movement/animal-departures  | String |
+|**Resource Type** | The fixed discriminator for the animal departure resource type.<br/>Value: /livestock/movement/animal-departure  | String |
 |**Consignment** | Consignment information for a movement (arrival, departure). [See the Consignment definition](/resource-types/livestock/movements/consignment.md) | Consignment |
 |**Responsable** | Use if an observation is manually recorded, or an event is carried out or authorised by a person. SHOULD be a person object. | String |
 |**ContemporaryGroup** | For manually recorded events, record any contemporary group code that would affect statistical analysis. | String |

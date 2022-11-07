@@ -22,25 +22,25 @@ taxonomy:
 
 ## URLs
 
-Get all deaths that you have access to
+Get all animal death events that you have access to.
 
 ```
 GET /data/livestock/movement/animal-deaths
 ```
 
-Get the death for the specified id
+Get an individual animal death event for the specified id. 
 
 ```
 GET /data/livestock/movement/animal-deaths/{DeathId}
 ```
 
-Get all deaths that are linked to the provided holding id
+Get all animal death events that are linked to the provided holding id.
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths
 ```
 
-Get the death for the specified holding that is linked to the provided death id
+Get an individual animal death event for a given holding.
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths/{DeathId}
@@ -50,14 +50,14 @@ GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths/{DeathId}
 
 ## Response Structure
 
-A call to the Deaths endpoints returns the following fields.
+A call to the animal death event endpoints returns the following fields.
 
 ```json
 {
   "self": "string",
   "location": {...},
   "meta": {...},
-  "resourceType": "/livestock/movement/animal-deaths",
+  "resourceType": "/livestock/movement/animal-death",
   "contemporaryGroup": "string",
   "eventDateTime": "DateTimeOffset",
   "id": "string",
