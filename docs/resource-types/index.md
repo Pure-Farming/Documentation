@@ -50,7 +50,9 @@ The Data API is based on the REST standard, where URLs represent collections of 
   - [Crops - Sample Analysis](/resource-types/crops/sample-analysis.md)  
     Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
   - [Crops - Load Receivals](/resource-types/crops/load-receival.md)  
-    Load Receivals provide information about the arrival of harvested crop loads to a location.   
+    Load Receivals provide information about the arrival of harvested crop loads to a location.  
+  - [Crops - Work Record](/resource-types/crops/work-record.md)
+    Work records provide information about agricultural work and operations performed on a piece of land or crop.
 - [Livestock](/resource-types/livestock)
   Resource types available for Livestock.
   - [Animals](/resource-types/livestock/animals.md)  
