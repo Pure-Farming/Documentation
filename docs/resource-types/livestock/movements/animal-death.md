@@ -80,7 +80,7 @@ A call to the animal death event endpoints returns the following fields.
 |**Self** | A link to this specific Animal Death | URI |
 |**Location** | An identifier for the location of the Animal Death | Identifier |
 |**Meta** | Meta data for the resource | Metadata |
-|**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/death  | String |
+|**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/animal-death  | String |
 |**ContemporaryGroup** | For manually recorded events, record any contemporary group code that would affect statistical analysis. | String |
 |**Event Date Time**| The Time that this event occured | DateTimeOffset |
 |**Id** | The Pure Farming Id of this death event | UUID |
