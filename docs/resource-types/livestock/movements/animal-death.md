@@ -28,19 +28,19 @@ Get all animal death events that you have access to.
 GET /data/livestock/movement/animal-deaths
 ```
 
-Get an individual animal death event for the specified id. 
+Get an individual animal death event for the specified **DeathId**, the Id is required. 
 
 ```
 GET /data/livestock/movement/animal-deaths/{DeathId}
 ```
 
-Get all animal death events that are linked to the provided holding id.
+Get all animal death events that are linked to the provided **HoldingId**, holding Id is required.
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths
 ```
 
-Get an individual animal death event for a given holding.
+Get an individual animal death event with a given **HoldingID** and **DeathId**, both Ids are required
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-deaths/{DeathId}

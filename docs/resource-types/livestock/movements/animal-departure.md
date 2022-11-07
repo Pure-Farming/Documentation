@@ -28,19 +28,19 @@ Get all animal departure events that you have access to.
 GET /data/livestock/movement/animal-departures
 ```
 
-Get an individual animal departure event for the specified id. 
+Get an individual animal departure event for the specified **DepartureId**, the Id is required. 
 
 ```
 GET /data/livestock/movement/animal-departures/{DepartureId}
 ```
 
-Get all animal departure events that are linked to the provided holding id.
+Get all animal departure events that are linked to the provided **HoldingId**, the holding Id is required.
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-departures
 ```
 
-Get an individual animal departure event for a given holding. 
+Get an individual animal departure event with a given **HoldingId** and **DepartureId**, both Ids are required. 
 
 ```
 GET /data/holdings/{HoldingId}/livestock/movement/animal-departures/{DepartureId}
