@@ -76,7 +76,7 @@ A call to the collection endpoint returns the following fields:
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Links** | This shows the links to the collections of data which includes location information related to holdings, land-covers and plots | An array of links |
-| **Collections** | This shows the collections of metadata of holdings, land-covers and plots, and collection of items in the respective geographic locations | An array of collections |
+| **Collections** | This shows collection items that have a certain set of metadata | An array of collections |
 
 ## Links
 
@@ -97,10 +97,10 @@ It provides all the links for the collections of the data that show geographical
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| Href | It shows URL to the links of collections of data of different geographical locations. The locations can be holdings, land-covers, or plots | URL |
-| Rel | It shows the type of link. For instance this is the link to self. | String |
-| Type | It is the type of format used for storing data. For example, json | String |
-| Hreflang | It is the language used in the data, like English | String |
+| Href |  | URL |
+| Rel | It shows what type of link it is. For instance, it can be a link to self | String |
+| Type | It is the type of the response in the link. For example, JSON | String |
+| Hreflang | It shows the language of the data in the link. For instance, English, Spanish, etc. | String |
 
 ## Collections
 
