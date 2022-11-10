@@ -78,7 +78,7 @@ A call to the Plots endpoint returns the following fields:
 | **Crops** | Information on the crops that are currently being grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
 | **Historic Crops** | Information on the crops that were historically grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
 | **Activities** | Information on the various activities performed on a specific plot  | Array of [Activities](#activity) |
-| **Classifications** | Any classifications that an individual plot may have | Array of [Classifications](#classification) |
+| **Classifications** | Any classifications that an individual plot may have | Array of [Classifications](/resource-types/common.md#classification) |
 | **Centroid** | The location of the center of the plot | GeoJSON Point |
 | **Spatial Feature** | The plot boundaries | GeoJSON Feature |
 | **Total Area** | The total area of the plot | [Total Area](/resource-types/common.md#total-area) |
@@ -117,29 +117,3 @@ For instance: planting a crop, harvesting, or some other such activity
 | **IsPrimary** | The activity is the primary activity of the plot | Boolean |
 | **Name** | The user-friendly name of the activity | String |
 | **Productive Area** | The productive area relevant to this activity | [Total Area](/resource-types/common.md#total-area) |
-
----
-
-## Classification
-
-Data can be classified in different ways. Primary classification is the highest level, followed by a Secondary sub-category, and a Tertiary sub-category under that.
-For example:  
-Primary: Rural  
-Secondary: Tracks and Pathways  
-Tertiary: Four-Wheel Drive Track  
-
-```json
-{
-  "primary": "string",
-  "scheme": "string",
-  "secondary": "string",
-  "tertiary": "string"
-}
-```
-
-| Response Item | Description | Data Type |
-| ------------- | ----------- | --------- |
-| **Primary** | The primary level of classification under the scheme. | String |
-| **Scheme** | The scheme for this classification. This should be reverse DNS notation. | String |
-| **Secondary** | The secondary level of classification under the scheme | String |
-| **Tertiary** | The tertiary level of classification under the scheme. | String |
