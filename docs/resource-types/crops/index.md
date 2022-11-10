@@ -54,12 +54,12 @@ A generic object containing the information about a crop being grown at a specif
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Establishment Date** | The date on which the Crop was planted | Date |
-| **Harvest Date** | The date on which the Crop was harvested. | Date |
-| **Identifiers** | Any identifiers for this Crop. | Array of [Identifiers](/resource-types/common.md#identifier) |
-| **Maturity Date** | The date on which the Crop reached maturity | Date |
-| **Name** | The name of the Crop if present. | String |
-| **Taxonomic Name** | The scientific name for this Crop. | String |
-| **Variety** | The variety of the Crop. | String |
+| **Establishment Date** | The date on which the crop was planted | Date |
+| **Harvest Date** | The date on which the crop was harvested | Date |
+| **Identifiers** | Any identifiers for this crop | Array of [Identifiers](/resource-types/common.md#identifier) |
+| **Maturity Date** | The date on which the crop reached maturity | Date |
+| **Name** | The name of the crop if present | String |
+| **Taxonomic Name** | The scientific name for this crop | String |
+| **Variety** | The variety of the crop | String |
 
 ---
