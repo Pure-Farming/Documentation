@@ -72,9 +72,9 @@ A call to the Sample analyses endpoint returns the following fields:
 | **Id** | The Id of the Sample analyses | UUID |
 | **Meta** | Metadata about the Sample analyses | Metadata |
 | **Observation Date** | The date of the Sample analyses | Date |
-| **Feature** | The feature that this Sample analyses is linked to | Feature |
+| **Feature** | The feature that this Sample analyses is linked to | [Feature](/resource-types/common.md/#feature)  |
 | **Feature Id** | The identifier for the Feature that this sample analyses is linked to | UUID |
-| **Holding** | The Holding that this Sample Plan is linked to | Feature |
+| **Holding** | The Holding that this Sample Plan is linked to | [Feature](/resource-types/common.md/#feature)  |
 | **Holding Id** | The Identifier for the Holding | UUID |
 | **Phenomenon Time** | The time when the sample analyses was done | Date/Time |
 | **Remark** | Any remarks recorded against this analyses | String |
