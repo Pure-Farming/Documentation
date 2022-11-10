@@ -41,8 +41,7 @@ Get all plots that are linked to the provided holding id.
 GET /data/holdings/{HoldingId}/plots
 ```
 
-Get a list of plots that are linked to the provided holding id.
-
+Get an individual plot based on the plot ID and it's holding ID
 ```
 GET /data/holdings/{HoldingId}/plots/{PlotId}
 ```
