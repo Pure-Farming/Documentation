@@ -50,7 +50,7 @@ GET /data/holdings/{HoldingId}/plots/{PlotId}
 
 ## Response Structure
 
-Plots are a field or a piece of land that is used for planting and reaping crops. Although it is smaller than the holdings but is a quite substantial piece of land. 
+Plots are a field or a piece of land that is used for planting and reaping crops. A holding may have one or more pieces of land ("plots"). A plot will only have one holding that it is part of.
 
 A call to the Plots endpoint returns the following fields:
 
@@ -66,7 +66,7 @@ A call to the Plots endpoint returns the following fields:
   "internalId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "id": "string",
   "meta": {...},
-  "self": "string",
+  "@self": "string",
   "identifiers": [...],
   "links": [...],
   "name": "string"
@@ -75,25 +75,26 @@ A call to the Plots endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Crops** | Provides information on the crops that are currently being grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
-| **Historic Crops** | Provides information on the crops that were historically grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
-| **Activities** | Provides information on the various activities performed on a specific plot.  | Array of [Activities](#activity) |
-| **Classifications** | Any classifications that an individual Plot may have | Array of [Classifications](#classification) |
-| **Centroid** | This is the central point of the plot | GeoJSON Point |
-| **Spatial Feature** | This is the GeoJson Feature that provides the Plot boundaries. | GeoJSON Feature |
+| **Crops** | Information on the crops that are currently being grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
+| **Historic Crops** | Information on the crops that were historically grown on a specific plot | Array of [Crops](/resource-types/crops/index.md#crop) |
+| **Activities** | Information on the various activities performed on a specific plot  | Array of [Activities](#activity) |
+| **Classifications** | Any classifications that an individual plot may have | Array of [Classifications](#classification) |
+| **Centroid** | The location of the center of the plot | GeoJSON Point |
+| **Spatial Feature** | The plot boundaries | GeoJSON Feature |
 | **Total Area** | The total area of the plot | [Total Area](/resource-types/common.md#total-area) |
-| **Id** | The Pure Farming ID of the Plot. | String |
-| **Meta** | Metadata about the Plot | [Metadata](/resource-types/common.md#metadata) |
-| **Self** | A link to itself to allow for navigation | URL |
-| **Identifiers** | Any identifiers for this Plot | Array of [Identifiers](/resource-types/common.md#identifier) |
-| **Links** | Any links relevant to this Plot | Array of [Links](/resource-types/common.md#link) |
-| **Name** | The name of the Plot, if present. | String |
+| **Id** | The Pure Farming ID of the plot | String |
+| **Meta** | Metadata about the plot | [Metadata](/resource-types/common.md#metadata) |
+| **@Self** | A link to this specific plot record | URL |
+| **Identifiers** | Any identifiers for this plot | Array of [Identifiers](/resource-types/common.md#identifier) |
+| **Links** | Any links relevant to this plot | Array of [Links](/resource-types/common.md#link) |
+| **Name** | The user-friendly name of the plot | String |
 
 ---
 
 ## Activity
 
-It provides information on the various activities performed on the plot. For instance, It can be plantation of a crop, harvesting, or some other such activity.
+Information on the various activities performed on the plot. 
+For instance: planting a crop, harvesting, or some other such activity
 
 ```json
 {
@@ -112,16 +113,20 @@ It provides information on the various activities performed on the plot. For ins
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Id** | The Identifier for this Activity | [Identifier](/resource-types/common.md#identifier) |
-| **IsPrimary** | Determines whether the Activity is the primary activity of the plot | Boolean |
-| **Name** | The name of the Activity | String |
-| **Productive Area** | The productive area relevant to this Activity | [Total Area](/resource-types/common.md#total-area) |
+| **Id** | The Identifier for this activity | [Identifier](/resource-types/common.md#identifier) |
+| **IsPrimary** | The activity is the primary activity of the plot | Boolean |
+| **Name** | The user-friendly name of the activity | String |
+| **Productive Area** | The productive area relevant to this activity | [Total Area](/resource-types/common.md#total-area) |
 
 ---
 
 ## Classification
 
-It is the systematic arrangement of groups or categories based on certain characteristics or established criteria. Here it is Primary, Secondary, and Tertiary.
+Data can be classified in different ways. Primary classification is the highest level, followed by a Secondary sub-category, and a Tertiary sub-category under that.
+For example:  
+Primary: Rural  
+Secondary: Tracks and Pathways  
+Tertiary: Four-Wheel Drive Track  
 
 ```json
 {
