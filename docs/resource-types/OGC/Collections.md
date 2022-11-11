@@ -172,39 +172,39 @@ It provides the links to collections of metadata and items of holdings, land-cov
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| ID | It shows the type of geographical location. For example, holding | String |
+| ID | It is the ID of the holding | UUID |
 | Links | This shows the links to a specific collection of data related to holdings | An array of links |
-| Href | It shows the URL to the links of collection of metadata of holdings | URL |
-| Rel | This shows the type of link. For instance, this is the link to the collection. | String |
-| Type | It is the type of format used for storing data. For example, json | String |
-| Hreflang | It is the language used in the data like English | String |
-| Title | It is the code of the metadata. For example, holdings | String |
-| Href | It shows the URL to the links of collection of items of holdings | URL |
-| Rel | This shows the type of link. For example, this is the link to the items. | String | 
-| Type | It is the type of format used for storing data. For example, geo+json | String |
-| Hreflang | It is the language used in the data like English | String |
-| Title | It is the code of the items. For example, holdings | String |
-| ID | It shows the type of geographical area. For example, land-covers | String |
+| Href |  | URL |
+| Rel | It shows what type of link it is. For instance, it can be a link to self | String |
+| Type | It is the type of the response in the link. For example, JSON | String |
+| Hreflang | It shows the language of the data in the link. For instance, English, Spanish, etc. | String |
+| Title | It is the title of the metadata | String |
+| Href |  | URL |
+| Rel | It shows what type of link it is. For instance, it can be a link to self | String | 
+| Type | It is the type of the response in the link. For example, JSON | String |
+| Hreflang | It shows the language of the data in the link. For instance, English, Spanish, etc. | String |
+| Title | It is the title of the metadata  | String |
+| ID | It is the ID of the land cover | UUID |
 | Links | This shows the links to a specific collection of data related to land-covers | An array of links |
-| Href | It shows the URL to the links of collection of metadata of land-covers | URL |
-| Rel | This shows the type of link. For example, this is the link to collection. | String |
-| Type | It is the type of format used for storing data. For example, json | String |
-| Hreflang | It is the language used in the data like English | String |
-| Title | It is the code of the metadata. For example, land-covers | String |
-| Href | It shows the URL to the links of collection of items of land-covers | URL |
-| Rel | This shows the type of link. For example, this is the link to the items. | String |
-| Type | It is the type of format used for storing data. For example, geo+json | String |
-| Hreflang | It is the language used in the data like English | String |
-| Title | It is the code of the items. For example, holdings | String |
-| ID | It shows the type of geographical area. For example, plots | String |
+| Href |  | URL |
+| Rel | It shows what type of link it is. For instance, it can be a link to self | String |
+| Type | It is the type of the response in the link. For example, JSON | String |
+| Hreflang | It shows the language of the data in the link. For instance, English, Spanish, etc. | String |
+| Title | It is the title of the metadata | String |
+| Href | It shows the URL of the links to the collection of items of land-covers | URL |
+| Rel | It shows what type of link it is. For instance, it can be a link to self | String |
+| Type | It is the type of the response in the link. For example, JSON | String |
+| Hreflang | It shows the language of the data in the link. For instance, English, Spanish, etc. | String |
+| Title | It is the title of the metadata | String |
+| ID | It is the ID of the plot | UUID |
 | Links | This shows the links to a specific collection of data related to plots | An array of links |
 | Href | It shows the URL to the links of collection of metadata of plots | URL |
-| Rel | This shows the type of link. For example, this is the link to collection. | String |
-| Type | It is the type of format used for storing data. For example, json | String |
-| Hreflang | It is the language used in the data like English | String |
-| Title | It is the code of the metadata. For example, plots | String |
-| Href | It shows the URL to the links to the collection of items of plots | URL |
-| Rel | This shows the type of link. For example, this is the link to the items. | String |
-| Type | It is the type of format used for storing data. For example, geo+json | String |
-| Hreflang | It is the language used in the data like English | String |
-| Title | It is the code of the items. For example, plots | String |
+| Rel |  | String |
+| Type | It is the type of the response in the link. For example, JSON | String |
+| Hreflang | It shows the language of the data in the link. For instance, English, Spanish, etc. | String |
+| Title | It is the title of the metadata | String |
+| Href |  | URL |
+| Rel | It shows what type of link it is. For instance, it can be a link to self | String |
+| Type | It is the type of the response in the link. For example, JSON | String |
+| Hreflang | It shows the language of the data in the link. For instance, English, Spanish, etc. | String |
+| Title | It is the title of the metadata | String |

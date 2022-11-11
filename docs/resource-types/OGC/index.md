@@ -23,15 +23,14 @@ taxonomy:
 
 ## OGC API - Features
 
-Pure farming OGC API confirms OGC API - Features, a multi-part standard that makes it possible to produce, alter, and query spatial data on the web and that lays out guidelines and standards for APIs that seek to share feature data in a consistent manner. Here spatial data is defined as geographical data, thus also known as geospatial data. In other words, OGC API - Features standard allows users to work with spatial data over the web.
-
-Pure farming OGC API - Features standard allows users to access all the collection of data on geographical specifications of holdings, land-covers, and plots, without any authentication. However, if users want to get the collection of items from the APIs, they must be authenticated to access them. 
-
+Pure farming OGC API comply with the OGC Features API, which is a multi-part standard that makes it possible to produce, alter, and query spatial data on the web and that lays out guidelines and standards for APIs that seek to share feature data in a consistent manner. Here spatial data is defined as geographical data, thus also known as geospatial data. In other words, OGC API - Features standard allows users to work with spatial data over the web.
+ Pure farming OGC API - Features standard allows users to access all the collection of geographical specifications of holdings, land-covers, and plots, without any authentication. However, if users want to get the collection of items from the APIs, they must be authenticated to access them.
 The pure farming API uses OAuth2.0 for authentication. Thus, to get authentication, users are required to be passed by OAuth2.0.
+Moreover, if the users are authenticated, they will also get some additional collections of data on the geographical specifications of different holdings, land-covers, and plots that they may have access to. It means that if the users want to get a collection of a specific geographical location like holding, land-cover, or plot that they may have access to, they can also get it provided that they are authenticated with the OGC API OAuth2.0.
 
-Moreover, if the users are authenticated, they will also get some additional collections of geographical specifications of different holdings, land-covers, and plots that they may have access to. To explicate, if the users want to get a collection of a specific geographical location like holding, land-cover, or plot that they may have access to, they can also get it provided that they are authenticated with the OGC API OAuth2.0.
+To learn more about the OGC API - Features standard, you can visit their website at https://ogcapi.ogc.org/features/.
 
-To learn more about the OGC API - Features standard, see the OGC API website at https://ogcapi.ogc.org/features/.
+To learn more about the OGC API - Features standard, see the OGC API website at .
 
 ## Resource Types
 - [OGC - Collections](resource-types/OGC/Collections.md)
