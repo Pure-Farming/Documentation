@@ -34,7 +34,6 @@ Your application can only access private data using Pure Farming APIs if it has 
 
 **Your app needs to send the Client ID and Code Challenge to the following URL:**
 
-https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
 
 Values that are required to be passed in as parameters: 
 
