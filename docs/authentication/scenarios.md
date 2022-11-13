@@ -24,7 +24,7 @@ taxonomy:
 
 The Pure Farming OAuth 2.0 endpoints supports any language or run-time that can make HTTP requests, for example Java, PHP, Python, and ASP.NET. 
 
-Pure Farming APIs use PKCE, short for proof key for code exchange, authorisation code flow. In order to make Pure Farming API requests, users will need to obtain an access token and refresh token. The application needs to redirect the user to the authorisation endpoint https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth with the client ID and code challenge.  
+Pure Farming APIs use proof key for code exchange (PKCE) authorisation code flow. In order to make Pure Farming API requests, users will need to obtain an access token and refresh token. The application needs to redirect the user to the authorisation endpoint https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth with the client ID and code challenge.  
 
 If the user is logged in, they will be redirected to the application with the authorisation code. If they are not logged in, they would need to log in. Once they log in, they will be redirected to the application with the authorisation code. The application needs to return this code in exchange for the access token and refresh token, but while doing so it also needs to send the code value it initially sent when the application submitted an authorisation request to the token endpoint. 
 
