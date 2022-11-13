@@ -14,11 +14,11 @@ taxonomy:
 
 # Basic Steps
 All applications need to follow a basic pattern when accessing Pure Farming APIs using OAuth 2.0. Here are the steps: 
-- [**Step 1:** Obtain Client ID and Client Secret](#step1)
-- [**Step 2:** Redirect the User’s browser to the Authorisation Endpoint with the Client ID and Code Challenge](#step2)
-- [**Step 3:** Send Authorization Code and Code Verifier](#step3)
-- [**Step 4:** Send Access Token to get Data](#step4)
-- [**Step 5:** Refresh the access token](#step5)
+- [**Step 1:** Obtain Client ID and Client Secret](#step-1:-obtain-client-id-and-client-secret)
+- [**Step 2:** Redirect the User’s browser to the Authorisation Endpoint with the Client ID and Code Challenge](#step-2:-redirect-the-user’s-browser-to-the-authorisation-endpoint-with-the-client-id-and-code-challenge)
+- [**Step 3:** Send Authorization Code and Code Verifier](#step-3:-send-authorization-code-and-code-verifier)
+- [**Step 4:** Send Access Token to get Data](#step-4:-send-access-token-to-get-data)
+- [**Step 5:** Refresh the access token](#step-5:-refresh-the-access-token)
 
 ---
 
