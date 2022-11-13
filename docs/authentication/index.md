@@ -42,6 +42,6 @@ OAuth 2.0 not only provides strong authentication, but also has the ability to s
 ## Endpoints
 **Authorisation:** `https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth`
 
-**Token:** https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
+**Token:** `https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token`
 
 **User Info:** ~https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/userinfo`
