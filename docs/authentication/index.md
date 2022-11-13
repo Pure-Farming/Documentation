@@ -13,7 +13,7 @@ taxonomy:
 ---
 
 # OAuth 2.0
-OAuth 2.0, short for Open Authorisation, is an authorisation protocol that enables applications to obtain limited access to resources on an HTTP service. This authorisation standard protects user data by providing access to the data without revealing the user’s identity or credentials. It uses username and password tokens instead.  
+OAuth 2.0 is an authorisation protocol that enables applications to obtain limited access to resources on an HTTP service. This authorisation standard protects user data by providing access to the data without revealing the user’s identity or credentials. It uses username and password tokens instead.  
 
 Pure Farming APIs use the OAuth 2.0 protocol for authentication. This informational guide provides an overview of OAuth 2.0, OAuth 2.0 roles, and the process of accessing Pure Farming APIs using OAuth 2.0. 
 
