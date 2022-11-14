@@ -12,8 +12,8 @@ taxonomy:
 
 ---
 # Scenarios
-- [Applications authenticated with Pure Farming](#authenticated)
-- [Applications not authenticated with Pure Farming](#NotAuthenticated)
+- [Applications authenticated with Pure Farming](#applications-authenticated-with-pure-farming)
+- [Applications not authenticated with Pure Farming](#applications-not-authenticated-with-pure-farming)
 
 ---
 
