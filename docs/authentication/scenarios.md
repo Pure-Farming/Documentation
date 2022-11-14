@@ -2,7 +2,7 @@
 
 title: Scenarios
 menu_order: 1
-post_status: draft
+post_status: publish
 post_excerpt: Authentication - Scenarios
 taxonomy:
     category:
@@ -20,7 +20,7 @@ taxonomy:
 ## Applications authenticated with Pure Farming
 **Prerequisite-** Third-party businesses/Third-party application developers need to send an email to info@purefarming.com to get the client ID and client secret. 
 
-!(OAuth_Scenarios_ClientSecret.svg)
+![Client Secrets](_images/OAuth_Scenarios_ClientSecret.svg "Client Secrets")
 
 The Pure Farming OAuth 2.0 endpoints supports any language or run-time that can make HTTP requests, for example Java, PHP, Python, and ASP.NET. 
 
@@ -33,7 +33,7 @@ Once the access token and refresh token are received, the application needs to s
 Authorization: Bearer <token>
 ```
 
-![Scenarios](OAuth_Scenarios_App_endpoints.svg)
+![Scenarios](_images/OAuth_Scenarios_App_endpoints.svg)
 
 **Note:** The Pure Farming OAuth 2.0 endpoint also supports applications that are installed on devices like smartphones, tablets, and computers as well as JavaScript applications that run in a browser. The same process mentioned above can be used by installed applications and JavaScript applications for accessing Pure Farming APIs.  
 
@@ -42,7 +42,7 @@ Authorization: Bearer <token>
 ## Applications not authenticated with Pure Farming
 Pre-requisite– Third-party businesses need to send an email to developer-support@purefarming.com to get the client ID and client secret. 
 
-![Non-Pure Farming Applications](OAuth_Scenarios_NotAuth.svg)
+![Non-Pure Farming Applications](_images/OAuth_Scenarios_NotAuth.svg)
 
 The Pure Farming OAuth 2.0 endpoint also supports applications that are not authenticated with Pure Farming. For instance, if Application X is authenticated with Pure Farming and it is allowing Application Y to access Pure Farming’s APIs on its behalf, Application Y can do so.  
 

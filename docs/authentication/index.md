@@ -2,7 +2,7 @@
 
 title: Authentication
 menu_order: 1
-post_status: draft
+post_status: publish
 post_excerpt: Authentication
 taxonomy:
     category:
