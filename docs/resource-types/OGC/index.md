@@ -30,8 +30,6 @@ Moreover, if the users are authenticated, they will also get some additional col
 
 To learn more about the OGC API - Features standard, you can visit their website at https://ogcapi.ogc.org/features/.
 
-To learn more about the OGC API - Features standard, see the OGC API website at .
-
 ## Resource Types
 - [OGC - Collections](resource-types/OGC/Collections.md)
 Collections provides list of data on geographical specifications of holdings, plots and land-covers.
