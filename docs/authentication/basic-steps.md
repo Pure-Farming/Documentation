@@ -1,6 +1,6 @@
 ---
 
-title: Authentication - Basic Steps
+title: Basic Steps
 menu_order: 1
 post_status: publish
 post_excerpt: Authentication - Basic Steps
@@ -38,10 +38,11 @@ Your application can only access private data using Pure Farming APIs if it has 
 Values that are required to be passed in as parameters: 
 
 **response_type = code**  
-**client_id:** Issued when you create your app **scope**: Permissions to request (see below)  
-**redirect_uri:** The URL on your server to redirect back to 
-**state:** A unique string to be passed back on completion (optional) (see below)  
-**code_challenge:** The code challenge your app has generated as described below  
+**client_id =** Issued when you create your app  
+**scope =** Permissions to request (see below)  
+**redirect_uri =** The URL on your server to redirect back to  
+**state =** A unique string to be passed back on completion (optional) (see below)  
+**code_challenge =** The code challenge your app has generated as described below  
 **code_challenge_method =** The type of code challenge, can be “S256” or “plain”  
 
 ### Redirect URIs  

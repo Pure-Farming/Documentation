@@ -1,6 +1,6 @@
 ---
 
-title: Authentication - How It Works
+title: How It Works
 menu_order: 1
 post_status: publish
 post_excerpt: Authentication - How It Works

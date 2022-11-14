@@ -1,6 +1,6 @@
 ---
 
-title: Authentication - Glossary
+title: Glossary
 menu_order: 1
 post_status: publish
 post_excerpt: Authentication - Glossary

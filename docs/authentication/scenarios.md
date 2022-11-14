@@ -30,12 +30,10 @@ If the user is logged in, they will be redirected to the application with the au
 
 Once the access token and refresh token are received, the application needs to store the access and refresh token and associated configuration securely. Finally, the application can call the Pure Farming APIs using the Authorisation header as follows:
 ```
-{
-    Authorization: Bearer <token>
-}
+Authorization: Bearer <token>
 ```
 
-!(OAuth_Scenarios_App_endpoints.svg)
+![Scenarios](OAuth_Scenarios_App_endpoints.svg)
 
 **Note:** The Pure Farming OAuth 2.0 endpoint also supports applications that are installed on devices like smartphones, tablets, and computers as well as JavaScript applications that run in a browser. The same process mentioned above can be used by installed applications and JavaScript applications for accessing Pure Farming APIs.  
 
@@ -44,7 +42,7 @@ Once the access token and refresh token are received, the application needs to s
 ## Applications not authenticated with Pure Farming
 Pre-requisite– Third-party businesses need to send an email to developer-support@purefarming.com to get the client ID and client secret. 
 
-!(OAuth_Scenarios_NotAuth.svg)
+![Non-Pure Farming Applications](OAuth_Scenarios_NotAuth.svg)
 
 The Pure Farming OAuth 2.0 endpoint also supports applications that are not authenticated with Pure Farming. For instance, if Application X is authenticated with Pure Farming and it is allowing Application Y to access Pure Farming’s APIs on its behalf, Application Y can do so.  
 
@@ -57,14 +55,12 @@ Once the application makes a request to the authorisation endpoint, it will get 
 Once the access token and refresh token are received, the application needs to store the access and refresh token and associated configuration securely. Finally, the application can call the Pure Farming APIs using the Authorisation header as follows:
 
 ```
-{
-    Authorization: Bearer <token>
-}
+Authorization: Bearer <token>
 ```
 
-!(OAuth_Scenarios_App_endpoints.svg)
+![Endpoints](OAuth_Scenarios_App_endpoints.svg)
 
 The application can use the refresh token to get a new access token by making a request to: https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
 
-!(OAuth_Scenarios_NotAuth.svg)
+![Non-Pure Farming](OAuth_Scenarios_NotAuth.svg)
 
