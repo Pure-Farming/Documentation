@@ -39,6 +39,13 @@ OAuth 2.0 not only provides strong authentication, but also has the ability to s
 
 ---
 
+## Sections to this Guide
+
+- [How it Works](/authentication/how-it-works.md)
+- [Basic Steps](/authentication/basic-steps.md)
+- [Scenarios](/authentication/scenarios.md)
+- [Glossary](/authentication/glossary.md)
+
 ## Endpoints
 **Authorisation:** `https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth`
 
