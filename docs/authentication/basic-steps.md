@@ -37,7 +37,7 @@ Your application can only access private data using Pure Farming APIs if it has 
 
 Values that are required to be passed in as parameters: 
 
-**response_type = code** . 
+**response_type = code**  
 **client_id:** Issued when you create your app **scope**: Permissions to request (see below)  
 **redirect_uri:** The URL on your server to redirect back to 
 **state:** A unique string to be passed back on completion (optional) (see below)  
