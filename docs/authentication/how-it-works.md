@@ -13,6 +13,7 @@ taxonomy:
 ---
 
 # How does OAuth 2.0 work?
+
 OAuth 2.0 is an authorisation framework for enabling resource sharing in a secured manner through a sequence of steps where the resource owner permits a client application to a certain protected resource for a limited time. OAuth defines four roles, with a clean separation of their concerns. This, together with the shifting of security-related complexity into a dedicated authorisation server, makes it possible to roll out OAuth 2.0 protected applications and services quickly and with consistent security properties.  
 
 - **Resource owner:** The resource owner is the person who is giving access to some portion of their account. The application’s access to the user’s account is limited to the scope of the authorisation granted (e.g., read or write access) 

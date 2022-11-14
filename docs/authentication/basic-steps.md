@@ -37,29 +37,29 @@ Your application can only access private data using Pure Farming APIs if it has 
 
 Values that are required to be passed in as parameters: 
 
-**response_type = code**
-**client_id:** Issued when you create your app **scope**: Permissions to request (see below)
-**redirect_uri:** The URL on your server to redirect back to
-**state:** A unique string to be passed back on completion (optional) (see below)
-**code_challenge:** The code challenge your app has generated as described below
-**code_challenge_method =** The type of code challenge, can be “S256” or “plain” 
+**response_type = code** . 
+**client_id:** Issued when you create your app **scope**: Permissions to request (see below)  
+**redirect_uri:** The URL on your server to redirect back to 
+**state:** A unique string to be passed back on completion (optional) (see below)  
+**code_challenge:** The code challenge your app has generated as described below  
+**code_challenge_method =** The type of code challenge, can be “S256” or “plain”  
 
-**Redirect URIs**
+### Redirect URIs  
 - All redirect URIs must be https (except for localhost). 
 - Custom URL schemes are not supported. 
 - Mobile Clients may use a custom URL scheme (e.g. oob://), but it is recommended to use the HTTPS Scheme for registered redirect URIs. 
 
-**Scopes**
-Scope parameter is a list of OAuth scopes separated by a space. It indicates the data that your app will be able to access. You should request a minimum scopes requirement for whatever the user is doing at a particular time. 
+### Scopes
+Scope parameter is a list of OAuth scopes separated by a space. It indicates the data that your app will be able to access. You should request a minimum scopes requirement for whatever the user is doing at a particular time.  
 
-For example, common scopes are: 
+For example, common scopes are:  
 
 - openid 
 - profile 
 - email 
 - offline_access 
 
-**State** 
+## State  
 
 The state parameter can be used to avoid forgery attacks. You may pass the unique value to the user you are sending through authorisation. The value will be passed back once the authorisation is completed. 
 
@@ -83,11 +83,11 @@ You are required to send this Authorization Code along with Code Verifier to get
 
 The request body is required to contain the grant type (authorization_code), client_id, code, redirect_uri and code verifier. 
 
-**grant_type** = authorization_code
-**client_id** = The client ID of your app
-**code** = The authorization code you received in the callback
-**redirect_uri** = The same redirect URI that was used when requesting the code
-**code_verifier** = The code verifier that you have just created 
+**grant_type** = authorization_code  
+**client_id** = The client ID of your app  
+**code** = The authorization code you received in the callback  
+**redirect_uri** = The same redirect URI that was used when requesting the code  
+**code_verifier** = The code verifier that you have just created  
 
 ```
 {
@@ -103,9 +103,9 @@ The request body is required to contain the grant type (authorization_code), cli
 }
 ```
 
-The response from the authorisation server will include: 
+The response from the authorisation server will include:  
 - **code:** Temporary code that can only be exchanged once and comes with an expiry time of 5 minutes after its issuance. 
-- **state:** If the states didn’t match, the request may have been created by a third party. In this case, you should abort the process. 
+- **state:** If the states didn’t match, the request may have been created by a third party. In this case, you should abort the process.  
 
 **Note:** If somehow the error occurs or the user denies the request, you will be redirected back to redirect_uri with an error parameter. 
 

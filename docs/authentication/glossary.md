@@ -14,6 +14,8 @@ taxonomy:
 
 # Glossary
 
+| Term | Description |
+| ---- | ----------- |
 | **Authorisation Grant** | Gives the app permission to retrieve an access token on behalf of the end user. OAuth 2.0 defines four specific grant types namely, authorisation code, implicit, resource owner password credentials and client credentials. |
 | **Access Token** | An access token is a long string of characters that serves as a credential used to access protected resources. |
 | **Protected Resource** | It is the data owned by the resource owner. For example, the user’s contact list, account information or other sensitive data. |
