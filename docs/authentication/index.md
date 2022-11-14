@@ -12,10 +12,10 @@ taxonomy:
 
 ---
 
-# OAuth 2.0
-OAuth 2.0 is an authorisation protocol that enables applications to obtain limited access to resources on an HTTP service. This authorisation standard protects user data by providing access to the data without revealing the user’s identity or credentials. It uses username and password tokens instead.  
+# Authentication  
+***Pure Farming*** uses the OAuth 2.0 protocol for authentication. This informational guide provides an overview of OAuth 2.0, OAuth 2.0 roles, and the process of accessing Pure Farming APIs using OAuth 2.0. 
 
-Pure Farming APIs use the OAuth 2.0 protocol for authentication. This informational guide provides an overview of OAuth 2.0, OAuth 2.0 roles, and the process of accessing Pure Farming APIs using OAuth 2.0. 
+OAuth 2.0 is an authorisation protocol that enables applications to obtain limited access to resources on an HTTP service. This authorisation standard protects user data by providing access to the data without revealing the user’s identity or credentials. It uses username and password tokens instead.  
 
 **Note:** If you are a non-technical reader and are just interested in knowing more about OAuth 2.0 and how applications can access Pure Farming’s APIs using OAuth 2.0, please check out the sections in the menu on the left.
 
@@ -47,8 +47,17 @@ OAuth 2.0 not only provides strong authentication, but also has the ability to s
 - [Glossary](/authentication/glossary.md)
 
 ## Endpoints
-**Authorisation:** `https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth`
+**Authorisation:**  
+```
+https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth
+```
 
-**Token:** `https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token`
+**Token:**  
+```
+https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token
+```
 
-**User Info:** `https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/userinfo`
+**User Info:**  
+```
+https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/userinfo
+```

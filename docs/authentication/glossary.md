@@ -1,9 +1,9 @@
 ---
 
-title: Glossary
+title: Authentication - Glossary
 menu_order: 1
-post_status: draft
-post_excerpt: Glossary
+post_status: publish
+post_excerpt: Authentication - Glossary
 taxonomy:
     category:
         - root

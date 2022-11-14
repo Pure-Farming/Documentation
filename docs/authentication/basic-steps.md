@@ -1,9 +1,9 @@
 ---
 
-title: Basic Steps
+title: Authentication - Basic Steps
 menu_order: 1
-post_status: draft
-post_excerpt: Basic Steps
+post_status: publish
+post_excerpt: Authentication - Basic Steps
 taxonomy:
     category:
         - root
@@ -65,9 +65,7 @@ The state parameter can be used to avoid forgery attacks. You may pass the uniqu
 
 ***Note:** *Users can create Code Challenge by performing SHA256 hash on the code verifier and then by Base64url encoding the hash.* 
 ```
-{
-  code_challenge = BASE64URL-ENCODE(SHA256(ASCII(code_verifier))) 
-}
+code_challenge = BASE64URL-ENCODE(SHA256(ASCII(code_verifier))) 
 ```
 
 Once a user has been authenticated (entered their username and password) they will be redirected back to the redirect URL, and all subsequent steps will happen via a back-channel – not visible to the user. 
@@ -90,17 +88,15 @@ The request body is required to contain the grant type (authorization_code), cli
 **code_verifier** = The code verifier that you have just created  
 
 ```
-{
-    POST https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
-    
-    Content-Type: application/x-www-form-urlencoded 
-    
-    grant_type=authorization_code 
-    &client_id=zzzzzzzz 
-    &code=xxxxxx 
-    &redirect_uri=https://myapp.com/redirect 
-    &code_verifier=yyyyyyy
-}
+POST https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
+
+Content-Type: application/x-www-form-urlencoded 
+
+grant_type=authorization_code 
+&client_id=zzzzzzzz 
+&code=xxxxxx 
+&redirect_uri=https://myapp.com/redirect 
+&code_verifier=yyyyyyy
 ```
 
 The response from the authorisation server will include:  
@@ -129,24 +125,22 @@ Token expiry times:
 Here, the Access token is JSON Web Token (JWT). It can be easily decoded to a JSON object containing information about the user as well as the performed authentication. One of the most useful values is authentication_event_id. It can be used to find out whether the user is connected in the current authorisation flow. 
 ```
 {
-    { 
-    "nbf": 1589363023, 
-    "exp": 1589364823, 
-    "iss": "https://identity.purefarming.com", 
-    "aud": "https://identity.purefarming.com/resources", 
-    "client_id": "91E5715B1199038080D6D0296EBC1648", 
-    "sub": "a3a4dbafh3495a808ed7a7b964388f53", 
-    "auth_time": 1589361892, 
-    "global_session_id": "ac2202575e824af3a181c50fcaa65c3c", 
-    "jti": "4e7747cec4ce54d6512b4b0775166c5f", 
-    "authentication_event_id": "d0ddcf81-f942-4f4d-b3c7-f98045204db4", 
-    "scope": [ 
-        "email", 
-        "profile", 
-        "openid", 
-        "offline_access" 
-    ] 
-    } 
+  "nbf": 1589363023, 
+  "exp": 1589364823, 
+  "iss": "https://identity.purefarming.com", 
+  "aud": "https://identity.purefarming.com/resources", 
+  "client_id": "91E5715B1199038080D6D0296EBC1648", 
+  "sub": "a3a4dbafh3495a808ed7a7b964388f53", 
+  "auth_time": 1589361892, 
+  "global_session_id": "ac2202575e824af3a181c50fcaa65c3c", 
+  "jti": "4e7747cec4ce54d6512b4b0775166c5f", 
+  "authentication_event_id": "d0ddcf81-f942-4f4d-b3c7-f98045204db4", 
+  "scope": [ 
+    "email", 
+    "profile", 
+    "openid", 
+    "offline_access" 
+  ] 
 }
 ```
 
@@ -156,9 +150,7 @@ Here, the Access token is JSON Web Token (JWT). It can be easily decoded to a JS
 Once you get the Access Token and Refresh Token you are required to store both along with associated configuration securely. Once done, you can call the Pure Farming APIs using the Authorization header as follows: **Authorization: Bearer <token>** to get data. 
 
 ```
-{
-    Authorization: Bearer <token> 
-}
+Authorization: Bearer <token> 
 ```
 
 ---
@@ -169,9 +161,7 @@ For security purposes, access tokens are generally valid for a short amount of t
 To obtain a new access token, the application can use the refresh token by making a request to the token endpoint:
 
 ```
-{
-    https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token
-}
+https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token
 ```
 
 **Refreshing Access & Refresh Tokens**
@@ -182,7 +172,7 @@ As discussed earlier, an Access Token expires after 30 minutes. You can refresh 
 
 For getting a new access token, you need to post to your previously issued refresh token to the token endpoint. 
 
-https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
+`https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token`
 
 The request body should contain the grant type and refresh token 
 
@@ -191,15 +181,13 @@ The request body should contain the grant type and refresh token
 - **refresh_token** = Your refresh token 
 
 ```
-{
-    POST https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
-    
-    Content-Type: application/x-www-form-urlencoded 
-    
-    grant_type=refresh_token 
-    &client_id=zzzzzzz 
-    &refresh_token=xxxxxx 
-}
+POST https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
+
+Content-Type: application/x-www-form-urlencoded 
+
+grant_type=refresh_token 
+&client_id=zzzzzzz 
+&refresh_token=xxxxxx 
 ```
 You will receive a new Access Token and possibly a new Refresh Token in the response. 
 
