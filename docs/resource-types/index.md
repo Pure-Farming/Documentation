@@ -36,12 +36,39 @@ The Data API is based on the REST standard, where URLs represent collections of 
 ## Resource Types
 - [Common Objects](/resource-types/common.md)  
   Items which are common across all Resource Types.
-- [Crops - Sample Plans](/resource-types/crops/sample-plan.md)  
-  Sample Plans provides information about a planned sampling activity for a crop  at a geospatial feature (paddock, field, or block) level.
-- [Crops - Sample Analysis](/resource-types/crops/sample-analysis.md)  
-  Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
-- [Crops - Load Receivals](/resource-types/crops/load-receival.md)  
-  Load Receivals provide information about the arrival of harvested crop loads to a location. 
+- [Core](/resource-types/core)
+  Core resource types, which are common across most data-requests.
+  - [Holdings](/resource-types/core/holdings.md)
+    A Holding is a representation of a working Farm, whether it be comprised of multiple areas of land (contiguous or non-contiguous) or not, it is represented as a Holding. An individual Holding may have spatial information, or may not, if present it may be a centroid (point), or spatial feature (feature) or both.
+  - [Plots](/resource-types/core/plots.md)
+    Plots are a field or a piece of land that is used for planting and reaping crops. 
+    Although it is smaller than the holdings but is a quite substantial piece of land. 
+- [Crops](/resource-types/crops)  
+  Resource types available for Crops.
+  - [Crops - Sample Plans](/resource-types/crops/sample-plan.md)  
+    Sample Plans provides information about a planned sampling activity for a crop  at a geospatial feature (paddock, field, or block) level.
+  - [Crops - Sample Analysis](/resource-types/crops/sample-analysis.md)  
+    Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
+  - [Crops - Load Receivals](/resource-types/crops/load-receival.md)  
+    Load Receivals provide information about the arrival of harvested crop loads to a location.  
+  - [Crops - Work Record](/resource-types/crops/work-record.md)
+    Work records provide information about agricultural work and operations performed on a piece of land or crop.
+- [Livestock](/resource-types/livestock)
+  Resource types available for Livestock.
+  - [Animals](/resource-types/livestock/animals.md)  
+    Animal provides information about individual animals.
+  - [Movements](/resource-types/livestock/movements)
+    Provides information about Movements that can be recorded against animals.
+    - [Birth Registrations](/resource-types/livestock/movements/birth-registrations.md)
+      Provides information about Birth Registrations for individual Animals.
+    - [Animal Arrival](/resource-types/livestock/movements/animal-arrival.md)
+      Provides information about Animal Arrivals for individual Animals.
+    - [Animal Departure](/resource-types/livestock/movements/animal-departure.md)
+      Provides information about Animal Departures for individual Animals.
+    - [Animal Death](/resource-types/livestock/movements/animal-death.md)
+      Provides information about Animal Deaths for individual Animals.
+    - [Consignment](/resource-types/livestock/movements/consignment.md)
+      Provides information about animal movements that is common accross the other movement resource types
 
 ---
 

@@ -1,4 +1,4 @@
-﻿---
+---
 
 title: Birth Registration
 menu_order: 1
