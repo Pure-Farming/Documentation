@@ -78,7 +78,7 @@ A call to the Load receivals endpoint returns the following fields:
 | **Id** | It is the ID of the load receival | String |
 | **Meta** | Metadata about the load receival | Metadata |
 | **Self** | A link to the specific Load receival | URI |
-| **Identifiers** | Any identifiers for this Load receival | Array of Identifiers |
+| **Identifiers** | Any identifiers for this Load receival | Array of [Identifiers](/resource-types/common.md/#identifier) |
 | **Links** | Any links relevant to this Load receival | Array of Links |
 | **Name** | The name of the Load receival | String |
 
@@ -124,7 +124,7 @@ This represents an individual load that has been received.
 | **Units** | The standardised unit. For instance, tons. | String |
 | **ID** | The ID of the load receival | String |
 | **Self** | A link to the specific load receival | URI |
-| **Identifiers** | These are any identifiers for this load receival | Array of Identifiers |
+| **Identifiers** | These are any identifiers for this load receival | Array of [Identifiers](/resource-types/common.md/#identifier) |
 | **Name** | This is the name of the load receival | String |
 | **Links** | Any links to other relations for this receival | Array of Links |
 
