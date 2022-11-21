@@ -18,4 +18,4 @@ taxonomy:
 
 Below are the currently provided resource types for Dairy.
 
-- [Animals](/resource-types/dairy/milk-collection.md)
+- [Milk Collection](/resource-types/dairy/milk-collection.md)
