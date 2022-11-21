@@ -14,7 +14,7 @@ taxonomy:
 
 ---
 
-# Resource Types: Livestock
+# Resource Types: Dairy
 
 Below are the currently provided resource types for Dairy.
 
