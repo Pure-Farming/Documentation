@@ -16,7 +16,7 @@ taxonomy:
 # Resource Type: Dairy
 
 - [URLs](#urls)
-- [Response Structure]()
+- [Response Structure](#response-structure)
 
 ---
 
