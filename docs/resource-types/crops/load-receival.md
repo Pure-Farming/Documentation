@@ -134,19 +134,7 @@ This represents an individual load that has been received.
 
 This provides all the details about the destination of the load. 
 
-```json
-{ 
-  "consignmentDate": "2022-07-08T07:24:20.249Z", 
-  "feature": { …  }, 
-  "organisation": { … } 
-} 
-```
-
-| Response Item | Description | Data Type |
-| ------------- | ----------- | --------- |
-| **Consignment date** | The date on which the crops arrived at a location | Date |
-| **Feature** | The feature that this load receival is linked to | [Feature](/resource-types/common.md/#feature)  |
-| **Organisation** | The organisation that this destination belongs to | Organisation |
+See the definition in [load resource common objects](/resource-types/load-resource.md#destination).
 
 ---
 
@@ -181,16 +169,4 @@ This provides all the information about the organisation including the organisat
 
 This provides all the information about the place where the load came from. 
 
-```json
-{ 
-  "consignmentDate": "2022-07-08T07:24:20.249Z", 
-  "feature": { … }, 
-  "organisation": { … } 
-} 
-```
-
-| Response Item | Description | Data Type |
-| ------------- | ----------- | --------- |
-| **Consignment date** | The date on which the crops arrived at a location | Date |
-| **Feature** | The feature that this load receival is linked to | [Feature](/resource-types/common.md/#feature)  |
-| **Organisation** | The organisation that this source belongs to | Organisation |
+See the definition in [load resource common objects](/resource-types/load-resource.md#source).
