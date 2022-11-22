@@ -15,11 +15,11 @@ taxonomy:
 
 # Common Objects
 
-- [Link](#link)
+- [Links](#links)
 
 ---
 
-## Link
+## Links
 
 A collection of data may be related to other data collections. A `link` is a link to a related collection or sub-collection. This is defined by RFC 8288
 
@@ -34,7 +34,7 @@ A collection of data may be related to other data collections. A `link` is a lin
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| Href | The URL of the collection or resource | URL |
-| Rel | The type of relationship this link has to the collection. [RFC8288](https://docs.ogc.org/is/18-062r2/18-062r2.html#toc16) defines some of these, but PureFarming has additional ones such as `items` for items within a collection | String |
+| Href | The URL of for this Link | URL |
+| Rel | The type of relationship this link has to the collection. [OGC Features API Standard - Links](https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_link_relations) defines these | String |
 | Type | The type of data provided by the URL. The same as a Content-Type header | String |
 | Hreflang | The language of the data in the link. For instance, English, Spanish, etc. | String |

@@ -13,7 +13,7 @@ taxonomy:
 
 ---
 
-# Resource Type: OGC – Conformance
+# OGC: Conformance
 
 - [URLs](#urls)
 - [Response Structure](#response-structure)
@@ -27,7 +27,7 @@ Get all the links to the standards that OGC API conforms to.
 GET /ogc/conformance
 ```
 
-## Conformance
+## Response Structure
 A call to the conformance endpoint returns the following fields:
 
 ```json
