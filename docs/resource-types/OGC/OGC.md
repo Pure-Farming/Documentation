@@ -41,8 +41,8 @@ A call to the OGC endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| Title | This is the title of the OGC API landing page | String |
-| Description | It shows the description of the OGC API landing page | String |
+| Title | This is the title of the OGC API landing page that provides links to the API definition, the conformance statements, and the feature collections in the data set. | String |
+| Description | It provides the description of the OGC API landing page that provides links to the API definition, the conformance statements, and the feature collections in the data set. | String |
 | Links | This provides the links that show the capabilities of different APIs that you may have access to | An array of links |
 
 ## links

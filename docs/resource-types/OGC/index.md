@@ -21,6 +21,15 @@ taxonomy:
 - [Frequently Asked Questions](#frequently-asked-questions)
 ---
 
+## Introduction
+
+OGC API allows users to find out the geographical features of a farm. With the help of the OGC API, users can find out the boundary, center point, bounding box, etc. of a holding, plot or land cover. The OGC API has three endpoints namely, Collections, OGC and Conformance. 
+
+Collections- The collections endpoint helps you get a list of all feature collections specified in a standard that the server conforms to or metadata describing the collections of data available from the OGC API. 
+OGC- The OGC endpoint provides information on the landing page that has the links to the API definition, the conformance statements and to the feature collection in the data set. 
+Conformance- This endpoint provides information about the standards that the OGC API conforms to. 
+The OGC API is based on the REST standard, where URLs represent data, and actions on the data are performed using HTTP verbs (Such as GET for retrieving data and POST for creating data). Any programming language capable of performing HTTPs requests can be used. Data returned from API uses the JSON standard. 
+
 ## OGC API - Features
 
 Pure farming OGC API comply with the OGC Features API, which is a multi-part standard that makes it possible to produce, alter, and query spatial data on the web and that lays out guidelines and standards for APIs that seek to share feature data in a consistent manner. Here spatial data is defined as geographical data, thus also known as geospatial data. In other words, OGC API - Features standard allows users to work with spatial data over the web.
@@ -78,20 +87,6 @@ To make an API call, firstly, the users need to find their desired API endpoint 
 
 Data that describes everything with a spatial extent, like size, shape, or position, is known as spatial data. This spatial data is also known as geospatial data when describing information about the things that are positioned relative to the earth. 
 
-### What are the components of HTTP requests?
-
-There are 5 following components of HTTP requests:
-
-1. Verbs showing HTTP methods like GET, PUT, POST, and DELETE for retrieving, creating, updating or replacing, and deleting the resources, respectively. 
-2. URI (Uniform Resource Identifier): URI is the identifier for the resource on the server.
-3. HTTP version: It demonstrates the version like - HTTP V1.1.
-4. Request Header: The Request Header contains metadata for the HTTP request message. Metadata can be a client type, a client-supported format, a message body format, a cache setting, etc.
-5. Request Body: It demonstrates message content or resource representation.
-
-### What is Resource in REST?
-
-REST architecture considers each type of content as a resource i.e., text files, HTML pages, images, videos, and dynamic business information. REST server provides the ability to access the resources and modifies them. By using URIs or global IDs, users can identify each resource.
-
 ### Do I need authentication for all the API calls that I want to make?
 
 No, the users do not need to get authentication for all the API calls. They can easily make an API call to get the collections of daṭa from the API, but they are required to get authentication if they want to get the items from the API.
@@ -104,7 +99,7 @@ Conformance gives a list that declares modules implemented by the API. These mod
 
 ### I am having trouble accessing data. Whom shall I contact to?
 
-If you are facing any trouble accessing data or making API calls, write to us at info@mapof.ag. Our team will reach out to you and resolve your issue within 24 hours.
+If you are facing any trouble accessing data or making API calls, write to us at info@mapof.ag. 
 
 ### Where can I get more help?
 

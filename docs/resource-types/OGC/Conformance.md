@@ -38,7 +38,7 @@ A call to the conformance endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| ConformsTo | This shows what standards OGC APIs Conforms to. | An array of conformsTo |
+| ConformsTo | This shows the standards that the OGC APIs Conforms to. This includes ogcapi - features related to core, oas30, html, geojson, and gmlsf0 | An array of conformsTo |
 
 ## ConformsTo
 
