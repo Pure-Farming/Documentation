@@ -22,44 +22,44 @@ taxonomy:
 
 ## URLs
 
-Get all load receivals that you have access to for a given Holding, the HoldingId is required in this case. 
+Get all load receivals that you have access to for a given Holding, the HoldingId is required in this case.
 
 ```
 GET /data/holdings/{HoldingId}/crops/load-receivals
 ```
 
-Get an individual load receival for a given holding, both the HoldingId and the Id of the load receival are required. 
+Get an individual load receival for a given holding, both the HoldingId and the Id of the load receival are required.
 
 ```
-GET /data/holdings/{HoldingId}/crops/load-receivals/{Id} 
+GET /data/holdings/{HoldingId}/crops/load-receivals/{Id}
 ```
 
 ---
 
 ## Response Structure
 
-A call to the Load receivals endpoint returns the following fields: 
+A call to the Load receivals endpoint returns the following fields:
 
 ```json
-{ 
-  "loads": [ … ], 
-  "operation": "string", 
-  "priority": 0, 
-  "status": 0, 
-  "feature": { … }, 
-  "featureId": "3fa85f64-5717-4562-b3fc-2c963f66afa6", 
-  "holding": { … }, 
-  "holdingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6", 
-  "observationDate": "2022-07-08T07:24:20.250Z", 
-  "phenomenonTime": "string", 
-  "remark": "string", 
-  "responsible": "string", 
-  "id": "string", 
-  "meta": { … }, 
-  "self": "string", 
-  "identifiers": [ … ], 
-  "links": [ … ], 
-  "name": "string" 
+{
+  "loads": [ … ],
+  "operation": "string",
+  "priority": 0,
+  "status": 0,
+  "feature": { … },
+  "featureId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "holding": { … },
+  "holdingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "observationDate": "2022-07-08T07:24:20.250Z",
+  "phenomenonTime": "string",
+  "remark": "string",
+  "responsible": "string",
+  "id": "string",
+  "meta": { … },
+  "self": "string",
+  "identifiers": [ … ],
+  "links": [ … ],
+  "name": "string"
 }
 ```
 
@@ -78,7 +78,7 @@ A call to the Load receivals endpoint returns the following fields:
 | **Id** | It is the ID of the load receival | String |
 | **Meta** | Metadata about the load receival | Metadata |
 | **Self** | A link to the specific Load receival | URI |
-| **Identifiers** | Any identifiers for this Load receival | Array of Identifiers |
+| **Identifiers** | Any identifiers for this Load receival | Array of [Identifiers](/resource-types/common.md/#identifier) |
 | **Links** | Any links relevant to this Load receival | Array of Links |
 | **Name** | The name of the Load receival | String |
 
@@ -89,25 +89,25 @@ A call to the Load receivals endpoint returns the following fields:
 This represents an individual load that has been received.
 
 ```json
-{ 
-  "analysis": [ … ], 
-  "crops": [ … ], 
-  "destination": { … }, 
-  "identifiers": [ … ], 
-  "internalId": "3fa85f64-5717-4562-b3fc-2c963f66afa6", 
-  "id": "string", 
-  "links": [ … ], 
-  "logisticUnit": "string", 
-  "meta": { … }, 
-  "name": "string", 
-  "quantity": 0, 
-  "rawUnits": "string", 
-  "rawQuantity": 0, 
-  "self": "string", 
-  "source": { … }, 
-  "status": 0, 
-  "units": "string" 
-} 
+{
+  "analysis": [ … ],
+  "crops": [ … ],
+  "destination": { … },
+  "identifiers": [ … ],
+  "internalId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "id": "string",
+  "links": [ … ],
+  "logisticUnit": "string",
+  "meta": { … },
+  "name": "string",
+  "quantity": 0,
+  "rawUnits": "string",
+  "rawQuantity": 0,
+  "self": "string",
+  "source": { … },
+  "status": 0,
+  "units": "string"
+}
 ```
 
 | Response Item | Description | Data Type |
@@ -124,7 +124,7 @@ This represents an individual load that has been received.
 | **Units** | The standardised unit. For instance, tons. | String |
 | **ID** | The ID of the load receival | String |
 | **Self** | A link to the specific load receival | URI |
-| **Identifiers** | These are any identifiers for this load receival | Array of Identifiers |
+| **Identifiers** | These are any identifiers for this load receival | Array of [Identifiers](/resource-types/common.md/#identifier) |
 | **Name** | This is the name of the load receival | String |
 | **Links** | Any links to other relations for this receival | Array of Links |
 
@@ -132,7 +132,7 @@ This represents an individual load that has been received.
 
 ### Destination
 
-This provides all the details about the destination of the load. 
+This provides all the details about the destination of the load.
 
 See the definition in [load resource common objects](/resource-types/load-resource.md#destination).
 
@@ -140,19 +140,19 @@ See the definition in [load resource common objects](/resource-types/load-resour
 
 ### Organisation
 
-This provides all the information about the organisation including the organisation’s name, global location number among others. 
+This provides all the information about the organisation including the organisation’s name, global location number among others.
 
 ```json
-{ 
-  "gln": "string", 
-  "leiCode": "string", 
-  "name": "string", 
-  "registration": { 
-    "id": "string", 
-    "scheme": "string" 
-  }, 
-  "uri": "string" 
-} 
+{
+  "gln": "string",
+  "leiCode": "string",
+  "name": "string",
+  "registration": {
+    "id": "string",
+    "scheme": "string"
+  },
+  "uri": "string"
+}
 ```
 
 | Response Item | Description | Data Type |
@@ -167,6 +167,6 @@ This provides all the information about the organisation including the organisat
 
 ### Source
 
-This provides all the information about the place where the load came from. 
+This provides all the information about the place where the load came from.
 
 See the definition in [load resource common objects](/resource-types/load-resource.md#source).

@@ -20,7 +20,7 @@ taxonomy:
 ## Applications authenticated with Pure Farming
 **Prerequisite-** Third-party businesses/Third-party application developers need to send an email to info@purefarming.com to get the client ID and client secret. 
 
-![Client Secrets](_images/OAuth_Scenarios_ClientSecret.svg "Client Secrets")
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/OAuth_Scenarios_ClientSecret.png "Client Secrets")
 
 The Pure Farming OAuth 2.0 endpoints supports any language or run-time that can make HTTP requests, for example Java, PHP, Python, and ASP.NET. 
 
@@ -33,7 +33,7 @@ Once the access token and refresh token are received, the application needs to s
 Authorization: Bearer <token>
 ```
 
-![Scenarios](_images/OAuth_Scenarios_App_endpoints.svg)
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/OAuth_Scenarios_App_endpoints.png "Scenarios")
 
 **Note:** The Pure Farming OAuth 2.0 endpoint also supports applications that are installed on devices like smartphones, tablets, and computers as well as JavaScript applications that run in a browser. The same process mentioned above can be used by installed applications and JavaScript applications for accessing Pure Farming APIs.  
 
@@ -42,7 +42,7 @@ Authorization: Bearer <token>
 ## Applications not authenticated with Pure Farming
 Pre-requisite– Third-party businesses need to send an email to developer-support@purefarming.com to get the client ID and client secret. 
 
-![Non-Pure Farming Applications](_images/OAuth_Scenarios_NotAuth.svg)
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/OAuth_Scenarios_NotAuth.png "Non-Pure Farming Applications")
 
 The Pure Farming OAuth 2.0 endpoint also supports applications that are not authenticated with Pure Farming. For instance, if Application X is authenticated with Pure Farming and it is allowing Application Y to access Pure Farming’s APIs on its behalf, Application Y can do so.  
 
@@ -58,9 +58,9 @@ Once the access token and refresh token are received, the application needs to s
 Authorization: Bearer <token>
 ```
 
-![Endpoints](OAuth_Scenarios_App_endpoints.svg)
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/OAuth_Scenarios_App_endpoints.png "Endpoints")
 
 The application can use the refresh token to get a new access token by making a request to: https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/token 
 
-![Non-Pure Farming](OAuth_Scenarios_NotAuth.svg)
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/OAuth_Scenarios_NotAuth.png "Non-Pure Farming")
 

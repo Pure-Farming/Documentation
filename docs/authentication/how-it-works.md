@@ -21,7 +21,7 @@ OAuth 2.0 is an authorisation framework for enabling resource sharing in a secur
 - **Resource server:** This is the server that protects the user’s resources and receives access requests from the client. It accepts and validates an Access Token from the client and returns the appropriate resources to it.  
 - **Authorisation server:** The authorisation server is the server that receives requests from the Client for Access Tokens and issues them upon successful authentication and consent by the Resource Owner.  
 
-![alt text](_images/How_OAuth_Works-1.svg "How OAuth Works")
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/How_OAuth_Works-1.png "How OAuth Works")
 
 The resource owner is a role that can change with different credentials. Furthermore, it can not only be an end-user, but it can also be a company. 
 
@@ -29,13 +29,13 @@ Clients can be either public or confidential. There’s a significant difference
 
 Generally, public clients are browsers, and mobile applications.  
 
-![alt text](_images/OAuth_Roles.svg "OAuth Roles")
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/OAuth_Roles.png "OAuth Roles")
 
 Now that you have an idea of what the OAuth 2.0 roles are, let’s look at a diagram of how they generally interact with each other:  
 
 Here is a more detailed explanation of the steps in the diagram:
 
-![alt text](_images/OAuth_Interactions-1.svg "OAuth Interactions")
+![alt text](https://developer.purefarming.com/wp-content/uploads/2022/11/OAuth_Interactions-1.png "OAuth Interactions")
 
 - **Application asks permission:** The API (Application Programming Interface) or the application asks for authorisation from the resource by providing the user’s verified identity as proof.  
 - **Application requests Access Token:** Once the authorisation has been authenticated, the resource grants an Access Token to the API, without having to divulge usernames or passwords.  
