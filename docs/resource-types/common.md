@@ -15,12 +15,39 @@ taxonomy:
 
 # Common Objects
 
+- [Classification](#classification)
 - [Metadata](#metadata)
 - [Feature](#feature)
 - [Identifier](#identifier)
 - [Link](#link)
 - [Total Area](#total-area)
 - [Total Length](#total-length)
+
+---
+
+## Classification
+
+Data can be classified in different ways. Primary classification is the highest level, followed by a Secondary sub-category, and a Tertiary sub-category under that.
+For example:  
+Primary: Rural  
+Secondary: Tracks and Pathways  
+Tertiary: Four-Wheel Drive Track  
+
+```json
+{
+  "primary": "string",
+  "scheme": "string",
+  "secondary": "string",
+  "tertiary": "string"
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| **Primary** | The primary level of classification under the scheme. | String |
+| **Scheme** | The scheme for this classification. This should be reverse DNS notation. | String |
+| **Secondary** | The secondary level of classification under the scheme | String |
+| **Tertiary** | The tertiary level of classification under the scheme. | String |
 
 ---
 

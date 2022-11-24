@@ -1,9 +1,9 @@
 ---
 
-title: Connected Data
+title: OGC API
 menu_order: 1
 post_status: publish
-post_excerpt: Connected Data
+post_excerpt: OGC API
 taxonomy:
     category:
         - root
@@ -12,13 +12,12 @@ taxonomy:
 
 ---
 
-- [Introduction](#introduction)
 - [OGC API - Features](#ogc-api-features)
-- [Resource Types](#resource-types)
-- [Endpoints/Environments](#endpoints-environments)
+- [Static Endpoints](#static-endpoints)
 - [Errors](#errors)
 - [Authentication](#authentication)
 - [Frequently Asked Questions](#frequently-asked-questions)
+
 ---
 
 ## Introduction
@@ -32,20 +31,30 @@ The OGC API is based on the REST standard, where URLs represent data, and action
 
 ## OGC API - Features
 
-Pure farming OGC API comply with the OGC Features API, which is a multi-part standard that makes it possible to produce, alter, and query spatial data on the web and that lays out guidelines and standards for APIs that seek to share feature data in a consistent manner. Here spatial data is defined as geographical data, thus also known as geospatial data. In other words, OGC API - Features standard allows users to work with spatial data over the web.
- Pure farming OGC API - Features standard allows users to access all the collection of geographical specifications of holdings, land-covers, and plots, without any authentication. However, if users want to get the collection of items from the APIs, they must be authenticated to access them.
-The pure farming API uses OAuth2.0 for authentication. Thus, to get authentication, users are required to be passed by OAuth2.0.
-Moreover, if the users are authenticated, they will also get some additional collections of data on the geographical specifications of different holdings, land-covers, and plots that they may have access to. It means that if the users want to get a collection of a specific geographical location like holding, land-cover, or plot that they may have access to, they can also get it provided that they are authenticated with the OGC API OAuth2.0.
+Pure Farming provides an API which complies with the OGC Features API, which is a multi-part standard.  
+This allows for querying spatial data as well as laying out guidelines and standards for APIs that seek to share feature data in a consistent manner.  
+
+
+The Pure Farming OGC compliant API allows users to access collections of geographical data representing resource types of holdings, land-covers, and plots.  
+
+The API may be initially used un-authenticated, but in order to retrieve any meaningful data from it, one must first be authenticated. The Pure Farming OGC Features compliant API uses OAuth 2.0 for authentication, see [authentication](/authentication) for more details.
+
+Moreover, if the users are authenticated, they will also get additional sub-collections of data depending on the different holdings, land-covers, and plots that they may have access to.
 
 To learn more about the OGC API - Features standard, you can visit their website at https://ogcapi.ogc.org/features/.
 
-## Resource Types
-- [OGC - Collections](resource-types/OGC/Collections.md)
-Collections provides list of data on geographical specifications of holdings, plots and land-covers.
-- [OGC - OGC](/resource-types/OGC/OGC.md)
-OGC provides links to the API definition, conformance and collections endpoints. 
-- [OGC - Conformance](/resource-types/OGC/Conromance.md)
-Conformance provides links to the standards that OGC API conforms to. 
+---
+
+## Static Endpoints
+- [Collections](/ogc/collections.md)  
+  Collections provides list of data on geographical specifications of holdings, plots and land-covers.  
+  `/ogc/collections`  
+- [Root Page](/ogc/ogc.md)  
+  OGC provides links to the API definition, conformance and collections endpoints.  
+  `/ogc`
+- [Conformance](/ogc/conformance.md)  
+  Conformance provides links to the standards that OGC API conforms to.  
+  `/ogc/conformance`
 
 ---
 
@@ -60,6 +69,7 @@ There are five classes or groups in which all HTTP response status codes are sep
 4. 4xx client error – This range of codes indicates that the request contained bad syntax or could not be fulfilled.
 5. 5xx server error – This range of codes indicates that the server failed to fulfill an apparently valid request.
 
+
 ### HTTP Status Code Summary
 
 | Code | Description |
@@ -70,12 +80,16 @@ There are five classes or groups in which all HTTP response status codes are sep
 | 429 - Quota Exceeded | The user has exceeded the limit of requests. |
 | 500 - Internal Server Error | Something went wrong on Pure Farming’s server. |
 
+---
+
 ## Authentication
 
 Authentication
 Users must obtain authorization in order to perform an API request. Pure Farming uses OAuth2.0 for authentication, which stands for “Open Authorisation.” On behalf of a user, it enables websites or applications to access resources stored on servers run by other web apps.  
 
 OAuth2.0 uses Access Token to provide authentication. An access token is a piece of information that symbolizes the authorization to access resources on behalf of the end-user.
+
+---
 
 ## Frequently Asked Questions
 
