@@ -17,5 +17,5 @@ taxonomy:
 Below are the currently provided resource types for Livestock.
 
 - [Animals](/resource-types/livestock/animals.md)
-- [Animal Group](/resource-types/livestock/animal-group.md)
+- [Animal Groups](/resource-types/livestock/animal-group.md)
 - [Movements](/resource-types/livestock/movements)
