@@ -13,8 +13,8 @@ taxonomy:
 
 # Resource Type: Animal Group
 
-- [URLs]()
-- [Response Structure]()
+- [URLs](#urls)
+- [Response Structure](#response-structure)
 
 ---
 
@@ -79,7 +79,7 @@ Animal group classification are...
 ```json
 {
   "birthPeriod": "String",
-  "count": decimal,
+  "count": Number,
   "lactationStatus": "String",
   "name": "String",
   "primaryBreed": {...},
