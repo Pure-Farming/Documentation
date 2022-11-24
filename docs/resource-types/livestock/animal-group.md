@@ -11,10 +11,11 @@ taxonomy:
     - api
 ---
 
-# Resource Type: Animal Group
+# Resource Type: Livestock - Animal Group
 
 - [URLs](#urls)
 - [Response Structure](#response-structure)
+  - [Classification](#classification)
 
 ---
 
@@ -78,15 +79,15 @@ Animal group classification are...
 
 ```json
 {
-  "birthPeriod": "String",
-  "count": Number,
-  "lactationStatus": "String",
-  "name": "String",
+  "birthPeriod": "string",
+  "count": 1,
+  "lactationStatus": "string",
+  "name": "string",
   "primaryBreed": {...},
   "productionPurposes": [...],
-  "reproductiveStatus": "String",
-  "sex": "String",
-  "species": "String"
+  "reproductiveStatus": "string",
+  "sex": "string",
+  "species": "string"
 }
 ```
 
