@@ -57,7 +57,7 @@ A call to the animal group endpoints returns the following fields.
   "self": "string",
   "location": {...},
   "meta": {...},
-  "resourceType": "livestock/animal-group"
+  "resourceType": "/livestock/animal-group"
 }
 ```
 
