@@ -2,7 +2,7 @@
 title: Animal Group
 menu_order: 1
 post_status: publish
-post_excerpt: Livestock - Animal Group
+post_excerpt: Livestock - Animal Groups
 taxonomy:
   category:
     - api
