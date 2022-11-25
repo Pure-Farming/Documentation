@@ -66,7 +66,7 @@ A call to the animal group endpoints returns the following fields.
 | **Classification** | The set of shared characteristics that defines the group of animals                            | [Classification](#classification)                       |
 | **Id**             | The Pure Farming Id of this Animal Group                                                       | UUID                                                    |
 | **Self**           | A link to this specific Animal Group                                                           | URI                                                     |
-| **Location**       | An identifier for the location of the Animal Group                                             | [Identifier](/docs/resource-types/common.md#identifier) |
+| **Location**       | An identifier for the location of the Animal Group                                             | [Identifier](/resource-types/common.md#identifier) |
 | **Meta**           | Meta data for the resource                                                                     | [Metadata](/resource-types/common.md#metadata)     |
 | **Resource Type**  | The fixed discriminator for the Animal Group resource type.<br/>Value: /livestock/animal-group | String                                                  |
 
