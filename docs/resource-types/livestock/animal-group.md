@@ -11,7 +11,7 @@ taxonomy:
     - api
 ---
 
-# Resource Type: Livestock - Animal Group
+# Resource Type: Livestock - Animal Groups
 
 - [URLs](#urls)
 - [Response Structure](#response-structure)
