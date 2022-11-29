@@ -13,7 +13,6 @@ taxonomy:
 ---
 
 - [OGC API - Features](#ogc-api-features)
-- [Static Endpoints](#static-endpoints)
 - [Errors](#errors)
 - [Authentication](#authentication)
 - [Frequently Asked Questions](#frequently-asked-questions)
@@ -106,7 +105,7 @@ Yes, but for a normal use case you shouldn't notice it. If you find you are gett
 
 ### What are conformance classes? 
 
-A conformance class is an OGC specification or module that is implemented by our API. We implement many different OGC specifications, and have a list of the specifications that we conform to - our conformance classes. You can find them in the [ConformsTo](conformance#conformsTo) section of the [conformance](conformance) page (or through the API endpoint itself!)
+A conformance class is an OGC specification or module that is implemented by our API. We implement many different OGC specifications, and have a list of the specifications that we conform to - our conformance classes. You can find them in the [ConformsTo](/ogc/conformance.md#conformsTo) section of the [conformance](/ogc/conformance.md) page (or through the API endpoint itself!)
 
 ### I am having trouble accessing data. Who do I talk to?
 
