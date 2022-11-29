@@ -21,43 +21,43 @@ taxonomy:
 ---
 
 ## URLs
-Get a list of all collections of data on geographical specifications of holdings, plots, and land-covers or metadata describing data on geographical specifications of holdings, plots, and land-covers. 
+Get a list of all collections of geographic data on holdings, plots, and land-covers or metadata describing geographic data on holdings, plots, and land-covers. 
 
 ```
 GET /ogc/collections
 ```
 
-Get all the collections of data on geographical specifications of all the holdings.
+Get all the collections of geographic data of all holdings.
 
 ```
 GET /ogc/collections/holdings
 ```
 
-Get a collection of data of a specific holding that you may have access to, the holdingID is required in this case.
+Get a collection of data on a specific holding. The ID of the holding is required in this case.
 
 ```
 GET /ogc/collections/holdings/{holdingId}/collections
 ```
 
-Get all the collections of data on geographical specifications of all the plots.
+Get all the collections of geographic data on all plots.
 
 ```
 GET /ogc/collections/plots
 ```
 
-Get a collection of data of plots for a specific holding that you may have access to, the holdingID is required in this case.
+Get a collection of data on plots for a specific holding. The ID of the holding is required in this case.
 
 ```
 GET /ogc/collections/holdings/{holdingId}/collections/plots
 ```
 
-Get all the collections of data on geographical specifications of all the land-covers.
+Get all the collections of geographic data on all land-covers.
 
 ```
 GET /ogc/collections/land-covers
 ```
 
-Get a collection of data of land-covers for a specific holding that you may have access to, the holdingID is required in this case.
+Get a collection of data on land-covers for a specific holding. The ID of the holding is required in this case.
 
 ```
 GET /ogc/collections/holdings/{holdingId}/collections/land-covers
@@ -75,12 +75,12 @@ A call to the collection endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| **Links** | Any links for the set of collections returned. See [links](/ogc-api/common#links) for more information. | An array of links |
-| **Collections** | This shows collection items that have a certain set of metadata | An array of collections |
+| **Links** | Any links for the set of collections returned. See [links](/ogc-api/common#links) for more information. | An array of [links](/ogc-api/common#links) |
+| **Collections** | Different collections of data available through this API (in PureFarming's case: holdings, land-covers and plots) | An array of [collections](#collections) |
 
 ## Collections
 
-It provides the links to collections of metadata and items of holdings, land-covers and plots
+Collections provide the links to collections of metadata and items for holdings, land-covers and plots
 
 ```json
  {
@@ -111,5 +111,5 @@ It provides the links to collections of metadata and items of holdings, land-cov
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| ID | It is the ID of the collection | String |
-| Links | Links to the individual URLs for this collection. | An array of [links](/ogc-api/common#links) |
+| ID | The ID/name of the collection | String |
+| Links | Links to the sub-collections and data in this collection | An array of [links](/ogc-api/common#links) |
