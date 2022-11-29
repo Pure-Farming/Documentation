@@ -21,7 +21,7 @@ taxonomy:
 ---
 
 ## URLs
-Get all the links to the standards that OGC API conforms to.
+Get all the links to the OGC standards that PureFarming's OGC API conforms to.
 
 ```
 GET /ogc/conformance
@@ -38,11 +38,11 @@ A call to the conformance endpoint returns the following fields:
 
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
-| ConformsTo | This shows the standards that the OGC APIs Conforms to. This includes ogcapi - features related to core, oas30, html, geojson, and gmlsf0 | An array of conformsTo |
+| ConformsTo | The standards that the PureFarming's OGC API conforms to. This includes "ogcapi - features" related to core, oas30, html, geojson, and gmlsf0 | An array of [conformsTo](#conformsTo) |
 
 ## ConformsTo
 
-It provides links to the tests which verify the standards that OGC API conforms to.
+Provides links to the tests which verify PureFarming's OGC API conforms to the OGC standard.
 
 ```json
 {
