@@ -21,7 +21,7 @@ taxonomy:
 
 ## Links
 
-A collection of data may be related to other data collections. A `link` is a link to a related collection or sub-collection. This is defined by RFC 8288
+A collection of data may be related to other data collections. A `link` is a link to a related collection or sub-collection. This is defined by [RFC 8288](https://www.rfc-editor.org/rfc/rfc8288.html)
 
 ```json
 {
@@ -37,4 +37,4 @@ A collection of data may be related to other data collections. A `link` is a lin
 | Href | The URL of for this Link | URL |
 | Rel | The type of relationship this link has to the collection. [OGC Features API Standard - Links](https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_link_relations) defines these | String |
 | Type | The type of data provided by the URL. The same as a Content-Type header | String |
-| Hreflang | The language of the data in the link. For instance, English, Spanish, etc. | String |
+| Hreflang | The language of the data in the link. For instance: English (en), Spanish (es), etc | String |
