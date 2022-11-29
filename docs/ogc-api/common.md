@@ -25,10 +25,11 @@ A collection of data may be related to other data collections. A `link` is a lin
 
 ```json
 {
-  "href": "https://api.test.purefarming.com/ogc/collections",
+  "href": "https://api.purefarming.com/ogc/collections",
   "rel": "self",
   "type": "application/json",
-  "hreflang": "en"
+  "hreflang": "en",
+  "title": "Collections"
 }
 ```
 
@@ -38,3 +39,4 @@ A collection of data may be related to other data collections. A `link` is a lin
 | Rel | The type of relationship this link has to the collection. [OGC Features API Standard - Links](https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_link_relations) defines these | String |
 | Type | The type of data provided by the URL. The same as a Content-Type header | String |
 | Hreflang | The language of the data in the link. For instance: English (en), Spanish (es), etc | String |
+| Title | The human readable name for the link | String |
