@@ -27,37 +27,37 @@ Get a list of all collections of geographic data on holdings, plots, and land-co
 GET /ogc/collections
 ```
 
-Get all the collections of geographic data of all holdings.
+Get all the collections of geographic data for all holdings.
 
 ```
 GET /ogc/collections/holdings
 ```
 
-Get a collection of data on a specific holding. The ID of the holding is required in this case.
+Get a collection of data on a specific holding. The ID of the holding is required.
 
 ```
 GET /ogc/collections/holdings/{holdingId}/collections
 ```
 
-Get all the collections of geographic data on all plots.
+Get all the collections of geographic data for all plots.
 
 ```
 GET /ogc/collections/plots
 ```
 
-Get a collection of data on plots for a specific holding. The ID of the holding is required in this case.
+Get a collection of data on plots for a specific holding. The ID of the holding is required.
 
 ```
 GET /ogc/collections/holdings/{holdingId}/collections/plots
 ```
 
-Get all the collections of geographic data on all land-covers.
+Get all the collections of geographic data for all land-covers.
 
 ```
 GET /ogc/collections/land-covers
 ```
 
-Get a collection of data on land-covers for a specific holding. The ID of the holding is required in this case.
+Get a collection of data on land-covers for a specific holding. The ID of the holding is required.
 
 ```
 GET /ogc/collections/holdings/{holdingId}/collections/land-covers
