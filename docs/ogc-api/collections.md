@@ -76,40 +76,4 @@ A call to the collection endpoint returns the following fields:
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Links** | Any links for the set of collections returned. See [links](/ogc-api/common#links) for more information. | An array of [links](/ogc-api/common#links) |
-| **Collections** | Different collections of data available through this API (in PureFarming's case: holdings, land-covers and plots) | An array of [collections](#collections) |
-
-## Collections
-
-Collections provide the links to collections of metadata and items for holdings, land-covers and plots
-
-```json
- {
-   "collections": [
-    {
-      "id": "holdings",
-      "links": [
-        {
-          "href": "https://api.test.purefarming.com/ogc/collections/holdings",
-          "rel": "collection",
-          "type": "application/json",
-          "hreflang": "en",
-          "title": "holdings"
-        },
-        {
-          "href": "https://api.test.purefarming.com/ogc/collections/holdings/items",
-          "rel": "items",
-          "type": "application/geo+json",
-          "hreflang": "en",
-          "title": "holdings"
-        }
-      ]
-    },
-    ...
-  ]
-}
-```
-
-| Response Item | Description | Data Type |
-| ------------- | ----------- | --------- |
-| ID | The ID/name of the collection | String |
-| Links | Links to the sub-collections and data in this collection | An array of [links](/ogc-api/common#links) |
+| **Collections** | Different collections of data available through this API (in PureFarming's case: holdings, land-covers and plots) | An array of [collections](/ogc/common.md#collections) |
