@@ -31,14 +31,14 @@ Collections provide the links to collections of metadata and items for holdings,
       "id": "holdings",
       "links": [
         {
-          "href": "https://api.test.purefarming.com/ogc/collections/holdings",
+          "href": "https://api.purefarming.com/ogc/collections/holdings",
           "rel": "collection",
           "type": "application/json",
           "hreflang": "en",
           "title": "holdings"
         },
         {
-          "href": "https://api.test.purefarming.com/ogc/collections/holdings/items",
+          "href": "https://api.purefarming.com/ogc/collections/holdings/items",
           "rel": "items",
           "type": "application/geo+json",
           "hreflang": "en",
