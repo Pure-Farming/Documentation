@@ -15,9 +15,47 @@ taxonomy:
 
 # Common Objects
 
+- [Collections](#collections)
 - [Links](#links)
 
 ---
+
+## Collections
+
+Collections provide the links to collections of metadata and items for holdings, land-covers and plots
+
+```json
+ {
+   "collections": [
+    {
+      "id": "holdings",
+      "links": [
+        {
+          "href": "https://api.test.purefarming.com/ogc/collections/holdings",
+          "rel": "collection",
+          "type": "application/json",
+          "hreflang": "en",
+          "title": "holdings"
+        },
+        {
+          "href": "https://api.test.purefarming.com/ogc/collections/holdings/items",
+          "rel": "items",
+          "type": "application/geo+json",
+          "hreflang": "en",
+          "title": "holdings"
+        }
+      ]
+    },
+    ...
+  ]
+}
+```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| ID | The ID/name of the collection | String |
+| Links | Links to the sub-collections and data in this collection | An array of [links](#links) |
+
 
 ## Links
 
