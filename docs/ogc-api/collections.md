@@ -76,4 +76,4 @@ A call to the collection endpoint returns the following fields:
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Links** | Any links for the set of collections returned. See [links](/ogc-api/common#links) for more information. | An array of [links](/ogc-api/common#links) |
-| **Collections** | Different collections of data available through this API (in PureFarming's case: holdings, land-covers and plots) | An array of [collections](/ogc/common.md#collections) |
+| **Collections** | Different collections of data available through this API (in *Pure Farming's* case: holdings, land-covers and plots) | An array of [collections](/ogc/common.md#collections) |

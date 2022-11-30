@@ -23,7 +23,7 @@ taxonomy:
 
 OGC API allows users to find out the geographical features of a farm. With the help of the OGC API, users can find out the boundary, center point, bounding box, etc. of a holding, plot or land cover. The OGC API has three endpoints namely, Collections, OGC and Conformance. 
 
-**Collections** - The collections endpoint helps you get a list of all feature collections specified in a standard that the server conforms to or metadata describing the collections of data available from the PureFarming's OCG API.  
+**Collections** - The collections endpoint helps you get a list of all feature collections specified in a standard that the server conforms to or metadata describing the collections of data available from *Pure Farming's* OCG API.  
 
 **OGC** - The OGC endpoint provides information on the landing page that has the links to the API definition, the conformance statements and to the feature collection in the data set.   
 
@@ -32,12 +32,12 @@ The OGC API is based on the REST standard, where URLs represent data, and action
 
 ## OGC API - Features
 
-PureFarming provides an API which complies with the OGC Features API, which is a multi-part standard.  
+Pure Farming provides an API which complies with the OGC Features API, which is a multi-part standard.  
 This allows for querying spatial data as well as laying out guidelines and standards for APIs that seek to share feature data in a consistent manner.  
 
-The PureFarming OGC compliant API allows users to access collections of geographical data representing resource types of holdings, land-covers, and plots.  
+The *Pure Farming* OGC compliant API allows users to access collections of geographical data representing resource types of holdings, land-covers, and plots.  
 
-The API may be used un-authenticated but in order to retrieve any meaningful data from it you must be authenticated. The PureFarming OGC Features compliant API uses OAuth 2.0 for authentication, see [authentication](/authentication) for more details.
+The API may be used un-authenticated but in order to retrieve any meaningful data from it you must be authenticated. The *Pure Farming* OGC Features compliant API uses OAuth 2.0 for authentication, see [authentication](/authentication) for more details.
 
 If you are authenticated, you will also get additional sub-collections of data depending on the different holdings, land-covers, and plots that you have access to.
 
@@ -46,15 +46,133 @@ To learn more about the OGC API - Features standard, you can visit their website
 ---
 
 ## Static Endpoints
-- [Collections](/ogc/collections.md)  
-  Collections provides a list of geographic data for holdings, plots and land-covers.  
-  `/ogc/collections`  
 - [Root Page](/ogc/ogc.md)  
   OGC provides links to the API definition, conformance and collections endpoints.  
-  `/ogc`
+
+  ```
+  GET /ogc
+  ```
+
 - [Conformance](/ogc/conformance.md)  
-  Conformance provides links to the standards that PureFarming's OCG API conforms to.  
-  `/ogc/conformance`
+  Conformance provides links to the standards that *Pure Farming's* OCG API conforms to.  
+
+  ```
+  GET /ogc/conformance
+  ```
+
+- [Collections](/ogc/collections.md)  
+  Collections provides a list of geographic data for holdings, plots and land-covers.  
+  
+  ```
+  GET /ogc/collections
+  ```
+
+---
+
+## Dynamic Endpoints
+
+The `/ogc/collections` endpoint is dynamic, in that if you are authenticated it will return further collections that relate to individual holdings should you wish to only use those.  
+
+For more information please look at the [collections](/ogc-api/collections.md) documentation for all the relevant endpoints.  
+
+For example, if you are unauthenticated or didn't have access to any holdings, you would be returned this:  
+```json
+{
+  "links": [
+    {
+      "href":"https://api.purefarming.com/ogc/collections",
+      "rel":"self",
+      "type":"application/json",
+      "hreflang":"en"
+    }
+  ],
+  "collections": [
+    {
+      "id":"holdings",
+      "links": [
+        {
+          "href":"https://api.purefarming.com/ogc/collections/holdings",
+          "rel":"collection",
+          "type":"application/json",
+          "hreflang":"en",
+          "title":"holdings"
+        },
+        {
+          "href":"https://api.purefarming.com/ogc/collections/holdings/items",
+          "rel":"items",
+          "type":"application/geo+json",
+          "hreflang":"en",
+          "title":"holdings"
+        }
+      ]
+    },
+    ...
+  ]
+}
+```
+
+Whereas if you were authenticated (and had access to one or more holdings), you would see something like the following:  
+```json
+{
+  "links": [
+    {
+      "href":"https://api.purefarming.com/ogc/collections",
+      "rel":"self",
+      "type":"application/json",
+      "hreflang":"en"
+    }
+  ],
+  "collections": [
+    {
+      "id":"holdings",
+      "links": [
+        {
+          "href":"https://api.purefarming.com/ogc/collections/holdings",
+          "rel":"collection",
+          "type":"application/json",
+          "hreflang":"en",
+          "title":"holdings"
+        },
+        {
+          "href":"https://api.purefarming.com/ogc/collections/holdings/items",
+          "rel":"items",
+          "type":"application/geo+json",
+          "hreflang":"en",
+          "title":"holdings"
+        }
+      ]
+    },
+    {
+			"id": "holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots",
+			"links": [
+				{
+					"href": "https://api.purefarming.com/ogc/collections/holdings/items/a50a28ce-ff23-49e9-8d84-a60869de2096",
+					"rel": "items",
+					"type": "application/geo+json",
+					"hreflang": "en",
+					"title": "holdings"
+				},
+				{
+					"href": "https://api.purefarming.com/ogc/collections/holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots",
+					"rel": "collection",
+					"type": "application/json",
+					"hreflang": "en",
+					"title": "plots-for-a50a28ce-ff23-49e9-8d84-a60869de2096"
+				},
+				{
+					"href": "https://api.purefarming.com/ogc/collections/holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots/items",
+					"rel": "items",
+					"type": "application/geo+json",
+					"hreflang": "en",
+					"title": "plots-for-a50a28ce-ff23-49e9-8d84-a60869de2096"
+				}
+			]
+		},
+    ...
+  ]
+}
+
+```
 
 ---
 
@@ -78,13 +196,13 @@ There are five classes or groups in which all HTTP response status codes are sep
 | 400 - Bad Request | The request made was not accepted due to an error with the incoming data |
 | 404 - Not Found | The resource requested by the user could be found |
 | 429 - Quota Exceeded | The user has exceeded the limit of number of requests |
-| 500 - Internal Server Error | Something went wrong on PureFarming's server |
+| 500 - Internal Server Error | Something went wrong on *Pure Farming's* server |
 
 ---
 
 ## Authentication
 
-Users must be authenticated and authorised in order to make some API requests. PureFarming uses OAuth2.0 for authentication.  
+Users must be authenticated and authorised in order to make some API requests. *Pure Farming* uses OAuth2.0 for authentication.  
 OAuth2.0 uses Access Tokens to provide authentication.  
 See [authentication](/authentication) for more information
 ---
@@ -109,12 +227,12 @@ A conformance class is an OGC specification or module that is implemented by our
 
 ### I am having trouble accessing data. Who do I talk to?
 
-If you are facing any trouble accessing data or making API calls, please get in touch with us through our [contact form](https://www.purefarming.com/contact/)
+If you are facing any trouble accessing data or making API calls, please get in touch with us through our [contact form](https://www.Pure Farming.com/contact/)
 
 ### Where can I get more help?
 
-If you have any other questions please reach out using our [contact form](https://www.purefarming.com/contact/)
+If you have any other questions please reach out using our [contact form](https://www.Pure Farming.com/contact/)
 
 ### Is there a way to check the status of the API if there is an outage or downtime?
 
-Absolutely! You can check the status of the APIs here - https://purefarming.statuspage.io/
+Absolutely! You can check the status of the APIs here - https://Pure Farming.statuspage.io/
