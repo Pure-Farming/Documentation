@@ -13,7 +13,7 @@ taxonomy:
 ---
 
 # Basic Steps
-All applications need to follow a basic pattern when accessing Pure Farming APIs using OAuth 2.0. Here are the steps: 
+All applications need to follow a basic pattern when accessing *Pure Farming* APIs using OAuth 2.0. Here are the steps: 
 - [**Step 1:** Obtain Client ID and Client Secret](#step-1:-obtain-client-id-and-client-secret)
 - [**Step 2:** Redirect the User’s browser to the Authorisation Endpoint with the Client ID and Code Challenge](#step-2:-redirect-the-user’s-browser-to-the-authorisation-endpoint-with-the-client-id-and-code-challenge)
 - [**Step 3:** Send Authorization Code and Code Verifier](#step-3:-send-authorization-code-and-code-verifier)
@@ -23,14 +23,14 @@ All applications need to follow a basic pattern when accessing Pure Farming APIs
 ---
 
 ## Step 1: Obtain Client ID and Client Secret 
-To make Pure Farming OAuth API requests, you are required to generate an “Access Token” and “Code Challenge”. For this, you have to get the Client ID and Client Secret (depending on the client type – as described above) by sending an email to developer-support@purefarming.com. 
+To make *Pure Farming* OAuth API requests, you are required to generate an “Access Token” and “Code Challenge”. For this, you have to get the Client ID and Client Secret (depending on the client type – as described above) by sending an email to developer-support@purefarming.com. 
 
 **Note:** When you email us, please mention in the email whether you want to use the refresh tokens. It is worth noting that this is an interim measure until such a time as we are able to provide self-service tools to developers. 
 
 ---
 
 ## Step 2: Redirect the User’s browser to the Authorisation Endpoint with the Client ID and Code Challenge
-Your application can only access private data using Pure Farming APIs if it has an access token that grants access to the data or endpoints provided by API. For obtaining the Access Token and Refresh Token, the application should redirect the user’s browser to the Authorization endpoint (https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth) with the Client ID and Code Challenge to get the Authorization code. If the user is logged in, they will be redirected to the application with the authorization code. If the user is not logged in, they would need to log in. Once they log in, they will be redirected to the application with the authorization code.  
+Your application can only access private data using *Pure Farming* APIs if it has an access token that grants access to the data or endpoints provided by API. For obtaining the Access Token and Refresh Token, the application should redirect the user’s browser to the Authorization endpoint (https://signin.purefarming.com/auth/realms/moa/protocol/openid-connect/auth) with the Client ID and Code Challenge to get the Authorization code. If the user is logged in, they will be redirected to the application with the authorization code. If the user is not logged in, they would need to log in. Once they log in, they will be redirected to the application with the authorization code.  
 
 **Your app needs to send the Client ID and Code Challenge to the following URL:**
 
@@ -148,7 +148,7 @@ Here, the Access token is JSON Web Token (JWT). It can be easily decoded to a JS
 ---
 
 ## Step 4: Send Access Token to get Data
-Once you get the Access Token and Refresh Token you are required to store both along with associated configuration securely. Once done, you can call the Pure Farming APIs using the Authorization header as follows: **Authorization: Bearer <token>** to get data. 
+Once you get the Access Token and Refresh Token you are required to store both along with associated configuration securely. Once done, you can call the *Pure Farming* APIs using the Authorization header as follows: **Authorization: Bearer <token>** to get data. 
 
 ```
 Authorization: Bearer <token> 
@@ -157,7 +157,7 @@ Authorization: Bearer <token>
 ---
 
 ## Step 5: Refresh the access token
-For security purposes, access tokens are generally valid for a short amount of time. If your application needs access to Pure Farming APIs beyond the lifetime of a single access token, it can obtain a refresh token. A refresh token allows your application to obtain a new access token. When an application requests an initial access token from the Pure Farming authorisation endpoint, it will usually come back with an access token, an identity token and a refresh token, if you request with offline_access scope. 
+For security purposes, access tokens are generally valid for a short amount of time. If your application needs access to *Pure Farming* APIs beyond the lifetime of a single access token, it can obtain a refresh token. A refresh token allows your application to obtain a new access token. When an application requests an initial access token from the *Pure Farming* authorisation endpoint, it will usually come back with an access token, an identity token and a refresh token, if you request with offline_access scope. 
 
 To obtain a new access token, the application can use the refresh token by making a request to the token endpoint:
 

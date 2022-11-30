@@ -83,7 +83,7 @@ A call to the animal death event endpoints returns the following fields.
 |**Resource Type** | The fixed discriminator for the animal death resource type.<br/>Value: /livestock/movement/animal-death  | String |
 |**ContemporaryGroup** | For manually recorded events, record any contemporary group code that would affect statistical analysis. | String |
 |**Event Date Time**| The Time that this event occured | DateTimeOffset |
-|**Id** | The Pure Farming Id of this death event | UUID |
+|**Id** | The *Pure Farming* Id of this death event | UUID |
 |**Remark** | A comment or remark field for additional user-specified information about the event. | String |
 |**Responsable** | Use if an observation is manually recorded, or an event is carried out or authorised by a person. SHOULD be a person object. | String |
 |**Trait Label** | If the event represents a formal trait, this identifies the recording system and trait.| Identifier |

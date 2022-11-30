@@ -67,7 +67,7 @@ A call to the Livestock Animal Birth Registration endpoint returns the following
 |Response Item   |Description                    |Data Type                    |
 |----------------|-------------------------------|-----------------------------|
 |**Self**        |A link to the specific Animal Birth Registration.         |URL             |
-|**Id**          |The Pure Farming Id of this Animal Birth Registration.    |UUID            |
+|**Id**          |The *Pure Farming* Id of this Animal Birth Registration.    |UUID            |
 |**Meta**        |Meta data for the resource.                               |Metadata        |
 |**Resource Type**|The fixed discriminator for the Animal Birth Registration resource type. <br/>Value: ***/livestock/movement/animal-birth-registration***    |String|
 |**Event DateTime** |The datetime when the event happened. Shall be UTC format with Z, specified in [RFC3339](https://ijmacd.github.io/rfc3339-iso8601/). |Date/Time|

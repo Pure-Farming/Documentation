@@ -87,4 +87,4 @@ A call to the animal departure endpoints returns the following fields.
 |**Departure Reason** | The Reason for the departure (Valid values: Age, BadType, Behaviour, Fertility, Health, LegOrClaw, Mastitis, MilkingAbility, Newborn, Nutrition, Other, Parturition,
 Production, Sale, Slaughter, Superfluous, Unknown) | Enumeration |
 |**Event Date Time** | The Time that this event occured | DateTimeOffset |
-|**Id** | The Pure Farming Id of this Animal Departure | UUID |
+|**Id** | The *Pure Farming* Id of this Animal Departure | UUID |
