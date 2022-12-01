@@ -227,11 +227,11 @@ A conformance class is an OGC specification or module that is implemented by our
 
 ### I am having trouble accessing data. Who do I talk to?
 
-If you are facing any trouble accessing data or making API calls, please get in touch with us through our [contact form](https://www.Pure Farming.com/contact/)
+If you are facing any trouble accessing data or making API calls, please get in touch with us through our [contact form](https://www.purefarming.com/contact/)
 
 ### Where can I get more help?
 
-If you have any other questions please reach out using our [contact form](https://www.Pure Farming.com/contact/)
+If you have any other questions please reach out using our [contact form](https://www.purefarming.com/contact/)
 
 ### Is there a way to check the status of the API if there is an outage or downtime?
 
