@@ -215,7 +215,7 @@ Data that describes everything with a spatial extent, like size, shape, or posit
 
 ### Do I need to be authenticated to use the API?
 
-No, you do not need to be authenticated to make _some_ API calls. You can easily make an API call to get the collections of daṭa from the API. However you _are_ required to be authenticated if you want to get actual data from the API (not just metadata on the collection).
+No, you do not need to be authenticated to make _some_ API calls. You can easily make an API call to get the collections of daṭa from the API. However you *are* required to be authenticated if you want to get actual data from the API (not just metadata on the collection).
 
 ### Is there a limit to API calls?
 
