@@ -82,7 +82,7 @@ A call to the Plots endpoint returns the following fields:
 | **Centroid** | The location of the center of the plot | GeoJSON Point |
 | **Spatial Feature** | The plot boundaries | GeoJSON Feature |
 | **Total Area** | The total area of the plot | [Total Area](/resource-types/common.md#total-area) |
-| **Id** | The Pure Farming ID of the plot | String |
+| **Id** | The *Pure Farming* ID of the plot | String |
 | **Meta** | Metadata about the plot | [Metadata](/resource-types/common.md#metadata) |
 | **@Self** | A link to this specific plot record | URL |
 | **Identifiers** | Any identifiers for this plot | Array of [Identifiers](/resource-types/common.md#identifier) |

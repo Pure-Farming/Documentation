@@ -75,7 +75,7 @@ A call to the Work Record endpoints returns the following fields:
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Resource Type** | The fixed discriminator for the Crop Work Record resource type. <br/>Value: /crop/work-record | String |
-|**Id** | The Pure Farming Id of this Work Record | UUID |
+|**Id** | The *Pure Farming* Id of this Work Record | UUID |
 | **Self** | A link to this specific work record | URI |
 | **Operation** | The operation performed on the crop | String |
 | **Status** | The status of a work item (Valid values: Cancelled, Scheduled, InProgress, Complete, Paused, PartiallyCompleted) | Enumeration |
@@ -120,7 +120,7 @@ This represents an individual operation within the work record
 | Response Item | Description | Data Type |
 | ------------- | ----------- | --------- |
 | **Resource Type** | The fixed discriminator for the operation record resource type. <br/>Value: /crop/operation-record | String
-| **Id** | The Pure Farming Id of this Operation Record | UUID |
+| **Id** | The *Pure Farming* Id of this Operation Record | UUID |
 | **Identifiers** | Any identifiers for this operation record | Array of [Identifiers](/resource-types/common.md#identifier) |
 | **Operation** | The type (or identifier of the type) of operation | String
 | **Operation Name** | Human readable name of the field operation | String

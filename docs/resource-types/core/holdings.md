@@ -67,7 +67,7 @@ A call to the Holdings endpoint returns the following fields.
 | **Spatial Feature** | The GeoJson Feature that provides the boundary of the holding.  | GeoJSON Feature |
 | **Total Area** | The total area of the Holding. | [Total Area](/resource-types/common.md#total-area) |
 | **Total Length** | The total length of all boundaries for this Holding. | [Total Length](/resource-types/common.md#total-length) |
-| **Id** | The Pure Farming ID of the Holding. | UUID |
+| **Id** | The *Pure Farming* ID of the Holding. | UUID |
 | **Meta** | This shows the metadata about the Holding | [Metadata](/resource-types/common.md#metadata) |
 | **Self** | A link to itself, to allow navigation. | URL |
 | **Identifiers** | Any identifiers for this Holding | Array of [Identifiers](/resource-types/common.md#identifier) |

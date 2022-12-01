@@ -84,4 +84,4 @@ A call to the animal arrival endpoints returns the following fields.
 |**Animal Scheme** | The scheme for the main identifier | String |
 |**Animal Detail** | Core schema for representing animal. [See the Animal definition](/resource-types/livestock/animals.md).  | Animal Detail |
 |**Arrival Reason** | The Reason for the arrival (Valid values: Purchase, Internal Transfer, Imported, Stud Service, Stud Service Return, Slaughter, Agistment, Agistment Return, Show, Show Return, Sale, Sale Return, Other) | Enumeration |
-|**Id** | The Pure Farming Id of this Animal Arrival | UUID |
+|**Id** | The *Pure Farming* Id of this Animal Arrival | UUID |

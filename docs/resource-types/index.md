@@ -75,7 +75,7 @@ The Data API is based on the REST standard, where URLs represent collections of 
 ---
 
 ## Endpoints / Environments
-The Pure Farming API is provided as a SaaS offering and the endpoints that you will be interested in are: 
+The *Pure Farming* API is provided as a SaaS offering and the endpoints that you will be interested in are: 
 
 - **Production:** https://api.purefarming.com/data  
 - **Demo:** https://api.demo.purefarming.com/data 
@@ -83,11 +83,11 @@ The Pure Farming API is provided as a SaaS offering and the endpoints that you w
 ---
 
 ## Errors
-The Pure Farming API uses conventional HTTP response codes to indicate the success or failure of an API request.  
+The *Pure Farming* API uses conventional HTTP response codes to indicate the success or failure of an API request.  
 In general:
 1. Codes in the 2XX range indicate success 
 2. Codes in the 4XX range indicate an error that has failed given the information provided (e.g., a required parameter was omitted, a charge failed, etc.) 
-3. Codes in the 5XX range indicate an error with Pure Farming’s servers.  
+3. Codes in the 5XX range indicate an error with *Pure Farming’s* servers.  
 Some 4XX errors that could be handled programmatically include an error code that briefly explains the error reported.  
 
 ### HTTP Status Code Summary 
@@ -97,13 +97,13 @@ Some 4XX errors that could be handled programmatically include an error code tha
 | 200 - OK | Everything worked as expected |
 | 400 - Bad Request | The request was unacceptable |
 | 404 - Not Found | The requested resource doesn’t exist |
-| 500 - Internal Server Error | Something went wrong on Pure Farming’s end |
+| 500 - Internal Server Error | Something went wrong on *Pure Farming’s* end |
 | 504 – Gateway Timeout | The API failed to respond within the timeout period |
 
 ---
 
 ## Authentication
-Before you begin making API calls, you must first authenticate to obtain a valid access token to use in subsequent requests. Pure Farming crop API uses OAuth 2.0 for authentication. OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, mobile phones, and living room devices.  
+Before you begin making API calls, you must first authenticate to obtain a valid access token to use in subsequent requests. *Pure Farming* crop API uses OAuth 2.0 for authentication. OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, mobile phones, and living room devices.  
 
 ### Subsequent Requests 
 
@@ -124,7 +124,7 @@ An API call is the process of a client application submitting a request to an AP
 
 ### What is the difference between an API call and an API response? 
 
-The API call is just the request being sent to Pure Farming APIs. The response is the actual data being returned. A single API call can return more than 1 record. By default, the API call will return all items found. You can send additional parameters with your API call to return fewer or more records. 
+The API call is just the request being sent to *Pure Farming* APIs. The response is the actual data being returned. A single API call can return more than 1 record. By default, the API call will return all items found. You can send additional parameters with your API call to return fewer or more records. 
 
 ### What are the common HTTP Methods? 
 

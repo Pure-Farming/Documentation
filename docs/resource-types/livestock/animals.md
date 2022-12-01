@@ -99,12 +99,12 @@ A call to the Animals endpoints returns the following fields.
 |**Name** | Name for given by the farmer for this Animal | String
 |**Official Name** | Official herdbook name for this Animal | String
 |**Parentage** | The parents, grandparents, ancestors of this Animal | Array Parentage
-|**Primary Breed** | ICAR breed code for this Animal. For example:<br/>`{ "scheme": "ICAR2", "id": "AN" }`<br/>For more details, see also Reference Data Breeds - PureFarming DevHub | Identifier |
+|**Primary Breed** | ICAR breed code for this Animal. For example:<br/>`{ "scheme": "ICAR2", "id": "AN" }`<br/>For more details, see also Reference Data Breeds - *Pure Farming* DevHub | Identifier |
 |**Production Purpose** | Primary production purpose for which this Animal was bred. (Valid values: Meat, Milk, Wool) | Enumeration |
 |**Reproduction Status** | The reproduction status of this Animal. (Valid values: Open, Inseminated, Pregnant, NotPregnant, Birthed, DoNotBreed, PregnantMultipleFoetus) | Enumeration |
 |**Specie** | The species of this Animal. (Valid values: Buffalo, Cattle, Deer, Elk, Goat, Horse, Pig, Sheep) |Enumeration |
 |**Status** | On-farm status of this Animal (Valid values: Alive, Dead, OffFarm, Unknown) | Enumeration |
-|**Id** | The Pure Farming Id of this Animal | UUID |
+|**Id** | The *Pure Farming* Id of this Animal | UUID |
 
 ---
 
