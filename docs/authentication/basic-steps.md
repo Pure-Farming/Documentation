@@ -23,7 +23,7 @@ All applications need to follow a basic pattern when accessing *Pure Farming* AP
 ---
 
 ## Step 1: Obtain Client ID and Client Secret 
-To make *Pure Farming* OAuth API requests, you are required to generate an “Access Token” and “Code Challenge”. For this, you have to get the Client ID and Client Secret (depending on the client type – as described above) by sending an email to developer-support@purefarming.com. 
+To make *Pure Farming* OAuth API requests, you are required to generate an "Access Token" and "Code Challenge". For this, you have to get the Client ID and Client Secret (depending on the client type – as described above) by sending an email to developer-support@purefarming.com. 
 
 **Note:** When you email us, please mention in the email whether you want to use the refresh tokens. It is worth noting that this is an interim measure until such a time as we are able to provide self-service tools to developers. 
 
