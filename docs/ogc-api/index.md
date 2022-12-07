@@ -31,17 +31,137 @@ The OGC API is based on the REST standard, where URLs represent data, and action
 
 ## OGC API - Features
 
-Pure Farming provides an API which complies with the OGC Features API, which is a multi-part standard.  
-This allows for querying spatial data as well as laying out guidelines and standards for APIs that seek to share feature data in a consistent manner.  
+Pure farming OGC API complies with the OGC Features API, which is a multi-part standard that makes it possible to produce, alter, and query spatial data on the web and that lays out guidelines and standards for APIs that seek to share feature data in a consistent manner. Here spatial data is defined as geographical data, thus also known as geospatial data. In other words, OGC API - Features standard allows users to work with spatial data over the web.
+Pure farming OGC API - Features standard allows users to access all the collection of geographical specifications of holdings, land-covers, and plots, without any authentication. However, if users want to get the collection of items from the APIs, they must be authenticated to access them. 
 
+The pure farming API uses OAuth2.0 for authentication. Thus, to get authentication, users are required to be passed by OAuth2.0.
 
-The Pure Farming OGC compliant API allows users to access collections of geographical data representing resource types of holdings, land-covers, and plots.  
+Besides the information as per the OGC Standard, Pure Farming provides additional information to the users in the context of geospatial specifications(if the users are authenticated). The information includes additional collections of data on the geographical specifications of different holdings, land-covers, and plots that they may have access to. Pure Farming’s OGC API provides additional capabilities that address specific needs. 
 
-The API may be initially used un-authenticated, but in order to retrieve any meaningful data from it, one must first be authenticated. The Pure Farming OGC Features compliant API uses OAuth 2.0 for authentication, see [authentication](/authentication) for more details.
+Here is how it works
+For Example - GET/ogc/collections/holdings/items. In the below mentioned schema, the top level properties is the properties object that belongs to geospatial feature conforming to the OGC Standard. However, everything that falls under the “agricultural properties object” of the feature is information provided exclusively by Pure Farming OGC API and is not a part of the OGC Standard.
 
-Moreover, if the users are authenticated, they will also get additional sub-collections of data depending on the different holdings, land-covers, and plots that they may have access to.
+"properties": {
+        "agriculture": {
+          "featureCatalog": "string",
+          "centroid": {
+            "bbox": [
+              0
+            ],
+            "coordinates": [
+              0
+            ],
+            "type": 0
+          },
+          "spatialFeature": {
+            "bbox": [
+              0
+            ],
+            "geometry": {
+              "bbox": [
+                0
+              ],
+              "coordinates": [
+                {
+                  "anythingArray": [
+                    {
+                      "anythingArray": [
+                        {
+                          "double": 0,
+                          "doubleArray": [
+                            0
+                          ]
+                        }
+                      ],
+                      "double": 0
+                    }
+                  ],
+                  "double": 0
+                }
+              ],
+              "type": 0,
+              "geometries": [
+                {
+                  "bbox": [
+                    0
+                  ],
+                  "coordinates": [
+                    {
+                      "anythingArray": [
+                        {
+                          "anythingArray": [
+                            {
+                              "double": 0,
+                              "doubleArray": [
+                                0
+                              ]
+                            }
+                          ],
+                          "double": 0
+                        }
+                      ],
+                      "double": 0
+                    }
+                  ],
+                  "type": 0
+                }
+              ]
+            },
+            "id": {},
+            "properties": {
+              "additionalProp1": "string",
+              "additionalProp2": "string",
+              "additionalProp3": "string"
+            },
+            "type": 0
+          },
+          "totalArea": {
+            "measurement": 0,
+            "units": 0
+          },
+          "totalLength": {
+            "measurement": 0,
+            "units": 0
+          },
+          "internalId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "id": "string",
+          "meta": {
+            "created": "2022-12-06T12:42:49.749Z",
+            "creator": "string",
+            "modified": "2022-12-06T12:42:49.749Z",
+            "sourceId": {
+              "id": "string",
+              "scheme": "string"
+            },
+            "validFrom": "2022-12-06T12:42:49.749Z",
+            "validTo": "2022-12-06T12:42:49.749Z"
+          },
+          "self": "string",
+          "identifiers": [
+            {
+              "id": "string",
+              "scheme": "string"
+            }
+          ],
+          "links": [
+            {
+              "contentType": "string",
+              "related": "string",
+              "relationship": "string"
+            }
+          ],
+          "name": "string",
+          "resourceType": "string"
+        }
+      }
+    }
+  ]
+}
 
-To learn more about the OGC API - Features standard, you can visit their website at https://ogcapi.ogc.org/features/.
+Every feature in a data set belongs to a collection. A data set may consist of multiple feature collections. A feature collection is often a collection of features of a similar type based on a common schema. The schema for the endpoint mentioned above returns a GeoJSON feature. Each individual feature has an arbitrary set of properties which then has an agricultural property that provides the details of the feature put inside a geospatial representation. Within that feature and as a part of the GeoJSON specification, PureFarming provides additional information related to the Geospatial entity in Pure Farming as the value of that agriculture property. This additional information about the spatial entity in Pure Farming includes Meta, holding, plot, additional properties, length, breadth, and so on. 
+It means that if the users want to get a collection of a specific geographical location like holding, land cover, or plot that they may have access to, they can also get it provided that they are authenticated with the OGC API OAuth2.0.
+
+To learn more about the OGC API - Features standard, see the OGC API website at OGC API - Features.
 
 ---
 
