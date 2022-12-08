@@ -129,7 +129,7 @@ It is up to the API consumer to decide whether they wish to include cross breeds
 
 The conceptual structure for the API can be represented by:
 
-![Conceptual structure for the API](/reference/assets/img/Reference_Breeds_DataStructure.png "Conceptual structure for the API")
+![Conceptual structure for the API](https://developer.purefarming.com/wp-content/uploads/2022/11/Reference_Breeds_DataStructure.png "Conceptual structure for the API")
 
 | **Resource Name**    | **Description**                                       |
 | -------------------- | ----------------------------------------------------- |
