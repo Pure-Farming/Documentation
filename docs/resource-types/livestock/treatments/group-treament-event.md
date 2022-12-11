@@ -32,7 +32,7 @@ Get all Group Treatment Event associated with a holding
 GET ​/data/holdings/{holdingId}/livestock/treatments/group-events
 ```
 
-Get a signle Group Treatment Event associated with a holding
+Get a single Group Treatment Event associated with a holding
 
 ```
 GET /data/holdings/{holdingId}/livestock/treatments/group-events/{treatmentId}
@@ -112,13 +112,13 @@ Embedded animal set in Group Treatment Event are...
 }
 ```
 
-| Response Item    | Description                                                                                 | Data Type                                                         |
-| ---------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| **Reource Type** | The fixed discriminator for the Animal Group resource type.<br>Value: /livestock/animal-set | String                                                            |
-| **Id**           | Unique identifier in the source system for this animal set                                  | UUID                                                              |
-| **Name**         | Human readable name of the set                                                              | String                                                            |
-| **Purpose**      | Purpose of the animal set                                                                   | Enumeration                                                       |
-| **Member**       |                                                                                             | Array of [Identifiers](/docs/resource-types/common.md#identifier) |
+| Response Item     | Description                                                                                 | Data Type                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Resource Type** | The fixed discriminator for the Animal Group resource type.<br>Value: /livestock/animal-set | String                                                            |
+| **Id**            | Unique identifier in the source system for this animal set                                  | UUID                                                              |
+| **Name**          | Human readable name of the set                                                              | String                                                            |
+| **Purpose**       | Purpose of the animal set                                                                   | Enumeration                                                       |
+| **Member**        | Identifies an animal using a scheme and ID                                                  | Array of [Identifiers](/docs/resource-types/common.md#identifier) |
 
 ---
 
@@ -187,9 +187,9 @@ Withdrawals in Group Treatment Event are...
 ```json
 [
   {
-    "productType": "String",
+    "productType": "string",
     "endDate": "2022-10-31T17:06:00.000Z",
-    "market": "String"
+    "market": "string"
   }
 ]
 ```
@@ -209,7 +209,7 @@ Batches in Group Treatment Event are...
 ```json
 [
   {
-    "identifier": "String",
+    "identifier": "string",
     "expiryDate": "2024-06-16T00:00:00.000Z"
   }
 ]
@@ -229,7 +229,7 @@ Dose per Animal in Group Treatment Event are...
 ```json
 {
   "doseQuantity": 27.5,
-  "doseUnits": "String"
+  "doseUnits": "string"
 }
 ```
 
@@ -247,7 +247,7 @@ Total amount of medicine in Group Treatment Event are...
 ```json
 {
   "doseQuantity": 84,
-  "doseUnits": "String"
+  "doseUnits": "string"
 }
 ```
 
