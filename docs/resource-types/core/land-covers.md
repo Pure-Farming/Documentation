@@ -72,7 +72,7 @@ A call to the Land Covers endpoint returns the following fields:
   "identifiers": [...],
   "links": [...],
   "name": "string",
-  "resourceType": "string"
+  "resourceType": "/core/land-cover"
 }
 ```
 
@@ -139,7 +139,7 @@ An Activity is defined as:
   "name": "string",
   "productiveArea": {
     "area": 0,
-    "units": 0
+    "units": "string"
   }
 }
 ```
