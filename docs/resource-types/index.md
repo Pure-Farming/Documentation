@@ -23,17 +23,12 @@ taxonomy:
 # Introduction
 *Pure Farming* APIs are designed to deliver standardised and cleansed data relating to all types currently supported resource types. 
 
-Currently supported Resource Types are: Sample analyses, Sample plans, and Load Receivals.  
-
-**Sample Analyses-** This endpoint provides details about samples taken from a crop and the laboratory test results for those samples.  
-**Sample Plans-** This endpoint provides information about  a planned sampling activity for a crop  at a geospatial feature (paddock, field, or block) level. Sample plans are typically used to coordinate sampling and analysis activities with other crop tasks.  
-**Load receivals-** The Load receivals endpoint provides information about the arrival of harvested crop loads to a location. A crop may be harvested and delivered in a single load or over multiple loads. Load receivals can also record delivery of other product materials to a location (for instance, silage to a pit or fertiliser to a field).
-
-A load receival records the details of the material, transport, source, and destination.  
-
 The Data API is based on the REST standard, where URLs represent collections of data, and actions on the data are performed using HTTP verbs (Such as GET for retrieving data and POST for creating data). Any programming language capable of performing HTTPs requests can be used. Data returned from API uses the JSON standard.  
 
 ## Resource Types
+
+Currently supported Resource Types are below.
+
 - [Common Objects](/resource-types/common.md)  
   Items which are common across all Resource Types.
 - [Core](/resource-types/core)
@@ -43,15 +38,17 @@ The Data API is based on the REST standard, where URLs represent collections of 
   - [Plots](/resource-types/core/plots.md)
     Plots are a field or a piece of land that is used for planting and reaping crops. 
     Although it is smaller than the holdings but is a quite substantial piece of land. 
+  - [Land Covers](/resource-types/core/land-covers.md)  
+    Land Covers are a representation of hedges, and other biodiversity features for a given spatial feature.
 - [Crops](/resource-types/crops)  
   Resource types available for Crops.
-  - [Crops - Sample Plans](/resource-types/crops/sample-plan.md)  
+  - [Sample Plans](/resource-types/crops/sample-plan.md)  
     Sample Plans provides information about a planned sampling activity for a crop  at a geospatial feature (paddock, field, or block) level.
-  - [Crops - Sample Analysis](/resource-types/crops/sample-analysis.md)  
+  - [Sample Analysis](/resource-types/crops/sample-analysis.md)  
     Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
-  - [Crops - Load Receivals](/resource-types/crops/load-receival.md)  
+  - [Load Receivals](/resource-types/crops/load-receival.md)  
     Load Receivals provide information about the arrival of harvested crop loads to a location.  
-  - [Crops - Work Record](/resource-types/crops/work-record.md)
+  - [Work Record](/resource-types/crops/work-record.md)
     Work records provide information about agricultural work and operations performed on a piece of land or crop.
 - [Livestock](/resource-types/livestock)
   Resource types available for Livestock.
