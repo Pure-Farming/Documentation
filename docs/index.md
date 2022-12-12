@@ -13,8 +13,7 @@ taxonomy:
 ---
 
 - [Introduction](#introduction)
-- [Resource Types](#resource-types)
-- [Endpoints/Environments](#endpoints-environments)
+- [Endpoints & Environments](#endpoints--environments)
 - [Errors](#errors)
 - [Authentication](#authentication)
 - [Frequently Asked Questions](#frequently-asked-questions)
