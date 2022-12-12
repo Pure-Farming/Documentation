@@ -26,11 +26,11 @@ taxonomy:
 You can see a list of all currently supported resource types on our [Resource Types](resource-types#resource-types) page.
 
 We have three different types of APIs:
-- [REST API](resource-types)
+- [REST API](resource-types)  
   A typical JSON REST API
-- [OGC API](ogc-api)
+- [OGC API](ogc-api)  
   An OGC compliant API for use with geospatial programs and overlaying data on maps
-- [Streaming API](streaming-api)
+- [Streaming API](streaming-api)  
   An API that allows you to push in large streams of data and pull all changes to a particular dataset
   
 ---
@@ -64,9 +64,9 @@ Some 4XX errors that could be handled programmatically include an error code tha
 ---
 
 ## Authentication
-Before you begin making API calls, you must first authenticate to obtain a valid access token to use in subsequent requests. *Pure Farming* crop API uses OAuth 2.0 for authentication. OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, mobile phones, and living room devices.  
+Before you begin making API calls, you must first authenticate to obtain a valid access token to use in subsequent requests. *Pure Farming* APIs uses OAuth 2.0 for authentication. OAuth 2.0 is the industry-standard protocol for authentication. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, mobile phones, and living room devices.  
 
-### Subsequent Requests 
+Find out how to authenticate against our APIs in the [Authentication Section](authentication).
 
 Once you have an OAuth token, all subsequent API calls that you make on a given user’s behalf must have the token specified in the header of the request. Set the `Authorization` field to `Bearer <Token>`. For example: 
 
