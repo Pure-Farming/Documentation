@@ -71,7 +71,9 @@ The Data API is based on the REST standard, where URLs represent collections of 
     - [Animal Death](/resource-types/livestock/movements/animal-death.md)
       Provides information about Animal Deaths for individual Animals.
     - [Consignment](/resource-types/livestock/movements/consignment.md)
-      Provides information about animal movements that is common accross the other movement resource types
+      Provides information about animal movements that is common accross the other movement resource types.
+  - [Treatments](/docs/resource-types/livestock/)
+    - [Group Treament Event](/docs/resource-types/livestock/treatments/group-treament-event.md) Event for recording treatment of a group of animals.
 - [Dairy](/resource-types/dairy)
   Resource types available for Dairy.
   - [Milk Collection](/resource-types/dairy/milk-collection.md)
