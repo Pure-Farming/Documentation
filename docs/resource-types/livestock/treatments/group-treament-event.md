@@ -188,7 +188,7 @@ Medicine in Group Treatment Event are...
 
 ### Withdrawals
 
-Withdrawals in Group Treatment Event are...
+Withholding details for the treatment administered
 
 ```json
 [
