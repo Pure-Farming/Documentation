@@ -55,7 +55,7 @@ Currently supported Resource Types are below.
   - [Animals](/resource-types/livestock/animals.md)  
     Animal provides information about individual animals.
   - [Animal Groups](/resource-types/livestock/animal-group.md)
-    Defines a group of animals in a medium-long sense (for instance, a mob or pen or batch or class or line).
+    Defines a group of animals in a medium-long term sense (for instance, a mob or pen or batch or class or line).
   - [Movements](/resource-types/livestock/movements)
     Provides information about Movements that can be recorded against animals.
     - [Birth Registrations](/resource-types/livestock/movements/birth-registrations.md)
