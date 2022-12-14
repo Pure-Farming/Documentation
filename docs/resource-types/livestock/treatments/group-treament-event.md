@@ -26,7 +26,7 @@ Get all group greatment gvent that you have access to
 GET /data/livestock/treatments/group-events
 ```
 
-Get a single group greatment event
+Get a single group treatment event
 
 ```
 GET /data/livestock/treatments/group-events/{TreatmentId}
