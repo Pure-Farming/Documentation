@@ -20,19 +20,25 @@ taxonomy:
 
 ## URLs
 
-Get all Group Treatment Event that you have access to
+Get all group greatment gvent that you have access to
 
 ```
 GET /data/livestock/treatments/group-events
 ```
 
-Get all Group Treatment Event associated with a holding
+Get a single group greatment event
+
+```
+GET /data/livestock/treatments/group-events/{TreatmentId}
+```
+
+Get all group treatment event associated with a holding
 
 ```
 GET ​/data/holdings/{holdingId}/livestock/treatments/group-events
 ```
 
-Get a single Group Treatment Event associated with a holding
+Get a single group treatment event associated with a holding
 
 ```
 GET /data/holdings/{holdingId}/livestock/treatments/group-events/{treatmentId}
