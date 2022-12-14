@@ -69,7 +69,7 @@ Currently supported Resource Types are below.
     - [Consignment](/resource-types/livestock/movements/consignment.md)
       Provides information about animal movements that is common accross the other movement resource types
   - [Treatments](/resource-types/livestock/treatments/index.md)
-    - [Group Treament Event](/resource-types/livestock/treatments/group-treament-event.md) Event for recording treatment of a group of animals.
+    - [Group Treament Event](/resource-types/livestock/treatments/group-treament-event.md) Event for recording a medical treatment on a group of animals.
 - [Dairy](/resource-types/dairy)
   Resource types available for Dairy.
   - [Milk Collection](/resource-types/dairy/milk-collection.md)
