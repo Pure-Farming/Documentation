@@ -210,7 +210,7 @@ Withholding details for the treatment administered
 
 ### Batches
 
-Batches in Group Treatment Event are...
+Batches and expiry details for the medicine administered
 
 ```json
 [
