@@ -37,7 +37,7 @@ Currently supported Resource Types are below.
     A Holding is a representation of a working Farm, whether it be comprised of multiple areas of land (contiguous or non-contiguous) or not, it is represented as a Holding. An individual Holding may have spatial information, or may not, if present it may be a centroid (point), or spatial feature (feature) or both.
   - [Plots](/resource-types/core/plots.md)
     Plots are a field or a piece of land that is used for planting and reaping crops.
-    Although it is smaller than the holdings but is a quite substantial piece of land.
+    It is smaller piece of land than a holding (a holding can have many plots).
   - [Land Covers](/resource-types/core/land-covers.md)  
     Land Covers are a representation of hedges, and other biodiversity features for a given spatial feature.
 - [Crops](/resource-types/crops)  
