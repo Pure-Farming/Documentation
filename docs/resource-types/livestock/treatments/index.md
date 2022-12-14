@@ -17,4 +17,4 @@ taxonomy:
 Below are the currently provided resource types for Livestock.
 
 - [Treatments](/docs/resource-types/livestock/treatments)
-  - [Group Treatment Event](/docs/resource-types/livestock/treatments/group-treament-event.md)
+  - [Group Treatment Event](/resource-types/livestock/treatments/group-treament-event.md)
