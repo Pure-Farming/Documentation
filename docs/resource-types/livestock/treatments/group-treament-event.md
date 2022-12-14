@@ -99,8 +99,8 @@ A call to the group treatment event endpoints returns the following fields.
 | **Positions**                | The possible positions for treatment or diagnosis                                                                         | Array of Enumeration                                  |
 | **Withdrawals**              | Withholding details for the treatment administered                                                                        | [Withdrawals](#withdrawals)                           |
 | **Batches**                  | Batches and expiry details for the medicine administered                                                                  | [Batches](#batches)                                   |
-| **Dose Per Animal**          | The actual or average medicine dose administered per animal                                                               | [Dose per Animal](#dose-per-animal)                   |
-| **Total Medicine Used**      | The total amount of medicine used                                                                                         | [Medicine Used](#medicine-used)                       |
+| **Dose Per Animal**          | The actual or average medicine dose administered per animal                                                               | [Dosage](#dosage)                                     |
+| **Total Medicine Used**      | The total amount of medicine used                                                                                         | [Dosage](#dosage)                                     |
 
 ---
 
@@ -203,7 +203,7 @@ Withholding details for the treatment administered
 | Response Item    | Description                                                                                             | Data Type   |
 | ---------------- | ------------------------------------------------------------------------------------------------------- | ----------- |
 | **Product Type** | Product or food item affected by this withdrawal                                                        | Enumeration |
-| **End Date**     | The end date for this withholding period                                                               | Datetime    |
+| **End Date**     | The end date for this withholding period                                                                | Datetime    |
 | **Market**       | The market to which the withdrawal applies, using a scheme such as au.gov.apvma.esi or au.gov.apvma.whp | String      |
 
 ---
@@ -221,38 +221,20 @@ Batches and expiry details for the medicine administered
 ]
 ```
 
-| Response Item   | Description                                   | Data Type |
-| --------------- | --------------------------------------------- | --------- |
-| **Identifier**  | The ID, batch or lot number                   | String    |
-| **Expiry Date** | The expiry date of the medication             | Datetime  |
+| Response Item   | Description                       | Data Type |
+| --------------- | --------------------------------- | --------- |
+| **Identifier**  | The ID, batch or lot number       | String    |
+| **Expiry Date** | The expiry date of the medication | Datetime  |
 
 ---
 
-### Dose per Animal
+### Dosage
 
 Dose per Animal in Group Treatment Event are...
 
 ```json
 {
   "doseQuantity": 27.5,
-  "doseUnits": "string"
-}
-```
-
-| Response Item     | Description                                     | Data Type   |
-| ----------------- | ----------------------------------------------- | ----------- |
-| **Dose Quantity** | Quantity of medicine or product administered    | Number      |
-| **Dose Units**    | Units of measurement in UN/CEFACT 3-letter form | Enumeration |
-
----
-
-### Medicine Used
-
-Total amount of medicine in Group Treatment Event are...
-
-```json
-{
-  "doseQuantity": 84,
   "doseUnits": "string"
 }
 ```
