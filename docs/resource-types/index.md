@@ -21,9 +21,9 @@ taxonomy:
 ---
 
 # Introduction
-*Pure Farming* APIs are designed to deliver standardised and cleansed data relating to all types currently supported resource types. 
+*Pure Farming* data APIs are designed to deliver for a range of different agricultural resources, which is standardised to a common schema regardless of the original data sources that provided the data.  
 
-The Data API is based on the REST standard, where URLs represent collections of data, and actions on the data are performed using HTTP verbs (Such as GET for retrieving data and POST for creating data). Any programming language capable of performing HTTPs requests can be used. Data returned from API uses the JSON standard.  
+The data APIs are based on REST, with each URL endpoint allowing client applications to retrieve (GET) data for individual records, filtered collections, or all the resources of a particular type to which access has been granted. Any programming language that supports HTTPS requests can be used, and data is returned in JSON format.  
 
 ## Resource Types
 
