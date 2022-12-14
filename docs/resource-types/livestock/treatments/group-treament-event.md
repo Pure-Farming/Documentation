@@ -203,7 +203,7 @@ Withholding details for the treatment administered
 | Response Item    | Description                                                                                             | Data Type   |
 | ---------------- | ------------------------------------------------------------------------------------------------------- | ----------- |
 | **Product Type** | Product or food item affected by this withdrawal                                                        | Enumeration |
-| **End Date**     | A particular point in the progression of time                                                           | Date/Time   |
+| **End Date**     | The end date for this withholding period                                                               | Datetime    |
 | **Market**       | The market to which the withdrawal applies, using a scheme such as au.gov.apvma.esi or au.gov.apvma.whp | String      |
 
 ---
