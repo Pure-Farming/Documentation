@@ -224,7 +224,7 @@ Batches and expiry details for the medicine administered
 | Response Item   | Description                                   | Data Type |
 | --------------- | --------------------------------------------- | --------- |
 | **Identifier**  | The ID, batch or lot number                   | String    |
-| **Expiry Date** | A particular point in the progression of time | Date/Time |
+| **Expiry Date** | The expiry date of the medication             | Datetime  |
 
 ---
 
