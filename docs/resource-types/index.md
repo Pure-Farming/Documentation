@@ -14,16 +14,16 @@ taxonomy:
 
 - [Introduction](#introduction)
 - [Resource Types](#resource-types)
-- [Endpoints/Environments](#endpoints--environments)
+- [Endpoints/Environments](#endpoints-/%20environments)
 - [Errors](#errors)
 - [Authentication](#authentication)
 - [Frequently Asked Questions](#frequently-asked-questions)
 ---
 
 # Introduction
-*Pure Farming* APIs are designed to deliver standardised and cleansed data relating to all types currently supported resource types. 
+*Pure Farming* data APIs are designed to deliver data for a range of different agricultural resources, which are standardised to a common schema regardless of the original data sources that provided the data.  
 
-The Data API is based on the REST standard, where URLs represent collections of data, and actions on the data are performed using HTTP verbs (Such as GET for retrieving data and POST for creating data). Any programming language capable of performing HTTPs requests can be used. Data returned from API uses the JSON standard.  
+The data APIs are based on REST, with each URL endpoint allowing client applications to retrieve (GET) data for individual records, filtered collections, or all the resources of a particular type to which access has been granted. Any programming language that supports HTTPS requests can be used, and data is returned in JSON format.  
 
 ## Resource Types
 
@@ -31,11 +31,11 @@ Currently supported Resource Types are below.
 
 - [Common Objects](/resource-types/common.md)  
   Items which are common across all Resource Types.
-- [Core](/resource-types/core)
+- [Core](/resource-types/core)  
   Core resource types, which are common across most data-requests.
-  - [Holdings](/resource-types/core/holdings.md)
+  - [Holdings](/resource-types/core/holdings.md)  
     A Holding is a representation of a working Farm, whether it be comprised of multiple areas of land (contiguous or non-contiguous) or not, it is represented as a Holding. An individual Holding may have spatial information, or may not, if present it may be a centroid (point), or spatial feature (feature) or both.
-  - [Plots](/resource-types/core/plots.md)
+  - [Plots](/resource-types/core/plots.md)  
     Plots are a field or a piece of land that is used for planting and reaping crops. 
     Although it is smaller than the holdings but is a quite substantial piece of land. 
   - [Land Covers](/resource-types/core/land-covers.md)  
@@ -48,21 +48,21 @@ Currently supported Resource Types are below.
     Sample Analyses provide details about samples taken from a crop and the laboratory test results for those samples. 
   - [Load Receivals](/resource-types/crops/load-receival.md)  
     Load Receivals provide information about the arrival of harvested crop loads to a location.  
-  - [Work Record](/resource-types/crops/work-record.md)
+  - [Work Record](/resource-types/crops/work-record.md)  
     Work records provide information about agricultural work and operations performed on a piece of land or crop.
-- [Livestock](/resource-types/livestock)
+- [Livestock](/resource-types/livestock)  
   Resource types available for Livestock.
   - [Animals](/resource-types/livestock/animals.md)  
     Animal provides information about individual animals.
-  - [Movements](/resource-types/livestock/movements)
+  - [Movements](/resource-types/livestock/movements)  
     Provides information about Movements that can be recorded against animals.
-    - [Birth Registrations](/resource-types/livestock/movements/birth-registrations.md)
+    - [Birth Registrations](/resource-types/livestock/movements/birth-registrations.md)  
       Provides information about Birth Registrations for individual Animals.
-    - [Animal Arrival](/resource-types/livestock/movements/animal-arrival.md)
+    - [Animal Arrival](/resource-types/livestock/movements/animal-arrival.md)  
       Provides information about Animal Arrivals for individual Animals.
-    - [Animal Departure](/resource-types/livestock/movements/animal-departure.md)
+    - [Animal Departure](/resource-types/livestock/movements/animal-departure.md)  
       Provides information about Animal Departures for individual Animals.
-    - [Animal Death](/resource-types/livestock/movements/animal-death.md)
+    - [Animal Death](/resource-types/livestock/movements/animal-death.md)  
       Provides information about Animal Deaths for individual Animals.
     - [Consignment](/resource-types/livestock/movements/consignment.md)
       Provides information about animal movements that is common accross the other movement resource types.
