@@ -14,7 +14,7 @@ taxonomy:
 
 - [Introduction](#introduction)
 - [Resource Types](#resource-types)
-- [Endpoints/Environments](#endpoints-environments)
+- [Endpoints/Environments](#endpoints--environments)
 - [Errors](#errors)
 - [Authentication](#authentication)
 - [Frequently Asked Questions](#frequently-asked-questions)
@@ -65,7 +65,9 @@ Currently supported Resource Types are below.
     - [Animal Death](/resource-types/livestock/movements/animal-death.md)
       Provides information about Animal Deaths for individual Animals.
     - [Consignment](/resource-types/livestock/movements/consignment.md)
-      Provides information about animal movements that is common accross the other movement resource types
+      Provides information about animal movements that is common accross the other movement resource types.
+  - [Weights](/resource-types/livestock/weights) Provides information about Weights that can be recorded against animals.
+    - [Group Weight Event](/resource-types/livestock/weights/group-weight-event.md) The Group Weight event records liveweight observations for a group of animals.
 - [Dairy](/resource-types/dairy)
 	Resource types available for Dairy.
 	- [Milk Collection](/resource-types/dairy/milk-collection.md) 
