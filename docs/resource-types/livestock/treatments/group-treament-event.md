@@ -48,7 +48,7 @@ GET /data/holdings/{holdingId}/livestock/treatments/group-events/{treatmentId}
 
 ## Response Structure
 
-A call to the group treatment event endpoints returns the following fields.
+A call to the group treatment event endpoints returns the following fields:
 
 ```json
 {
