@@ -95,7 +95,7 @@ A call to the Group Weight Event endpoints returns the following fields:
 | **Device** | Optional information about the device used for the measurement. | [Device](#device) |
 | **Method** | The method of observation. | Enumeration |
 | **Resolution** | The smallest measurement difference that can be discriminated given the current device settings. | Number |
-| **Statistics** | The statitics that have been calculated. | Array of [Statistics Type](#statistics-type) |
+| **Statistics** | The statistics that have been calculated. | Array of [Statistics Type](#statistics-type) |
 | **Time Off Feed** | Hours of curfew or withholding feed prior to weighing to standardise gut fill. | Number |
 | **Units** | Units specified in UN/CEFACT 3-letter form. | Enumeration |
 
@@ -120,7 +120,7 @@ Animal Set Reference object returns the following properties:
 |-|-|-|
 | **Identifier** | Identifies a resource. | [Identifier](/docs/resource-types/common.md#identifier) |
 | **Context** | Deprecated - Tells us the type of the referenced Animal Set object  | String |
-| **Id** | Deprecated - Uniform resource idendentifier (URI) of the referenced Animal Set. | URI |
+| **Id** | Deprecated - Uniform resource identifier (URI) of the referenced Animal Set. | URI |
 | **Type** | Deprecated - Specifies whether this is a single Animal Set a Link or a Collection. | Enumeration |
 | **Href** | Where provided, this is the URI to the referenced resource. | URI |
 | **Reltype** | Defines the relationship between the current resource and the referenced resource. | String | 
@@ -228,7 +228,7 @@ Device object returns the following properties:
 | Response Item | Description | Data Type |
 |-|-|-|
 | **Context** | Deprecated - Tells us the type of the referenced Device object. | String |
-| **Id** | Deprecated - Uniform resource idendentifier (URI) of the referenced Device.| URI | 
+| **Id** | Deprecated - Uniform resource identifier (URI) of the referenced Device.| URI | 
 | **Type** | Deprecated - Specifies whether this is a single Device a Link or a Collection. | Enumeration | 
 | **Href** | Where provided, this is the URI to the referenced resource. | URI |
 | **Identifier** | Device defined using an identifier and scheme. | [Identifier](/docs/resource-types/common.md#identifier) |
@@ -239,7 +239,7 @@ Device object returns the following properties:
 ---
 
 ### Statistics Type
-The statitics that have been calculated.
+The statistics that have been calculated.
 
 Statistics object returns the following properties:
 ```json
@@ -255,6 +255,6 @@ Statistics object returns the following properties:
 | Response Item | Description | Data Type |
 |-|-|-|
 | **Aggregation** | The type of aggregation. | Enumeration |
-| **Metric** | The metric code for a specific statitics. | [Identifier](https://github.com/adewg/ICAR/wiki/Schemes#identification-and-enum-schemes) | 
+| **Metric** | The metric code for a specific statistic. | [Identifier](https://github.com/adewg/ICAR/wiki/Schemes#identification-and-enum-schemes) | 
 | **Unit** | Mass units for weight from UN/CEFACT trade facilitation. | Enumeration|
 | **Value** | The value of the metric. | Number |
