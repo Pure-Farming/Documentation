@@ -106,7 +106,7 @@ A call to the group treatment event endpoints returns the following fields:
 
 ### Embedded Animal Set
 
-Embedded animal set in Group Treatment Event are...
+An embedded animal set is a set of animals embedded in a specific group treatment event.
 
 ```json
 {
