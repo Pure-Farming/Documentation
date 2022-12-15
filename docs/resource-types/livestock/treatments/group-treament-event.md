@@ -32,7 +32,7 @@ Get a single group treatment event
 GET /data/livestock/treatments/group-events/{TreatmentId}
 ```
 
-Get all group treatment event associated with a holding
+Get all group treatment events associated with a holding
 
 ```
 GET ​/data/holdings/{holdingId}/livestock/treatments/group-events
