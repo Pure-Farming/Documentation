@@ -20,7 +20,7 @@ taxonomy:
 
 ## URLs
 
-Get all group greatment gvent that you have access to
+Get all group treatment events that you have access to
 
 ```
 GET /data/livestock/treatments/group-events
