@@ -162,7 +162,7 @@ Inventory classifications describe the group of animals by their characteristics
 
 ### Medicine
 
-Medicine in Group Treatment Event are...
+The medication used for treatment of the animals
 
 ```json
 {
