@@ -130,7 +130,7 @@ An embedded animal set is a set of animals embedded in a specific group treatmen
 
 ### Inventory Classification
 
-Inventory classification in Group Treatment Event are...
+Inventory classifications describe the group of animals by their characteristics rather than animal identifiers
 
 ```json
 {
