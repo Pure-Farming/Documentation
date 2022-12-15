@@ -182,7 +182,7 @@ The medication used for treatment of the animals
 | **Registered Identifier** | Identifies a medicine registraton with a national Scheme and a registered ID within that scheme                                 | Array of [Identifier](/resource-types/common.md#identifier) |
 | **Approved**              | An indicator whether the medicine or remedy is an approved medicine                                                             | String                                                      |
 | **Reltype**               | Defines the relationship between the current resource and the referenced resource. Defined in well-known/relationshipCatalog.md | String                                                      |
-| **Href**                  | Where provided, this is the URI to the referenced resource                                                                      | URI                                                         |
+| **Href**                  | Where provided, this is the URI to the medication information page                                                              | URI                                                         |
 
 ---
 
