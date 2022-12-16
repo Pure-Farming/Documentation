@@ -47,11 +47,11 @@ There are just 4 endpoints defined in this API yet that is enough to enable the 
 ## Supported Resource Types
 Currently the following resource types are supported:
 
-| Section | Resource Type Name | Short Code        | Dataset       |
-| ------- | ------------------ | ----------------- | --------------|
-| Core    | Holdings           | /core/holdings    | `holdings`    |
-| Core    | Land Covers        | /core/land-covers | `land-covers` |
-| Core    | Plots              | /core/plots       | `plots`       |
+| Section | Resource Type Name | Short Code                                                                  | Dataset       |
+| ------- | ------------------ | --------------------------------------------------------------------------- | --------------|
+| Core    | Holdings           | [/core/holdings](/resource-types/core/holdings.md#response-structure)       | `holdings`    |
+| Core    | Land Covers        | [/core/land-covers](/resource-types/core/land-covers.md#response-structure) | `land-covers` |
+| Core    | Plots              | [/core/plots](/resource-types/core/plots.md#response-structure)             | `plots`       |
 
 # Protocol Definition
 
