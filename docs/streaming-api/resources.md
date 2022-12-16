@@ -64,7 +64,7 @@ A response from the resources endpoint tells you if inserting the data into _Pur
   {
     "successful": false,
     "index": 1,
-    "error": "Could not find Holding for: \"uk.gov.rpa.sbi\":\"1235676\""
+    "error": "Could not find Holding for: \"com.purefarming.holdingId\":\"79daf037-407e-49b0-b385-6cb5b9e5453c\""
   },
   ...
 ]
