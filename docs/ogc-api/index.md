@@ -143,31 +143,31 @@ Whereas if you were authenticated (and had access to one or more holdings), you 
       ]
     },
     {
-			"id": "holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots",
-			"links": [
-				{
-					"href": "https://api.purefarming.com/ogc/collections/holdings/items/a50a28ce-ff23-49e9-8d84-a60869de2096",
-					"rel": "items",
-					"type": "application/geo+json",
-					"hreflang": "en",
-					"title": "holdings"
-				},
-				{
-					"href": "https://api.purefarming.com/ogc/collections/holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots",
-					"rel": "collection",
-					"type": "application/json",
-					"hreflang": "en",
-					"title": "plots-for-a50a28ce-ff23-49e9-8d84-a60869de2096"
-				},
-				{
-					"href": "https://api.purefarming.com/ogc/collections/holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots/items",
-					"rel": "items",
-					"type": "application/geo+json",
-					"hreflang": "en",
-					"title": "plots-for-a50a28ce-ff23-49e9-8d84-a60869de2096"
-				}
-			]
-		},
+      "id": "holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots",
+      "links": [
+        {
+          "href": "https://api.purefarming.com/ogc/collections/holdings/items/a50a28ce-ff23-49e9-8d84-a60869de2096",
+          "rel": "items",
+          "type": "application/geo+json",
+          "hreflang": "en",
+          "title": "holdings"
+        },
+        {
+	  "href": "https://api.purefarming.com/ogc/collections/holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots",
+          "rel": "collection",
+          "type": "application/json",
+          "hreflang": "en",
+          "title": "plots-for-a50a28ce-ff23-49e9-8d84-a60869de2096"
+        },
+        {
+          "href": "https://api.purefarming.com/ogc/collections/holdings/a50a28ce-ff23-49e9-8d84-a60869de2096/collections/plots/items",
+          "rel": "items",
+          "type": "application/geo+json",
+	  "hreflang": "en",
+	  "title": "plots-for-a50a28ce-ff23-49e9-8d84-a60869de2096"
+	}
+      ]
+    },
     ...
   ]
 }
@@ -200,11 +200,12 @@ There are five classes or groups in which all HTTP response status codes are sep
 
 ---
 
-## Authentication
+## Authentication  
 
 Users must be authenticated and authorised in order to make some API requests. *Pure Farming* uses OAuth2.0 for authentication.  
 OAuth2.0 uses Access Tokens to provide authentication.  
 See [authentication](/authentication) for more information
+
 ---
 
 ## Frequently Asked Questions
