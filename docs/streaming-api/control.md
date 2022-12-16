@@ -28,7 +28,7 @@ GET /data/streaming/control
   {
     "holdingId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
     "connectedAt": "2022-12-16T02:02:54.632Z",
-    "signature": "string",
+    "signature": "9b96a1fe1d548cbbc960cc6a0286668fd74a763667b06366fb2324269fcabaa4",
     "identifiers": [...],
     "resourceTypes": [...],
     "connectorIdentifiers": [...]
