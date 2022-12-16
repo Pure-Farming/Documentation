@@ -42,7 +42,7 @@ GET /data/streaming/control
 | **Connected At** | The date and time this permission was granted | Datetime | 
 | **Signature** | A SHA256 has representing the permissions for this holding | SHA256 string |
 | **Identifiers** | A list of identifiers for this holding | List of [Identifier](/resource-types/common.md#identifier)|
-| **Resource Types** | A list of the resource types you are permitted to supply data for | List of [Streaming Resource Type](#streaming-resource-type) |
+| **Resource Types** | A list of the resource types you are permitted to supply data for, for this holding | List of [Streaming Resource Type](#streaming-resource-type) |
 | **Connector Identifiers** | A list of identifiers relating to this specific data connection | List of [Identifier](/resource-types/common.md#identifier) |
 
 
