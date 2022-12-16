@@ -1,9 +1,9 @@
 ---
 
-title: Datasets
+title: Datasets Endpoint
 menu_order: 1
 post_status: publish
-post_excerpt: Datasets
+post_excerpt: Datasets Endpoint
 taxonomy:
     category:
         - root
@@ -12,83 +12,64 @@ taxonomy:
 
 ---
 
-# TODO
-This page was copied from [https://github.com/mimiro-io/ICAR/edit/feature-268-streamingapi/generic-data-exchange-api.md](https://github.com/mimiro-io/ICAR/blob/feature-268-streamingapi/generic-data-exchange-api.md)
-and needs tidying up
 
 # Datasets Endpoint
 
-The datasets endpoint returns a list of datasets that it is exposing. 
+The datasets endpoint returns a list of datasets available for consuming and publishing data.
 
-`/datasets` 
-
-The following Schema is used to represent a single dataset in the list:
-
-```json
-{
-    "description": "Dataset Resource.",
-    
-    "type": "object",
-    
-    "required": [
-        "name", "url", "changes"
-    ],
-
-    "properties": {
-        "name": {
-            "type": "string",
-            "description": "Unique dataset name exposes by this service endpoint."
-        },
-        "url": {
-            "type": "string",
-            "description": "Dataset url"
-        },
-        "changes": {
-            "type": "string",
-            "description": "Url that exposes the changes for this dataset"
-        },
-        "containedTypes": {
-            "type": "array",
-            "description": "An array of strings. Each value is the name of a resource type exposed in this dataset.",
-            "items" : {
-                "type" : "string"
-            }
-        }
-    }
-}
+```
+GET /data/streaming/datasets
 ```
 
-An example response from a compliant endpoint could look like the following:
+
+## Response Structure
 
 ```json
 [
     {
-        "name" : "animals",
-        "url" : "/datasets/animals",
-        "changes" : "/datasets/animals/changes",
-        "containedTypes" : [ "icarAnimalCoreResource"]
+        "name": "holdings",
+        "url": "https://api.dev.purefarming.com/data/streaming/datasets/holdings",
+        "changes": "https://api.dev.purefarming.com/data/streaming/datasets/holdings/changes",
+        "updates": "https://api.dev.purefarming.com/data/streaming/datasets/holdings/updates",
+        "containedTypes": [
+          "/core/holding"
+        ]
     },
-    {
-        "name" : "everything",
-        "url" : "/datasets/everything",
-        "changes" : "/datasets/everything/changes"
-    }
+    ...
 ]
 ```
 
+This response is a list of [dataset response](#dataset-response)s
+
+
 # Dataset Endpoint
 
-The dataset endpoint allows a client to retrieve a single dataset. 
+The dataset endpoint returns metadata about a single dataset
 
-`/datasets/{datasetid}`
+```
+GET /data/streaming/datasets/{datasetid}
+```
+where `datasetId` is the name of the dataset
 
-The schema of the dataset resource is the same as the dataset resource when returned in the list. An example response is shown below.
+
+## Dataset Response
 
 ```json
 {
-    "name" : "animals",
-    "url" : "/datasets/animal",
-    "changes" : "/datasets/animals/changes",
-    "containsTypes" : [ "icarAnimalCoreResource"]
+    "name": "holdings",
+    "url": "https://api.dev.purefarming.com/data/streaming/datasets/holdings",
+    "changes": "https://api.dev.purefarming.com/data/streaming/datasets/holdings/changes",
+    "updates": "https://api.dev.purefarming.com/data/streaming/datasets/holdings/updates",
+    "containedTypes": [
+      "/core/holding"
+    ]
 }
 ```
+
+| Response Item | Description | Data Type |
+| ------------- | ----------- | --------- |
+| **Name** | The name of the dataset (also called the dataset id) | string | 
+| **URL** | A link to the dataset metadata | URI | 
+| **Changes** | A link to get the latest changes to the resources within the dataset | URI |
+| **Updates** | A link publish updates for a resource | URI |
+| **Contained Types** |  A list of resource types contained in this dataset | List of strings |
