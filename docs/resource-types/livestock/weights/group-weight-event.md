@@ -31,7 +31,7 @@ Get a single Group Weight Events for the specified **GroupWeightEventId**, the I
 GET /data/livestock/weight/group-weight-events/{GroupWeightEventId}
 ```
 
-Get all Group Weight Events that are linked to the provided **HoldingID**, holding Id is required. 
+Get all Group Weight Events that are linked to the provided **HoldingId**, holding Id is required. 
 ```
 GET /data/holdings/{holdingId}/livestock/weight/group-weight-events
 ```
