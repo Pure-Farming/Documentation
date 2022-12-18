@@ -21,7 +21,7 @@ taxonomy:
 
 # Introduction
 
-_Pure Farming_ data APIs are designed to deliver data for a range of different agricultural resources, which are standardised to a common schema regardless of the original data sources that provided the data.
+*Pure Farming* data APIs are designed to deliver data for a range of different agricultural resources, which are standardised to a common schema regardless of the original data sources that provided the data.
 
 The data APIs are based on REST, with each URL endpoint allowing client applications to retrieve (GET) data for individual records, filtered collections, or all the resources of a particular type to which access has been granted. Any programming language that supports HTTPS requests can be used, and data is returned in JSON format.
 
@@ -81,7 +81,7 @@ Currently supported Resource Types are below.
 
 ## Endpoints / Environments
 
-The _Pure Farming_ API is provided as a SaaS offering and the endpoints that you will be interested in are:
+The *Pure Farming* API is provided as a SaaS offering and the endpoints that you will be interested in are:
 
 - **Production:** https://api.purefarming.com/data
 - **Demo:** https://api.demo.purefarming.com/data
