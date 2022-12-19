@@ -14,7 +14,7 @@ taxonomy:
 
 - [Introduction](#introduction)
   - [API Reference](#api-reference) 
-- [Resource Types](#resource-types)
+- [Available Resource Types](#available-resource-types)
 
 ---
 
@@ -29,7 +29,7 @@ You can find the API reference for the Data API at https://developer.purefarming
 ## Authentication
 Most endpoints for the Data API require you to be authenticated. Find out more in the [Authentication Section](/authentication/index.md)
 
-# Resource Types
+# Available Resource Types
 Currently supported Resource Types are below:
 
 - [Common Objects](/resource-types/common.md)  
