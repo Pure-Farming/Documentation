@@ -14,7 +14,7 @@ taxonomy:
 
 # Resource Types: Livestock Weights
 
-Below are the currently provided resource types for Livestock.
+Below are the currently provided resource types for livestock weights.
 
 - [Weights](/resource-types/livestock/weights)
   - [Group Weights Event](/resource-types/livestock/movements/group-weight-event.md)
