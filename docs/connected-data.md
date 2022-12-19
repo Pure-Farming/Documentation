@@ -22,14 +22,14 @@ taxonomy:
 # Introduction
 *Pure Farming* APIs are designed to deliver standardised and cleansed data relating to all currently supported resource types. 
 
-You can see a list of all currently supported resource types on our [Resource Types](resource-types#resource-types) page.
+You can see a list of all currently supported resource types on our [Resource Types](/resource-types/index.md#available-resource-types) page.
 
 We have three different types of APIs:
-- [REST API](resource-types)  
+- [REST API](/resource-types/index.md)  
   A typical JSON REST API
-- [OGC API](ogc-api)  
+- [OGC API](/ogc-api/index.md)  
   An OGC compliant API for use with geospatial programs and overlaying data on maps
-- [Streaming API](streaming-api)  
+- [Streaming API](/streaming-api/index.md)  
   An API that allows you to push in large streams of data and pull all changes to a particular dataset
   
 ---
