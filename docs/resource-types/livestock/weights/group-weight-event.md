@@ -88,16 +88,16 @@ A call to the Group Weight Event endpoints returns the following fields:
 | **Trait Label** | Represents a formal trait, identifies the recording system and trait. | [Identifier](/docs/resource-types/common.md#identifier) | 
 | **Animal Set Reference** | Reference an existing animal set by ID and optionally URI. | [Animal Set Reference](#animal-set-reference) |
 | **Count Observed** | Summarises the number of animals observed in the event. | Integer |
-| **Group Method** | Indicates whether the event references an existing animal set, has an embedded animal set, or an inventory classification. | Enumeration | 
+| **Group Method** | Indicates whether the event references an existing animal set, has an embedded animal set, or an inventory classification.</br>(Valid values: ExistingAnimalSet, EmbeddedAnimalSet, InventoryClassification, EmbeddedAnimalSetAndInventoryClassification)| Enumeration | 
 | **Embedded Animal Set** | Specifies the set of animals as a list of member animal identifiers. | [Embedded Animal Set](#embedded-animal-set) |
 | **Inventory Classification** | Describe the group of animals by their characteristics rather than animal identifiers. | [Inventory Classification](#inventory-classification) |
 | **Animal Weights** | The Animal-Weight entity records a liveweight for an individual animal in a Group Weight. | Array of [Animal Weight Type](#animal-weight-type) |
 | **Device** | Optional information about the device used for the measurement. | [Device](#device) |
-| **Method** | The method of observation. | Enumeration |
+| **Method** | The method of observation.</br>(Valid values: LoadCell, Girth, Assessed, WalkOver, Predicted, Imaged, FrontEndCorrelated, GroupAverage) | Enumeration |
 | **Resolution** | The smallest measurement difference that can be discriminated given the current device settings. | Number |
 | **Statistics** | The statistics that have been calculated. | Array of [Statistics Type](#statistics-type) |
 | **Time Off Feed** | Hours of curfew or withholding feed prior to weighing to standardise gut fill. | Number |
-| **Units** | Units specified in UN/CEFACT 3-letter form. | Enumeration |
+| **Units** | Units specified in UN/CEFACT 3-letter form.</br>(Valid values: KGM, GRM, LBR, TNE, MC, MGM, ONZ, PN) | Enumeration |
 
 ---
 
@@ -152,7 +152,7 @@ Embedded Animal Set object returns the following properties:
 | **Id** | The *Pure Farming* Id of this Animal Set. | UUID |
 | **Member** |  An identifier for the animal of the Animal Set. | Array of [Identifier](/resource-types/common.md#identifier) | 
 | **Name** | Human readable name of the Animal Set. | String | 
-| **Purpose**| Purpose of the Animal Set. | Enumeration |
+| **Purpose**| Purpose of the Animal Set.</br>(Valid values: Enclosure, Feeding, Health, Lactation, Movement, Reproduction, Session, Other) | Enumeration |
 
 ---
 
@@ -178,13 +178,13 @@ Inventory Classification object returns the following properties:
 |-|-|-|
 | **Birth Period** | The range of birth dates | String | 
 | **Count** | The count or number of animals in this inventory classification | Number | 
-| **Lactation Status** | The lactation status of animals | Enumeration |
+| **Lactation Status** | The lactation status of animals</br>(Valid values: Dry, Lead, Fresh, Early, Lactating) | Enumeration |
 | **Name** | Human-readable name for this inventory grouping | String |
 | **Primary Breed** | Primary breed defined using an identifier and scheme | [Identifier](/resource-types/common.md#identifier) |
-| **Production Purposes** | Defines the primary product that for which this animal is bred or kept | Array of Enumeration |
-| **Reproductive Status** | The reproductive/pregnancy status of animals | Enumeration |  
-| **Sex** | The sex of animals | Enumeration |
-| **Species** | The species of animals | Enumeration | 
+| **Production Purposes** | Defines the primary product that for which this animal is bred or kept </br>(Valid values: Meat, Milk, Wool)| Array of Enumeration |
+| **Reproductive Status** | The reproductive/pregnancy status of animals </br>(Valid values: Open, Inseminated, Pregnant, NotPregnant, Birthed, DoNotBreed, PregnantMultipleFoetus)  | Enumeration |  
+| **Sex** | The sex of animals </br>(Valid values: Female, FemaleNeuter, Male, MaleCryptorchid, MaleNeuter, Unknown) | Enumeration |
+| **Species** | The species of animals </br>(Valid values: Buffalo, Cattle, Deer, Elk, Goat, Horse, Pig, Sheep)| Enumeration | 
 
 ---
 
@@ -254,7 +254,7 @@ Statistics object returns the following properties:
 ```
 | Response Item | Description | Data Type |
 |-|-|-|
-| **Aggregation** | The type of aggregation. | Enumeration |
+| **Aggregation** | The type of aggregation.</br>(Valid values: Average, Sum, StDev, Min, Max, Count) | Enumeration |
 | **Metric** | The metric code for a specific statistic. | [Identifier](/docs/resource-types/common.md#identifier) | 
-| **Unit** | Mass units for weight from UN/CEFACT trade facilitation. | Enumeration|
+| **Unit** | Mass units for weight from UN/CEFACT trade facilitation.</br>(Valid values: KGM, GRM, LBR, TNE, MC, MGM, ONZ, PN) | Enumeration|
 | **Value** | The value of the metric. | Number |
