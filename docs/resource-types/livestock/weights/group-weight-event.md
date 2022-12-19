@@ -81,7 +81,7 @@ A call to the Group Weight Event endpoints returns the following fields:
 | **Meta** | Meta data for the resource. | Metadata |
 | **Resource Type** | The fixed discriminator for the Group Weight Event resource type.<br/>Value: /livestock/weights/group-weight-event | String |
 | **Contemporary Group** | For manually recorded events, record any contemporary group code that would affect statistical analysis. | String | 
-| **Event Date Time** | A particular point in the progression of time. | [Datetime](https://ijmacd.github.io/rfc3339-iso8601/) | 
+| **Event Date Time** | A particular point in the progression of time. | DateTimeOffset | 
 | **Id** | The *Pure Farming* Id of this Group Weight Event. | UUID |
 | **Remark** | A comment or remark field for additional user-specified information about the event. | String |  
 | **Responsible** | Use if an observation is manually recorded, or an event is carried out or authorised by a person. | String |
