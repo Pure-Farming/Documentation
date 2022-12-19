@@ -68,7 +68,7 @@ Currently supported Resource Types are below:
     - [Animal Death](/resource-types/livestock/movements/animal-death.md)  
       Provides information about Animal Deaths for individual Animals.
     - [Consignment](/resource-types/livestock/movements/consignment.md)  
-      Provides information about animal movements that is common accross the other movement resource types
+      Provides information about animal movements that is common across the other movement resource types
 - [Dairy](/resource-types/dairy)
 	Resource types available for Dairy.
 	- [Milk Collection](/resource-types/dairy/milk-collection.md) 
