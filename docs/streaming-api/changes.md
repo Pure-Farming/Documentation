@@ -1,6 +1,6 @@
 ---
 
-title: Changes Endpoint
+title: Changes
 menu_order: 1
 post_status: publish
 post_excerpt: Changes Endpoint
@@ -96,5 +96,7 @@ GET /data/streaming/datasets/{datasetid}/changes?since=token-issued-by-server-to
 ```
 
 Note that the continuation token can be used by the server to provide paging. A client typically calls to the changes endpoint until no resources are returned. It then stores the token and then waits for some period before asking again. 
+
+> **Note:** The definition of "no resources", is that the response only contains the `@context` and `@continuation` items.
 
 The client should only store the contiuation token if it has succesfully processed all resources returned in a response.

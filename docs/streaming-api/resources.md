@@ -1,6 +1,6 @@
 ---
 
-title: Resources Endpoint
+title: Resources
 menu_order: 1
 post_status: publish
 post_excerpt: Resources Endpoint
@@ -53,7 +53,7 @@ See [Supported Resource Types](/streaming-api/index.md#supported-resource-types)
 
 
 ## Response Structure
-A response from the resources endpoint tells you if inserting the data into _Pure Farming_ succeeded or failed
+A response from the resources endpoint tells you if inserting the data into *Pure Farming* succeeded or failed. The response is an array of items providing the status of each original item pushed.
 
 ```json
 [

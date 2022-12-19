@@ -1,6 +1,6 @@
 ---
 
-title: Control Endpoint
+title: Control
 menu_order: 1
 post_status: publish
 post_excerpt: Control Endpoint
@@ -14,7 +14,7 @@ taxonomy:
 
 # Control Endpoint
 
-The Streaming API Control endpoint is used to determine which _Pure Farming_ holdings you can push data for using the [push endpoint](/streaming-api/resources.md)
+The Streaming API Control endpoint is used to determine which *Pure Farming* holdings you can push data for using the [push endpoint](/streaming-api/resources.md)
 
 ```
 GET /data/streaming/control
@@ -41,9 +41,9 @@ GET /data/streaming/control
 | **Holding ID** | The _Pure Farming_ ID of the holding you can push data for | UUID | 
 | **Connected At** | The date and time this permission was granted | Datetime | 
 | **Signature** | A SHA256 has representing the permissions for this holding | SHA256 string |
-| **Identifiers** | A list of identifiers for this holding | List of [Identifier](/resource-types/common.md#identifier)|
-| **Resource Types** | A list of the resource types you are permitted to supply data for, for this holding | List of [Streaming Resource Type](#streaming-resource-type) |
-| **Connector Identifiers** | A list of identifiers relating to this specific data connection | List of [Identifier](/resource-types/common.md#identifier) |
+| **Identifiers** | An array of identifiers for this holding | Array of [Identifier](/resource-types/common.md#identifier)|
+| **Resource Types** | An array of the resource types you are permitted to supply data for, for this holding | Array of [Streaming Resource Type](#streaming-resource-type) |
+| **Connector Identifiers** | An array of identifiers relating to this specific data connection | Array of [Identifier](/resource-types/common.md#identifier) |
 
 
 ## Streaming Resource Type

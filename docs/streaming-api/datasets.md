@@ -1,6 +1,6 @@
 ---
 
-title: Datasets Endpoint
+title: Datasets
 menu_order: 1
 post_status: publish
 post_excerpt: Datasets Endpoint
@@ -72,4 +72,4 @@ where `datasetId` is the name of the dataset
 | **URL** | A link to the dataset metadata | URI | 
 | **Changes** | A link to get the latest changes to the resources within the dataset | URI |
 | **Updates** | A link publish updates for a resource | URI |
-| **Contained Types** |  A list of resource types contained in this dataset | List of strings |
+| **Contained Types** |  An array of resource types contained in this dataset | Array of Strings |
