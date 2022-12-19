@@ -78,7 +78,7 @@ A call to the Group Weight Event endpoints returns the following fields:
 |-|-|-|
 | **Self** | A link to this specific Group Weight Event. | URI |
 | **Location** | An identifier for the location of the Group Weight Event. | [Identifier](/resource-types/common.md#identifier) |
-| **Meta** | Meta data for the resource. | Metadata |
+| **Meta** | Meta data for the resource. | [Metadata](/resource-types/livestock/common.md#metadata) |
 | **Resource Type** | The fixed discriminator for the Group Weight Event resource type.<br/>Value: /livestock/weights/group-weight-event | String |
 | **Contemporary Group** | For manually recorded events, record any contemporary group code that would affect statistical analysis. | String | 
 | **Event Date Time** | A particular point in the progression of time. | DateTimeOffset | 
