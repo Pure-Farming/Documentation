@@ -77,7 +77,7 @@ A call to the Group Weight Event endpoints returns the following fields:
 | Response Item | Description | Data Type |
 |-|-|-|
 | **Self** | A link to this specific Group Weight Event. | URI |
-| **Location** | An identifier for the location of the Group Weight Event. | [Identifier](/docs/resource-types/common.md#identifier) |
+| **Location** | An identifier for the location of the Group Weight Event. | [Identifier](/resource-types/common.md#identifier) |
 | **Meta** | Meta data for the resource. | Metadata |
 | **Resource Type** | The fixed discriminator for the Group Weight Event resource type.<br/>Value: /livestock/weights/group-weight-event | String |
 | **Contemporary Group** | For manually recorded events, record any contemporary group code that would affect statistical analysis. | String | 
@@ -118,10 +118,10 @@ Animal Set Reference object returns the following properties:
 
 | Response Item | Description | Data Type |
 |-|-|-|
-| **Identifier** | Identifies a resource. | [Identifier](/docs/resource-types/common.md#identifier) |
-| **Context** | Deprecated - Tells us the type of the referenced Animal Set object  | String |
-| **Id** | Deprecated - Uniform resource identifier (URI) of the referenced Animal Set. | URI |
-| **Type** | Deprecated - Specifies whether this is a single Animal Set a Link or a Collection. | Enumeration |
+| **Identifier** | Identifies a resource. | [Identifier](/resource-types/common.md#identifier) |
+| **Context** | Tells us the type of the referenced Animal Set object  | String |
+| **Id** | Uniform resource identifier (URI) of the referenced Animal Set. | URI |
+| **Type** | Specifies whether this is a single Animal Set a Link or a Collection. | Enumeration |
 | **Href** | Where provided, this is the URI to the referenced resource. | URI |
 | **Reltype** | Defines the relationship between the current resource and the referenced resource. | String | 
 
@@ -146,11 +146,11 @@ Embedded Animal Set object returns the following properties:
 | Response Item | Description | Data Type |
 |-|-|-|
 | **Self** | A link to this specific Animal Set. | URI | 
-| **Location** | An identifier for the location of the Animal Set. | [Identifier](/docs/resource-types/common.md#identifier) |
+| **Location** | An identifier for the location of the Animal Set. | [Identifier](/resource-types/common.md#identifier) |
 | **Meta** | Meta data for the resource. | Metadata | 
 | **Resource Type** | The fixed discriminator for the Animal Set resource type. <br/>Value: /livestock/animal-set  | String | 
 | **Id** | The *Pure Farming* Id of this Animal Set. | UUID |
-| **Member** |  An identifier for the animal of the Animal Set. | Array of [Identifier](/docs/resource-types/common.md#identifier) | 
+| **Member** |  An identifier for the animal of the Animal Set. | Array of [Identifier](/resource-types/common.md#identifier) | 
 | **Name** | Human readable name of the Animal Set. | String | 
 | **Purpose**| Purpose of the Animal Set. | Enumeration |
 
@@ -180,7 +180,7 @@ Inventory Classification object returns the following properties:
 | **Count** | The count or number of animals in this inventory classification | Number | 
 | **Lactation Status** | The lactation status of animals | Enumeration |
 | **Name** | Human-readable name for this inventory grouping | String |
-| **Primary Breed** | Primary breed defined using an identifier and scheme | [Identifier](/docs/resource-types/common.md#identifier) |
+| **Primary Breed** | Primary breed defined using an identifier and scheme | [Identifier](/resource-types/common.md#identifier) |
 | **Production Purposes** | Defines the primary product that for which this animal is bred or kept | Array of Enumeration |
 | **Reproductive Status** | The reproductive/pregnancy status of animals | Enumeration |  
 | **Sex** | The sex of animals | Enumeration |
@@ -203,7 +203,7 @@ Animal Weight Type object returns the following properties:
 ```
 | Response Item | Description | Data Type |
 |-|-|-|
-| **Animal** | Animal defined using an identifier and scheme | [Identifier](/docs/resource-types/common.md#identifier) | 
+| **Animal** | Animal defined using an identifier and scheme | [Identifier](/resource-types/common.md#identifier) | 
 | **Weight** | The weight measurement. | Number |
 
 ---
@@ -227,11 +227,11 @@ Device object returns the following properties:
 ```
 | Response Item | Description | Data Type |
 |-|-|-|
-| **Context** | Deprecated - Tells us the type of the referenced Device object. | String |
-| **Id** | Deprecated - Uniform resource identifier (URI) of the referenced Device.| URI | 
-| **Type** | Deprecated - Specifies whether this is a single Device a Link or a Collection. | Enumeration | 
+| **Context** | Tells us the type of the referenced Device object. | String |
+| **Id** | Uniform resource identifier (URI) of the referenced Device.| URI | 
+| **Type** | Specifies whether this is a single Device a Link or a Collection. | Enumeration | 
 | **Href** | Where provided, this is the URI to the referenced resource. | URI |
-| **Identifier** | Device defined using an identifier and scheme. | [Identifier](/docs/resource-types/common.md#identifier) |
+| **Identifier** | Device defined using an identifier and scheme. | [Identifier](/resource-types/common.md#identifier) |
 | **Reltype** | Defines the relationship between the current resource and the referenced resource. | String | 
 | **Model** | ICAR registered device model, which represents manufacturer, model, hardware and software versions. | String |
 | **Serial** | Optionally, the serial number of the device. | String |
@@ -255,6 +255,6 @@ Statistics object returns the following properties:
 | Response Item | Description | Data Type |
 |-|-|-|
 | **Aggregation** | The type of aggregation. | Enumeration |
-| **Metric** | The metric code for a specific statistic. | [Identifier](https://github.com/adewg/ICAR/wiki/Schemes#identification-and-enum-schemes) | 
+| **Metric** | The metric code for a specific statistic. | [Identifier](/docs/resource-types/common.md#identifier) | 
 | **Unit** | Mass units for weight from UN/CEFACT trade facilitation. | Enumeration|
 | **Value** | The value of the metric. | Number |
