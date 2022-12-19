@@ -32,7 +32,11 @@ We expose a number of datasets (resource types). Each dataset contains resources
 Each change is represented as the latest representation of a resource that has been created, modified or deleted. 
 Each resource has unique identity across all resources in all datasets. This is known as the data point key.
 
-It is based off the ICAR Streaming API standard.
+It is based off the Mimiro Universal Data API standard which you can find here: https://open.mimiro.io/specifications/uda/latest.html#api
+
+The PureFarming Streaming API has two notable differences from the Mimiro standard:
+1. The addition of a [control endpoint](/streaming-api/control.md)
+2. The `entities` endpoint has been renamed to [resources endpoint](/streaming-api/resources.md)
 
 ## Motivation
 The main motivation of this API is to enable the synchronisation of *Pure Farming* resources between our system and yours in a generalised manner
