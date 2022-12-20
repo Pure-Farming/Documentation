@@ -61,7 +61,7 @@ Currently the following resource types are supported:
 # Protocol Definition
 
 Our Streaming API has a single entry point and is consistently structured to allow introspection and dynamic navigation. 
-You can find the datasets in the [Supported Resource Types](#supported-resource-types) section above.
+You can find the datasets in the [Supported Resource Types](#supported-resource%20types) section above.
 A compliant server exposes the following endpoints:
 
 ## Control
