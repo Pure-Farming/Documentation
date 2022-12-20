@@ -113,6 +113,56 @@ You could store the ID of the data row, or a hash of the object, or some other s
 
 Data point keys must be unique per *Pure Farming* entity.
 
+## An Example
+
+In your system you have a plot with an ID of `1398e88c-4521-4e82-9974-9ae5ff8fea4d`.
+
+When inserting the plot using the [resources endpoint](/streaming-api/resources.md) you set the dataPointKey to the ID in your system...
+```json
+{
+    "totalArea": {
+      "measurement": 20.0,
+      "units": "MTK"
+    },
+	"totalLength": {
+	  "measurement": 5.0,
+	  "units": "MTK" 
+	},
+    "identifiers": [
+      {
+        "id": "1e3af36f-7e3c-4afd-86f5-23a84be0da7f",
+        "scheme": "com.purefarming.holdingId"
+      },
+    ],
+    "name": "my plot",
+    "resourceType": "/core/plot",
+    "dataPointKey": "1398e88c-4521-4e82-9974-9ae5ff8fea4d"
+}
+```
+
+You could also hash the object, and set the dataPointKey to the hash:
+```json
+{
+    "totalArea": {
+      "measurement": 20.0,
+      "units": "MTK"
+    },
+	"totalLength": {
+	  "measurement": 5.0,
+	  "units": "MTK" 
+	},
+    "identifiers": [
+      {
+        "id": "1e3af36f-7e3c-4afd-86f5-23a84be0da7f",
+        "scheme": "com.purefarming.holdingId"
+      },
+    ],
+    "name": "my plot",
+    "resourceType": "/core/plot",
+    "dataPointKey": "7a4a6ed4c958268f2bd5bac5485e9e8a6939a35f4632be908c9aaa4e8b1bb7cf"
+}
+```
+
 # Security
 All communication is done over HTTPs. 
 
