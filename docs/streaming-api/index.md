@@ -14,7 +14,7 @@ taxonomy:
 
 - [Introduction](#introduction)
   - [Motivation](#motivation)
-  - [Supported Resource Types](#supported-resource-types)
+  - [Supported Resource Types](#supported-resource%20types)
 - [Protocol Definition](#protocol-definition)
   - [Control](#control)
   - [Datasets](#datasets)
