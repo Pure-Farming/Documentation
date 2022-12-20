@@ -94,7 +94,7 @@ You can specify a continuation token which will only return resources that have 
 GET /data/streaming/datasets/{dataset}/changes
 ```
 
-See further information about the endpoint and continuation token in the [Changes Endpoint](/streaming-api/datasets.md) page
+See further information about the endpoint and continuation token in the [Changes Endpoint](/streaming-api/changes.md) page
 
 ## Resources
 Publishes new data or updates to existing data for a dataset. This allows you to publish large streams of data into the *Pure Farming* platform.
