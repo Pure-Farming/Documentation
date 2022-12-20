@@ -20,6 +20,7 @@ taxonomy:
   - [Datasets](#datasets)
   - [Changes](#changes) (GET)
   - [Resources](#resources) (POST)
+- [Data Point Keys](#data-point%20keys)
 - [Security](#security)
 
 ---
