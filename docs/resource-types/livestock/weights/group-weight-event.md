@@ -97,7 +97,7 @@ A call to the Group Weight Event endpoints returns the following fields:
 | **Resolution** | The smallest measurement difference that can be discriminated given the current device settings. | Number |
 | **Statistics** | The statistics that have been calculated. | Array of [Statistics Type](#statistics-type) |
 | **Time Off Feed** | Hours of curfew or withholding feed prior to weighing to standardise gut fill. | Number |
-| **Units** | Units specified in UN/CEFACT 3-letter form.</br>(Valid values: KGM, GRM, LBR, TNE, MC, MGM, ONZ, PN) | Enumeration |
+| <span id = "unit">**Units**</span> | Units specified in UN/CEFACT 3-letter form.</br>(Valid values: KGM, GRM, LBR, TNE, MC, MGM, ONZ, PN) | Enumeration |
 
 ---
 
@@ -144,6 +144,7 @@ Animal Weight Type object returns the following properties:
 |-|-|-|
 | **Animal** | Animal defined using an identifier and scheme | [Identifier](/resource-types/common.md#identifier) | 
 | **Weight** | The weight measurement. | Number |
+>The units of all **weight** measurement are specified at the root level. See [Units](#unit) for reference. 
 
 ---
 
