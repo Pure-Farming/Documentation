@@ -167,6 +167,6 @@ You could also hash the object, and set the dataPointKey to the hash:
 # Security
 All communication is done over HTTPs. 
 
-Any endpoint that returns or adds data must be authenticated. See the [Authentication section](/authentication/index.md).
+Any endpoint that returns or adds data must be authenticated. See the [Authentication section](/authentication/).
 
 You can see what *Pure Farming* entities you are able to publish data for using the [control endpoint](/streaming-api/control.md)
