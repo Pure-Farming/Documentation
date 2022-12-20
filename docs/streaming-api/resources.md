@@ -49,7 +49,7 @@ Supply a list of objects that match the dataset specification. For example, for 
 ]
 ```
 
-See [Supported Resource Types](/streaming-api/index.md#supported-resource-types) for a list of resource types the streaming API will accept.
+See [Supported Resource Types](/streaming-api/#supported-resource%20types) for a list of resource types the streaming API will accept.
 
 
 ## Response Structure
