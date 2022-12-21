@@ -70,6 +70,11 @@ Currently supported Resource Types are below:
       Provides information about Animal Deaths for individual Animals.
     - [Consignment](/resource-types/livestock/movements/consignment.md)  
       Provides information about animal movements that is common across the other movement resource types
+  - [Treatments](/resource-types/livestock/treatments)
+    - [Group Treament Event](/resource-types/livestock/treatments/group-treament-event.md)
+      Event for recording a medical treatment on a group of animals.
+  - [Weights](/resource-types/livestock/weights) Provides information about Weights that can be recorded against animals.
+    - [Group Weight Event](/resource-types/livestock/weights/group-weight-event.md) The Group Weight event records liveweight observations for a group of animals.
 - [Dairy](/resource-types/dairy)
 	Resource types available for Dairy.
 	- [Milk Collection](/resource-types/dairy/milk-collection.md) 
