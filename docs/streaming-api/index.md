@@ -14,12 +14,13 @@ taxonomy:
 
 - [Introduction](#introduction)
   - [Motivation](#motivation)
-  - [Supported Resource Types](#supported-resource-types)
+  - [Supported Resource Types](#supported-resource%20types)
 - [Protocol Definition](#protocol-definition)
   - [Control](#control)
   - [Datasets](#datasets)
   - [Changes](#changes) (GET)
   - [Resources](#resources) (POST)
+- [Data Point Keys](#data-point%20keys)
 - [Security](#security)
 
 ---
@@ -60,7 +61,7 @@ Currently the following resource types are supported:
 # Protocol Definition
 
 Our Streaming API has a single entry point and is consistently structured to allow introspection and dynamic navigation. 
-You can find the datasets in the [Supported Resource Types](#supported-resource-types) section above.
+You can find the datasets in the [Supported Resource Types](#supported-resource%20types) section above.
 A compliant server exposes the following endpoints:
 
 ## Control
@@ -93,7 +94,7 @@ You can specify a continuation token which will only return resources that have 
 GET /data/streaming/datasets/{dataset}/changes
 ```
 
-See further information about the endpoint and continuation token in the [Changes Endpoint](/streaming-api/datasets.md) page
+See further information about the endpoint and continuation token in the [Changes Endpoint](/streaming-api/changes.md) page
 
 ## Resources
 Publishes new data or updates to existing data for a dataset. This allows you to publish large streams of data into the *Pure Farming* platform.
@@ -113,9 +114,59 @@ You could store the ID of the data row, or a hash of the object, or some other s
 
 Data point keys must be unique per *Pure Farming* entity.
 
+## An Example
+
+In your system you have a plot with an ID of `1398e88c-4521-4e82-9974-9ae5ff8fea4d`.
+
+When inserting the plot using the [resources endpoint](/streaming-api/resources.md) you set the dataPointKey to the ID in your system...
+```json
+{
+    "totalArea": {
+      "measurement": 20.0,
+      "units": "MTK"
+    },
+	"totalLength": {
+	  "measurement": 5.0,
+	  "units": "MTK" 
+	},
+    "identifiers": [
+      {
+        "id": "1e3af36f-7e3c-4afd-86f5-23a84be0da7f",
+        "scheme": "com.purefarming.holdingId"
+      },
+    ],
+    "name": "my plot",
+    "resourceType": "/core/plot",
+    "dataPointKey": "1398e88c-4521-4e82-9974-9ae5ff8fea4d"
+}
+```
+
+You could also hash the object, and set the dataPointKey to the hash:
+```json
+{
+    "totalArea": {
+      "measurement": 20.0,
+      "units": "MTK"
+    },
+	"totalLength": {
+	  "measurement": 5.0,
+	  "units": "MTK" 
+	},
+    "identifiers": [
+      {
+        "id": "1e3af36f-7e3c-4afd-86f5-23a84be0da7f",
+        "scheme": "com.purefarming.holdingId"
+      },
+    ],
+    "name": "my plot",
+    "resourceType": "/core/plot",
+    "dataPointKey": "7a4a6ed4c958268f2bd5bac5485e9e8a6939a35f4632be908c9aaa4e8b1bb7cf"
+}
+```
+
 # Security
 All communication is done over HTTPs. 
 
-Any endpoint that returns or adds data must be authenticated. See the [Authentication section](/authentication/index.md).
+Any endpoint that returns or adds data must be authenticated. See the [Authentication section](/authentication/).
 
 You can see what *Pure Farming* entities you are able to publish data for using the [control endpoint](/streaming-api/control.md)
