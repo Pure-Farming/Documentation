@@ -19,5 +19,5 @@ Below are the currently provided resource types for Livestock.
 - [Animals](/resource-types/livestock/animals.md)
 - [Animal Groups](/resource-types/livestock/animal-group.md)
 - [Movements](/resource-types/livestock/movements)
-- [Treatments](/resource-types/livestock/treatments/index.md)
-- [Weight](/resource-types/livestock/weights)
+- [Treatments](/resource-types/livestock/treatments)
+- [Weights](/resource-types/livestock/weights)
